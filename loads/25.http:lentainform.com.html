@@ -1,0 +1,1071 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" http-equiv="Content-Type" />
+<meta name="description" content="">
+<title>Lentainform - Эффективная система рекомендации контента</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="/js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/js/jquery.main.js"></script>
+<script type="text/javascript" src="/js/helper.js"></script>
+<script type="text/javascript" src="/js/doT.min.js"></script>
+<script type="text/javascript" src="/js/share42.js"></script>
+<link rel="manifest" href="/js/manifest.json?v=1.0" />
+<meta name="yandex-verification" content="68c0398dcbf10e2c" />
+<meta name="yandex-verification" content="5d721bec042c8885" />
+<meta name="yandex-verification" content="7b13e0eaad2d7cd0" />
+<meta property="og:title" content="Lentainform - Эффективная система рекомендации контента" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:url" content="https://www.lentainform.com/" />
+<meta property="og:image" content="https://www.lentainform.com/images/lenta_icon.png" />
+<meta property="og:image:secure_url" content="https://www.lentainform.com/images/lenta_icon.png">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="3" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta name="capitaller" content="53fc9796f83c5322666c6c6cf43054dad2a7c6a5" />
+<script>
+
+        var getNameBrowser = function () {
+
+            var ua = navigator.userAgent;
+            if (ua.search(/Edge/) > -1) {
+                return "edge"
+            }
+            if (ua.search(/MSIE/) > -1) {
+                return "ie"
+            }
+            if (ua.search(/Trident/) > -1) {
+                return "ie11"
+            }
+            if (ua.search(/Firefox/) > -1) {
+                return "firefox"
+            }
+            if (ua.search(/Opera/) > -1) {
+                return "opera"
+            }
+            if (ua.search(/OPR/) > -1) {
+                return "operaWebkit"
+            }
+            if (ua.search(/YaBrowser/) > -1) {
+                return "yabrowser"
+            }
+            if (ua.search(/Chrome/) > -1) {
+                return "chrome"
+            }
+            if (ua.search(/Safari/) > -1) {
+                return "safari"
+            }
+            if (ua.search(/Maxthon/) > -1) {
+                return "maxthon"
+            }
+            return 'undefined';
+
+        }
+
+    </script>
+</head>
+<body>
+
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PBCJFJ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBCJFJ');</script>
+
+<script lang="javascript">
+    helper.user = 0;
+    helper.search = 0;
+    helper.userCategories = [];
+    helper.userSources = [];
+    helper.userCountry = 2;
+</script>
+<script src="//cdn.lentainform.com/js/push/subscribe.js"></script>
+
+<div class="popup_register none">
+<div class="close popup-close-btn"></div>
+<p><strong>Присоединяйтесь</strong> и получите еще больше интересных новостей</p>
+<div class="btns">
+<a id="open-reg-block" href="javascript:;" class="login">Войти</a>
+</div>
+</div>
+
+<div class="popup fixed none" id="reg">
+<div class="logo">
+<img src="/images/logo_lenta_popup.svg" alt="" class="logotype">
+<div class="close"></div>
+</div>
+<div class="poptitle">
+<p>Добро пожаловать</p>
+
+</div>
+<div class="socnetwork">
+<p>войдите через социальные сети</p>
+<div class="socpic">
+<a id="vkLink" data-vk-url="" data-type="vk" href="javascript:" class="auth_link">
+<img class="socials" src="/img/svg/vk_big.svg" alt="" width="65" height="65">
+</a>
+<a id="fbLink" data-fb-url="" data-type="fb" href="javascript:" class="auth_link">
+<img class="socials" src="/img/svg/fb_big.svg" alt="" width="65" height="65">
+</a>
+<a id="twLink" data-tw-url="" data-type="tw" href="javascript:" class="auth_link">
+<img class="socials" src="/img/svg/tw_big.svg" alt="" width="65" height="65">
+</a>
+<a id="okLink" data-ok-url="" data-type="ok" href="javascript:" class="auth_link">
+<img class="socials" src="/img/svg/ok_big.svg" alt="" width="65" height="65">
+</a>
+<a id="glLink" data-gl-url="" data-type="gl" href="javascript:" class="auth_link">
+<img class="socials" src="/img/svg/G_big.svg" alt="" width="65" height="65">
+</a>
+<a id="mLink" data-m-url="" data-type="ml" href="javascript:" class="auth_link">
+<img class="socials" src="/img/svg/mailru.svg" alt="" width="65" height="65">
+</a>
+</div>
+</div>
+</div>
+
+
+
+<div class="popup none" id="about">
+<div class="logo">
+<img src="/images/logo_lenta_popup.svg" alt="" class="logotype">
+<div class="close"></div>
+</div>
+<div class="poptitle">
+<span>о проекте</span>
+</div>
+<div class="textabout">
+<div class="subtext">
+<span>О проекте</span>
+<p>
+<a href="https://www.lentainform.com/" target="_blank">lentainform.com</a> — новостной агрегатор. Мы автоматически
+собираем новости интернет-СМИ и ранжируем их по
+времени публикации, а также по популярности, основанной на количестве просмотров посетителями. Рядом с
+заголовком каждой статьи указано количество ее прочтений на текущий момент. Статистика обновляется в
+режиме онлайн.
+</p>
+<p>Можно посмотреть ленту популярных материалов за час, сутки или за неделю, а также выбрать конкретную
+тематику и получить выборку новостей по ней. На <a href="https://www.lentainform.com/" target="_blank">lentainform.com</a> публикуются новости следующих тематик:
+политика, общество, спорт, экономика, шоу-бизнес, недвижимость, здоровье и красота, авто, кулинария,
+мода и стиль, наука и технологии, дети и родители, туризм, образ жизни. Каждая из тематик представлена в
+меню сайта.</p>
+<p>Материалы, отсортированные по времени публикации, размещены в блоке «Последние новости» на главной
+странице и страницах тематических рубрик. При клике на заголовок новости происходит переход на сайт
+издания, которое ее опубликовало.</p>
+</div>
+<div class="subtext">
+<span>Для СМИ</span>
+<p>
+Мы очень дорожим доверием читателей и внимательно относимся к отбору поставщиков контента. Поэтому
+сотрудничаем только с изданиями, имеющими свидетельство о регистрации в качестве средства массовой
+информации. Участие в ранжировании, а также размещение анонсов статей и других редакционных материалов в
+новостном агрегаторе <a href="https://www.lentainform.com/" target="_blank">lentainform.com</a> абсолютно бесплатно.
+Подать заявку на участие вы можете на
+странице <a href="https://partner.lentainform.com/" target="_blank">https://partner.lentainform.com/</a>. Для попадания
+контента в новостной агрегатор необходимо
+разместить код Lentainform на сайте вашего издания. Мы открыты к сотрудничеству. По всем вопросам
+обращайтесь на <a href="maiilto:support@lentainform.com">support@lentainform.com</a>.
+</p>
+</div>
+<div class="subtext">
+<span>Для читателей</span>
+<p>
+Мы стремимся к тому, чтобы пользование <a href="https://www.lentainform.com/" target="_blank">lentainform.com</a>
+приносило удовольствие, и читатели возвращались к
+нам снова. Для удобства чтения вы можете настроить свою персонализированную новостную ленту. Сделать это
+очень просто: в меню нужно нажать кнопку «Войти». Система предложит зарегистрироваться/войти с помощью
+популярных соц. сетей: odnoklassniki, vk, mail.ru, facebook, twitter или google+. После этого вы сможете
+выбрать список СМИ и тематику новостей, которая вас интересует. Также предусмотрена возможность
+подписаться на рассылку популярных новостей. При
+нажатии на кнопку «сохранить» выбранные настройки сохраняются. Теперь у вас есть своя
+персонализированная новостная лента! О том, удобно ли ей пользоваться, а также если у вас есть другие
+вопросы и предложения, пишите на <a href="maiilto:support@lentainform.com">support@lentainform.com</a>.
+</p>
+</div>
+<div class="subtext contacts">
+<p><strong>Контакты</strong></p>
+<a class="contacts__phone" href="tel:+7(495)128-14-34">+7(495)128-14-34,</a>
+<a class="contacts__phone" href="tel:+7(495)128-05-41">+7(495)128-05-41</a>
+<a class="contacts__mail" href="mailto:support@lentainform.com">support@lentainform.com</a>
+</div>
+</div>
+</div>
+
+
+<div class="popup none fixed" id="disableSource">
+<div class="logo">
+<img src="/images/logo_lenta.svg" alt="" class="logotype">
+<div class="close"></div>
+</div>
+<form action="/auth/disable-source" method="post">
+<div class="setting">
+<span>Вы действительно хотите исключить сайт “<span id="placeholderSource"></span>” из своей ленты новостей?</span>
+</div>
+<input type="hidden" id="filter_sources_popup" name="filter_sources" value="" />
+<div class="save">
+<input type="reset" value="Нет" class="close">
+<input type="submit" value="Да">
+</div>
+</form>
+</div>
+
+
+
+
+<div class="popup none" id="person">
+<div class="popup-header">
+<img src="/images/logo_lenta_popup.svg" alt="" class="logotype">
+<p class="poptitle">Персонализируй свою ленту новостей</p>
+<span class="close"></span>
+</div>
+<form class='personalization-form' action="/auth/save-settings" method="post">
+<div class="forminner">
+<div class="subjecttitle">
+<span>Выбор тематики</span>
+<div class="subject" class="personalization-subject">
+<div data-category-id="1">
+<span class="hover"></span><img src="/img/cat_1.png" alt="">
+<p>Политика</p>
+</div>
+<div data-category-id="2">
+<span class="hover"></span><img src="/img/cat_2.png" alt="">
+<p>Общество</p>
+</div>
+<div data-category-id="3">
+<span class="hover"></span><img src="/img/cat_3.png" alt="">
+<p>Спорт</p>
+</div>
+<div data-category-id="4">
+<span class="hover"></span><img src="/img/cat_4.png" alt="">
+<p>Экономика</p>
+</div>
+<div data-category-id="5">
+<span class="hover"></span><img src="/img/cat_5.png" alt="">
+<p>Шоу-бизнес</p>
+</div>
+<input class='personalization-categories-input' type="hidden" name="filter_categories" value="" />
+</div>
+</div>
+
+
+
+  
+
+ 
+
+<div class="blocked">
+<span>Заблокированые источники</span>
+<div class="checkbox">
+</div>
+</div>
+</div>
+<div class="save">
+<span class="personalization-save-settings">Сохранить</span>
+</div>
+</form>
+</div>
+
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8&appId=295936154156533";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<div class="popup-like none">
+<div class="popup-like__head">
+<a href="#" class="popup-like__cross popup-like__close"></a>
+<div class="popup-like__head-top">
+<a href="https://www.facebook.com/lentainformcom/" target="_blank" class="popup-like__logo">
+<img src="/img/fb-logo.png" width="108" height="22" alt="Facebook">
+</a>
+</div>
+<div class="popup-like__head-txt">
+Нажмите <b>«Нравится»</b>, чтобы <br>
+читать Lentainform в Facebook
+</div>
+</div>
+<div class="popup-like__wrap">
+<div class="popup-like__inner">
+<div class="fb-like" data-href="https://www.facebook.com/lentainformcom/" data-layout="standard" data-width="330" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+</div>
+<div class="popup-like__footer">
+<a href="#" class="popup-like__together popup-like__close">Спасибо, я уже с вами</a>
+
+</div>
+</div>
+</div>
+
+<header>
+<div class="wrap">
+<div class="top">
+<div class="logo">
+<a href="/"></a>
+</div>
+<nav class="menu-category">
+<div class="wrap-hd-menu">
+<ul class="list" id="mCategory">
+<li class="categoryMenu covid">
+<a href="/covid19">
+<span class="m-item">Коронавирус</span>
+</a>
+</li>
+<li class="categoryMenu1">
+<a href="/category/politics">
+<span class="m-item">Политика</span>
+</a>
+</li>
+<li class="categoryMenu2">
+<a href="/category/society">
+<span class="m-item">Общество</span>
+</a>
+</li>
+<li class="categoryMenu3">
+<a href="/category/sport">
+<span class="m-item">Спорт</span>
+</a>
+</li>
+<li class="categoryMenu4">
+<a href="/category/economics">
+ <span class="m-item">Экономика</span>
+</a>
+</li>
+<li class="categoryMenu5">
+<a href="/category/showbiz">
+<span class="m-item">Шоу-бизнес</span>
+</a>
+</li>
+<li class="categoryMenu">
+<a href="/persons">
+<span class="m-item">Знаменитости</span>
+</a>
+</li>
+</ul>
+<div class="wrap-second-menu">
+<span class="wr">eщё</span>
+<ul class="secondMenu">
+</ul>
+</div>
+</div>
+</nav>
+<div class="header_block reg">
+<div id="open-reg">войти</div>
+<form action="/" method="post" autocomplete="on" id="searchform">
+<input id="search" name="search" type="text" placeholder="Поиск...">
+<input id="search_submit" value="" type="submit">
+</form>
+<a class="android" target="_blank" href="https://play.google.com/store/apps/details?id=com.lentainform&amp;referrer=utm_source%3Dmain_page%26utm_medium%3Dicon_a">
+<img src="/img/android_icon.png">
+</a>
+</div>
+</div>
+</div>
+<div class="bottom">
+<div class="wrap">
+<div class="period">
+<a class="hour" data-period="hour" href="javascript:;">час</a>
+<a class="day active" data-period="day" href="javascript:;">день</a>
+<a class="week" data-period="week" href="javascript:;">неделя</a>
+</div>
+<div class="date" data-user-time="Mon, 08 Mar 2021 14:51:03"></div>
+<div class="money">
+<span>USD 74.59</span>
+<span>EUR 88.60</span>
+</div>
+<div class="temperature"><span>Tatarstan: -5&deg;C</span></div>
+<ul class="soc_net">
+<li class="fb"><a target="_blank" href="https://www.facebook.com/lentainformcom"></a></li>
+<li class="vk"><a target="_blank" href="https://vk.com/lentainform"></a></li>
+<li class="ok"><a target="_blank" href="https://ok.ru/lentainform"></a></li>
+<li class="tw"><a target="_blank" href="https://twitter.com/Lentainform"></a></li>
+</ul>
+<div class="about">О проекте</div>
+</div>
+</div>
+</header>
+<div class="wrap">
+<div class="content">
+<div class="main">
+<div class="target-news"></div>
+<div class="main__col col-left">
+<div id="MasonryNews" class="MasonryContent"></div>
+</div>
+<div class="main__col col-middle">
+<div class="news-by-categories">
+<div class="news-by-category-left"></div>
+<div class="news-by-category-right"></div>
+</div>
+<div class="main-bottom">
+<div class="news-header hidden">
+<h2>Другие новости </h2>
+</div>
+<div class="main-bottom-left"></div>
+<div class="main-bottom-right"></div>
+</div>
+</div>
+</div>
+<div class="sidebar">
+
+
+
+<h1>Последние новости</h1>
+<div id="box"></div>
+</div>
+<!--googleoff: all-->
+<div id="news-template" class="robots-noindex">{{ var i = 0; }}
+{{~it : news}}
+{{? (loadingNews.category && loadingNews.pageNews == 1 && i == 0) }}
+<h1>главные новости</h1>
+<div class="part item w_2">
+<div class="topnews">
+{{?news.categoryId}}
+<a href="/category/{{=loadingNews.categories[news.categoryId]}}" class="category">{{=loadingNews.categoriesRu[news.categoryId]}}</a>
+{{?}}
+<div class="img">
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target='_blank'>
+<img class="news-img" src="{{=news.img_link}}" alt="{{=news.title}} | Lentainform" title="{{=news.title}} | Lentainform">
+</a>
+<div class="counter"><span class="eye"></span>{{=news.clicks}}</div>
+</div>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=news.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank" class="title">{{=news.title}}</a>
+{{?news.description}}
+<p>{{=news.description}}...</p>
+{{?}}
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank">{{=news.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=news.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=news.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=news.createdAt}}</span></div>
+{{?news.similarNews}}
+<div class="more">
+<span>ещё</span>
+</div>
+<div class="more_block">
+{{~news.similarNews : similar}}
+<div class="daynews">
+<div class="source">
+<img src="{{=loadingNews.getIcon(similar.domain)}}" alt="">
+<a class="daynews-domain" target="_blank" href="http://{{=similar.domain}}">{{=similar.domain}}</a>
+</div>
+<div class="timeside">
+<span>{{=similar.createdAt}}</span>
+</div>
+<a target="_blank" href="{{=loadingNews.getRedirectUrl(similar.campaignId, similar.url)}}" class="titleside">{{=similar.title}}</a>
+</div>
+{{~}}
+</div>
+{{?}}
+</div>
+</div>
+{{?? (loadingNews.targetNews != news.id) }}
+{{? loadingNews.category}}
+<div class="item">
+<div class="news">
+{{?news.categoryId}}
+<a href="/category/{{=loadingNews.categories[news.categoryId]}}" class="category">{{=loadingNews.categoriesRu[news.categoryId]}}</a>
+{{?}}
+<div class="img">
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target='_blank'>
+<img class="news-img" src="{{=news.img_link}}" alt="{{=news.title}} | Lentainform" title="{{=news.title}} | Lentainform">
+</a>
+<div class="counter"><span class="eye"></span>{{=news.clicks}}</div>
+</div>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=news.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" class="title" target='_blank'>{{=news.title}}</a>
+{{?news.description}}
+<p>{{=news.description}}...</p>
+{{?}}
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank">{{=news.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=news.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=news.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time">
+<span>{{=news.createdAt}}</span>
+</div>
+</div>
+</div>
+{{??}}
+{{? loadingNews.pageNews == 1 && i == 0 }}
+<div class="news-header hidden">
+<h2>Главное</h2>
+</div>
+{{?}}
+<div class="item news-main">
+<div class="news">
+<div class="news-main__bottom">
+<div class="subnetwork">
+<img src="https://www.google.com/s2/favicons?domain={{=news.domain}}" alt="">
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank">{{=news.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=news.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=news.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=news.createdAt}}</span></div>
+<p>
+<a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" class="news-main__text" target='_blank'>
+{{=news.title}}
+<span class="counter">{{=news.clicks}}</span>
+</a>
+</p>
+</div>
+</div>
+</div>
+{{?}}
+{{?}}
+{{ i++; }}
+{{~}}</div>
+<div id="target-news-template" class="robots-noindex">{{var i = 0; }}
+{{~it : targetNews}}
+{{?(i == 0 && loadingNews.targetNews == targetNews.id)}}
+<div class="target-news-main target-full">
+<div class="target-news-main__img">
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="target-news-main__link" target="_blank">
+<img src="{{=targetNews.img_link}}" alt="{{=targetNews.title}} | Lentainform" title="{{=targetNews.title}} | Lentainform">
+<span class="target-news-main__label">
+<span class="target-news-main__category">{{=targetNews.domain}}</span>
+<span class="target-news-main__date">{{=targetNews.createdAt}}</span>
+</span>
+<span class="target-news-main__views">{{=targetNews.clicks}}</span>
+</a>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="target-news-main__link" target="_blank">
+<h2 class="target-news-main__title">{{=targetNews.title}}</h2>
+</a>
+{{?targetNews.description}}
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="target-news-main__link" target="_blank">
+<p class="target-news-main__description">
+{{=targetNews.description}}
+</p>
+</a>
+{{?}}
+<div class="read-full">
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" target="_blank">Читать полностью новость на сайте {{=targetNews.domain}}</a>
+</div>
+<div class="soctarget" id="socTarget">
+<span class="soctarget__text">Поделиться:</span>
+</div>
+</div>
+{{?? (i == 0) }}
+<div class="target-news-main">
+<div class="target-news-main__img">
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="target-news-main__link" target="_blank">
+<img src="{{=targetNews.img_link}}" alt="{{=targetNews.title}} | Lentainform" title="{{=targetNews.title}} | Lentainform">
+<span class="target-news-main__label">
+<span class="target-news-main__category">{{=targetNews.domain}}</span>
+<span class="target-news-main__date">{{=targetNews.createdAt}}</span>
+</span>
+<span class="target-news-main__views">{{=targetNews.clicks}}</span>
+</a>
+</div>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=targetNews.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="target-news-main__link" target="_blank">
+<h2 class="target-news-main__title">{{=targetNews.title}}</h2>
+</a>
+{{?targetNews.description}}
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="target-news-main__link" target="_blank">
+<p class="target-news-main__description">
+{{=targetNews.description}}
+<span class="read-more"></span>
+</p>
+</a>
+{{?}}
+{{? loadingNews.targetNews }}
+<p>{{=loadingNews.targetNews}}</p>
+{{?}}
+</div>
+{{??(i > 0)}}
+{{?(i == 1)}}
+<div class="related-news"> 
+<div class="news-header">
+<h2>Сейчас в СМИ</h2>
+</div>
+<ul class="related-news__list"> 
+{{?}}
+<li class="related-news__item">
+<div class="related-news__header">
+<span class="related-news__domain">
+<img src="https://www.google.com/s2/favicons?domain={{=targetNews.domain}}" alt="">
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" target="_blank">{{=targetNews.domain}}</a>
+</span>
+<span class="related-news__date">
+{{=targetNews.createdAt}}
+</span>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(targetNews.campaignId, targetNews.url)}}" class="related-news__link" target="_blank">
+{{?targetNews.title}}
+<p class="related-news__title">
+{{=targetNews.title}}
+</p>
+{{?}}
+</a>
+</li>
+{{?(i == 3)}}
+</ul> 
+</div> 
+{{?}}
+{{?}}
+{{i++;}}
+{{~}}</div>
+<div id="news-by-categories-template" class="robots-noindex">{{ var i = 0; }}
+{{? loadingNews.loadTargetAccentNews }}
+<div class="news-by-category news-by-category-accent hidden">
+<div class="news-header">
+<h2>
+<a href="{{=loadingNews.currentCategoryLink}}" target="_blank">
+{{=loadingNews.currentCategoryName}}
+</a>
+</h2>
+</div>
+{{~it : newsCollection}}
+{{? i == 2 }}
+<div class="news-by-category__item category-news-accent">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="news-by-category__link image-container" target="_blank">
+<img src="{{=newsCollection.img_link}}" alt="{{=newsCollection.title}} | Lentainform" title="{{=newsCollection.title}} | Lentainform">
+<div class="news-by-category__counter">{{=newsCollection.clicks}}</div>
+</a>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=newsCollection.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="news-by-category__link" target="_blank">
+<h3 class="news-by-category__title">
+{{=newsCollection.title}}
+</h3>
+</a>
+{{?newsCollection.description}}
+<p class="news-by-category__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="news-by-category__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{??}}
+<div class="news-by-category__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="news-by-category__link" target="_blank">
+<h3 class="news-by-category__title">
+{{=newsCollection.title}}
+<span class="news-by-category__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+{{? (i == 1 && newsCollection.description) }}
+<p class="news-by-category__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="news-by-category__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+ </div>
+{{?}}
+{{ i++; }}
+{{~}}
+</div>
+{{??}}
+<div class="news-by-category regular-news hidden">
+<div class="news-header">
+<h2>
+<a href="{{=loadingNews.currentCategoryLink}}" target="_blank">
+{{=loadingNews.currentCategoryName}}
+</a>
+</h2>
+</div>
+{{~it : newsCollection}}
+{{? i == 1 }}
+<div class="news-by-category__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="news-by-category__link" target="_blank">
+<h3 class="news-by-category__title">
+{{=newsCollection.title}}
+<span class="news-by-category__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+<div class="news-by-category__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{??}}
+<div class="news-by-category__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="news-by-category__link image-container" target="_blank">
+<img src="{{=newsCollection.img_link}}" alt="{{=newsCollection.title}} | Lentainform" title="{{=newsCollection.title}} | Lentainform">
+<div class="news-by-category__counter">{{=newsCollection.clicks}}</div>
+</a>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=newsCollection.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="news-by-category__link" target="_blank">
+<h3 class="news-by-category__title">
+{{=newsCollection.title}}
+<span class="news-by-category__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+{{?newsCollection.description}}
+<p class="news-by-category__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="news-by-category__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{?}}
+{{ i++; }}
+{{~}}
+</div>
+{{?}}
+</div>
+<div id="hot-template" class="robots-noindex">{{~it : hot}}
+<div class="daynews">
+<div class="source">
+<img src="https://www.google.com/s2/favicons?domain={{=hot.domain}}" alt="">
+<a class="daynews-domain" target="_blank" href="http://{{=hot.domain}}">{{=hot.domain}}</a>
+</div>
+<div class="timeside">
+<span>{{=hot.createdAt}}</span>
+</div>
+<a target="_blank" href="{{=loadingNews.getRedirectUrl(hot.campaignId, hot.url)}}" class="titleside">{{=hot.title}}</a>
+</div>
+{{~}}</div>
+<div id="search-template" class="robots-noindex">{{~it : search}}
+<div class="main search">
+<div class="line">
+<img src="{{=loadingNews.getIcon(search.domain)}}" alt="">
+<div class="timeline">{{=search.createdAt}}</div>
+<span><a target="_blank" href="{{=loadingNews.getRedirectUrl(search.campaignId, search.url)}}" class="titleside">{{=loadingNews.highlightTitle(search.title)}}</a></span>
+<div class="countline">{{=search.clicks}}</div>
+</div>
+</div>
+{{~}}</div>
+<div id="news-main-center" class="robots-noindex">{{ var i = 0;}}
+{{? loadingNews.loadingMainBottomLeft }}
+{{~it : news}}
+{{ i++; }}
+{{? (i % 2 == 0) }}
+<div class="main-bottom-news main-bottom-news-accent">
+{{ var j = 0; }}
+{{~news : newsCollection}}
+{{? j == 2 }}
+<div class="main-bottom-news__item main-bottom-news-accent">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link image-container" target="_blank">
+<img src="{{=newsCollection.img_link}}" alt="{{=newsCollection.title}} | Lentainform" title="{{=newsCollection.title}} | Lentainform">
+<div class="main-bottom-news__counter">{{=newsCollection.clicks}}</div>
+</a>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=newsCollection.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+</h3>
+</a>
+{{?newsCollection.description}}
+<p class="main-bottom-news__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{??}}
+<div class="main-bottom-news__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+<span class="main-bottom-news__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+{{? (i == 1 && newsCollection.description) }}
+<p class="main-bottom-news__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{?}}
+{{ j++; }}
+{{~}}
+</div>
+{{??}}
+<div class="main-bottom-news regular-news">
+{{ var k = 0; }}
+{{~news : newsCollection}}
+{{? k == 1 }}
+<div class="main-bottom-news__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+<span class="main-bottom-news__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{??}}
+<div class="main-bottom-news__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link image-container" target="_blank">
+<img src="{{=newsCollection.img_link}}" alt="{{=newsCollection.title}} | Lentainform" title="{{=newsCollection.title}} | Lentainform">
+<div class="main-bottom-news__counter">{{=newsCollection.clicks}}</div>
+</a>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=newsCollection.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+<span class="main-bottom-news__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+{{?newsCollection.description}}
+<p class="main-bottom-news__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{?}}
+{{ k++; }}
+{{~}}
+</div>
+{{?}}
+{{~}}
+{{??}}
+{{~it : news}}
+{{ i++; }}
+{{? (i % 2 == 0) }}
+<div class="main-bottom-news regular-news">
+{{ var k = 0; }}
+{{~news : newsCollection}}
+{{? k == 1 }}
+<div class="main-bottom-news__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+<span class="main-bottom-news__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{??}}
+<div class="main-bottom-news__item">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link image-container" target="_blank">
+<img src="{{=newsCollection.img_link}}" alt="{{=newsCollection.title}} | Lentainform" title="{{=newsCollection.title}} | Lentainform">
+<div class="main-bottom-news__counter">{{=newsCollection.clicks}}</div>
+</a>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=newsCollection.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+<span class="main-bottom-news__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+{{?newsCollection.description}}
+<p class="main-bottom-news__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{?}}
+{{ k++; }}
+{{~}}
+</div>
+{{??}}
+<div class="main-bottom-news main-bottom-news-accent">
+{{ var j = 0; }}
+{{~news : newsCollection}}
+{{? j == 2 }}
+<div class="main-bottom-news__item main-bottom-news-accent">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link image-container" target="_blank">
+<img src="{{=newsCollection.img_link}}" alt="{{=newsCollection.title}} | Lentainform" title="{{=newsCollection.title}} | Lentainform">
+<div class="main-bottom-news__counter">{{=newsCollection.clicks}}</div>
+</a>
+<div class="share_popup">
+<div class="share_pic none"></div>
+<div id="social_hendler_{{=newsCollection.id}}" class="sharesoc none"></div>
+</div>
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+</h3>
+</a>
+{{?newsCollection.description}}
+<p class="main-bottom-news__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{??}}
+<div class="main-bottom-news__item">
+ <a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" class="main-bottom-news__link" target="_blank">
+<h3 class="main-bottom-news__title">
+{{=newsCollection.title}}
+<span class="main-bottom-news__counter counter-title">{{=newsCollection.clicks}}</span>
+</h3>
+</a>
+{{? (i == 1 && newsCollection.description) }}
+<p class="main-bottom-news__text">{{=newsCollection.description}}</p>
+{{?}}
+<div class="main-bottom-news__bottom">
+<div class="subnetwork">
+<a href="{{=loadingNews.getRedirectUrl(newsCollection.campaignId, newsCollection.url)}}" target="_blank">{{=newsCollection.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=newsCollection.domain}}'></div>
+<div class="sub_popup none">
+Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=newsCollection.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+</div>
+</div>
+<div class="time"><span>{{=newsCollection.createdAt}}</span></div>
+</div>
+</div>
+{{?}}
+{{ j++; }}
+{{~}}
+</div>
+{{?}}
+{{~}}
+{{?}}
+</div>
+<!--googleon: all-->
+<script type="text/javascript" src="/js/scripts.js?v=1.1"></script>
+<script lang="javascript">
+    loadingNews.targetNews = 0;
+        loadingNews.categories = {"3":"showbiz","11":"sport","13":"society","15":"society","16":"politics","17":"society","21":"showbiz","22":"showbiz","30":"politics","31":"society","32":"society","33":"economics","34":"sport","35":"sport","36":"sport","37":"showbiz","38":"society","40":"society","41":"society","43":"society","46":"society","49":"society","50":"showbiz","52":"society","53":"society","60":"society","62":"society","64":"society","68":"society","72":"society","100":"politics","102":"politics","104":"economics","110":"society","111":"economics","112":"society","113":"economics","114":"sport","115":"society","118":"politics","119":"showbiz","120":"politics","121":"society","122":"society","123":"society","124":"politics","125":"politics","126":"politics","127":"politics","128":"society","129":"society","130":"politics","131":"politics","132":"politics","133":"society","134":"society","135":"politics","136":"politics","137":"society","138":"society","139":"economics","140":"politics","141":"politics","142":"society","143":"society","144":"economics"};
+    loadingNews.categoriesRu = {"3":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","11":"\u0421\u043f\u043e\u0440\u0442","13":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","15":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","16":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","17":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","21":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","22":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","30":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","31":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","32":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","33":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","34":"\u0421\u043f\u043e\u0440\u0442","35":"\u0421\u043f\u043e\u0440\u0442","36":"\u0421\u043f\u043e\u0440\u0442","37":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","38":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","40":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","41":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","43":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","46":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","49":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","50":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","52":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","53":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","60":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","62":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","64":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","68":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","72":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","100":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","102":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","104":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","110":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","111":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","112":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","113":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","114":"\u0421\u043f\u043e\u0440\u0442","115":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","118":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","119":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","120":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","121":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","122":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","123":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","124":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","125":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","126":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","127":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","128":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","129":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","130":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","131":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","132":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","133":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","134":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","135":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","136":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","137":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","138":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","139":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","140":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","141":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","142":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","143":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","144":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430"};
+    loadingNews.category = 0;
+</script>
+</div>
+</div>
+
+<script type="text/javascript">new
+    Image().src = "//counter.yadro.ru/hit;Lentainform?r" +
+        escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+            ";s" + screen.width + "*" + screen.height + "*" +
+            (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) +
+        ";u" + escape(document.URL) + ";"
+        + Math.random();</script>
+
+
+<script>
+    var _gaq = _gaq || [];
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-35438815-1', 'auto');
+        ga('send', 'pageview', '/main_page');    </script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/33331333" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+
+</body>
+</html>

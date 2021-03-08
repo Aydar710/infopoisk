@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="Content-Type" />
+    <title>Idealmedia</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="/js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.main.js"></script>
+    <script type="text/javascript" src="/js/helper.js"></script>
+    <script type="text/javascript" src="/js/doT.min.js"></script>
+    <script type="text/javascript" src="/js/share42.js"></script>
+    <link rel="manifest" href="/js/manifest.json?v=1.0" />
+    <meta name="yandex-verification" content="68c0398dcbf10e2c" />
+    <meta name="yandex-verification" content="5d721bec042c8885" />
+        <meta name="capitaller" content="53fc9796f83c5322666c6c6cf43054dad2a7c6a5"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35438815-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35438815-3');
+    </script>
+</head>
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PBCJFJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBCJFJ');</script>
+<!-- End Google Tag Manager -->
+
+<script lang="javascript">
+    helper.user = 0;
+    helper.search = 0;
+    helper.userCategories = [];
+    helper.userSources = [];
+    helper.userCountry = 1;
+</script>
+<script src="//cdn.idealmedia.io/js/push/subscribe.js"></script>
+<!--register popup start-->
+    <div class="popup_register none">
+        <div class="close popup-close-btn"></div>
+        <p><strong>Присоединяйтесь</strong> и получите еще больше интересных новостей</p>
+        <div class="btns">
+            <a id="open-reg-block" href="javascript:;" class="login">Войти</a>
+        </div>
+    </div>
+    <!--reg popup start-->
+    <div class="popup fixed none" id="reg">
+        <div class="logo">
+            <img src="/img/svg/logo.svg" alt="" class="logotype">
+            <div class="close"></div>
+        </div>
+        <div class="poptitle">
+            <h1>Добро пожаловать</h1>
+        </div>
+        <div class="socnetwork">
+            <h1>войдите через социальные сети</h1>
+            <div class="socpic">
+                <a id="fbLink" data-fb-url="" data-type="fb" href="javascript:" class="auth_link">
+                    <img class="socials" src="/img/svg/fb_big.svg" alt="" width="65" height="65">
+                </a>
+                <a id="twLink" data-tw-url="" data-type="tw" href="javascript:" class="auth_link">
+                    <img class="socials" src="/img/svg/tw_big.svg" alt="" width="65" height="65">
+                </a>
+                <a id="glLink" data-gl-url="" data-type="gl" href="javascript:" class="auth_link">
+                    <img class="socials" src="/img/svg/G_big.svg" alt="" width="65" height="65">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--register popup end-->
+<!--reg popup end-->
+<!--about popup start-->
+<div class="popup none" id="about">
+    <div class="logo">
+        <img src="/img/svg/logo.svg" alt="" class="logotype">
+        <div class="close"></div>
+    </div>
+    <div class="poptitle">
+        <span>о проекте</span>
+    </div>
+    <div class="textabout">
+        <div class="subtext">
+            <span>1. О рейтинге:</span>
+            <p>Idealmedia.io — рейтинг актуальных и популярных новостей интернет СМИ. Новости выводятся в наш рейтинг согласно их популярности среди аудитории сайта. </p>
+            <p>Вы можете просмотреть ленту за час, за сутки или за неделю, а также выбрать конкретные тематики и получить выборку новостей по ним. Блок "Картина дня" - формируется по самым актуальным новостям за последние 24 часа в хронологическом порядке. Кликнув на заголовок Вы попадаете на полный текст новости на сайте издания.</p>
+        </div>
+        <div class="subtext">
+            <span>2. Для вебмастеров/владельцев сайтов:</span>
+            <p>Участие в рейтинге, так же как и в обменной сети Idealmedia.io бесплатно. Зарегистрироваться в программе обмена посетителями вы можете на этой странице <a target="_blank" href="https://partner.idealmedia.io">https://partner.idealmedia.io</a>.
+                <br>
+                Для попадания вашего контента в новостной агрегатор Idealmedia.io стоит только разместить код новостного блока на ваш сайт. По всем вопросам данного сотрудничества обращайтесь на <a href="mailto:support@idealmedia.io" class="nounderline">support@idealmedia.io</a>.</p>
+        </div>
+        <div class="subtext">
+            <span>3. Регистрация (для читателей):</span>
+            <p>Читатель может настроить персонализированную ленту новостей. Для этого нужно нажать кнопку "Войти". Присоединиться можно через социальные сети:  facebook, twitter, google+. Следующим шагом является персонализация ленты новостей -  выбор страны, источников и тематик новостей. Нажав на кнопку "сохранить" применяются все выбранные настройки.</p>
+        </div>
+    </div>
+</div>
+<!--about popup end-->
+<!--setting popup start-->
+<div class="popup none fixed" id="disableSource">
+    <div class="logo">
+        <img src="/img/svg/logo.svg" alt="" class="logotype">
+        <div class="close"></div>
+    </div>
+    <form action="/auth/disable-source" method="post">
+        <div class="setting">
+            <span>Вы действительно хотите исключить сайт “<span id="placeholderSource"></span>” из своей ленты новостей?</span>
+        </div>
+        <input type="hidden" id="filter_sources_popup" name="filter_sources" value="" />
+        <div class="save">
+            <input type="reset" value="Нет" class="close">
+            <input type="submit" value="Да">
+        </div>
+    </form>
+</div>
+<!--setting popup end-->
+<!--profile popup start-->
+<!--profile popup end-->
+<!--person popup start-->
+<div class="popup none" id="person">
+    <div class="popup-header">
+        <img src="/img/svg/logo.svg" alt="" class="logotype">
+        <h1 class="poptitle">Персонализируй свою ленту новостей</h1>
+        <span class="close"></span>
+    </div>
+    <form class='personalization-form' action="/auth/save-settings" method="post">
+        <div class="forminner">
+            <div class="subjecttitle">
+                <span>Выбор тематики</span>
+                <div class="subject" class="personalization-subject">
+                                            <div  data-category-id="1">
+                            <span class="hover"></span><img src="/img/cat_1.png" alt=""> <p>Политика</p>
+                        </div>
+                                            <div  data-category-id="2">
+                            <span class="hover"></span><img src="/img/cat_2.png" alt=""> <p>Общество</p>
+                        </div>
+                                            <div  data-category-id="3">
+                            <span class="hover"></span><img src="/img/cat_3.png" alt=""> <p>Спорт</p>
+                        </div>
+                                            <div  data-category-id="4">
+                            <span class="hover"></span><img src="/img/cat_4.png" alt=""> <p>Экономика</p>
+                        </div>
+                                            <div  data-category-id="5">
+                            <span class="hover"></span><img src="/img/cat_5.png" alt=""> <p>Шоу-бизнес</p>
+                        </div>
+                                        <input class='personalization-categories-input' type="hidden" name="filter_categories" value=""/>
+                </div>
+            </div>
+                    </div>
+        <div class="save">
+            <span class="personalization-save-settings">Сохранить</span>
+        </div>
+    </form>
+</div>
+<!--person popup end-->
+<!--facebook popup like-->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '604787133338542',
+      xfbml      : true,
+      version    : 'v3.3'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="popup-like none">
+
+    <div class="popup-like__head">
+
+        <a href="#" class="popup-like__cross popup-like__close"></a><!-- /popup-like__close -->
+
+        <div class="popup-like__head-top">
+
+            <a href="https://www.facebook.com/idealmediaio/" target="_blank" class="popup-like__logo">
+
+                <img src="/img/fb-logo.png" width="108" height="22" alt="Facebook">
+
+            </a><!-- /popup-like__logo -->
+
+        </div><!-- /popup-like__head-top -->
+
+        <div class="popup-like__head-txt">
+            Нажмите <b>«Нравится»</b>, чтобы <br>
+            читать Idealmedia в Facebook
+        </div><!-- /popup-like__head-txt -->
+
+    </div><!-- /popup-like__head -->
+
+    <div class="popup-like__wrap">
+
+        <div class="popup-like__inner">
+            <div class="fb-like" data-href="https://www.facebook.com/idealmediaio/" data-layout="standard" data-width="330" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+        </div><!-- /popup-like__inner -->
+
+        <div class="popup-like__footer">
+
+            <a href="#" class="popup-like__together popup-like__close">Спасибо, я уже с вами</a><!-- /popup-like__together -->
+
+        </div><!-- /popup-like__footer -->
+
+    </div><!-- /popup-like__wrap -->
+
+</div><!-- /popup-like -->
+<!--facebook popup like end-->
+
+<header>
+    <div class="wrap">
+        <div class="top">
+            <div class="logo">
+                <a href="/">
+                    <img src="/img/svg/logo.svg" width="213" height="32" alt="Idealmedia.io">
+                </a>
+            </div>
+			<nav class="menu-category">
+				<div class="wrap-hd-menu">
+					<ul class="list" id="mCategory">
+                        <li class="categoryMenu covid">
+                            <a href="/covid19">
+                                <span class="m-item">COVID-19</span>
+                            </a>
+                        </li>
+                                                    <li class="categoryMenu1">
+                                <a href="/category/politics">
+                                    <span class="m-item">Политика</span>
+                                </a>
+                            </li>
+                                                    <li class="categoryMenu2">
+                                <a href="/category/society">
+                                    <span class="m-item">Общество</span>
+                                </a>
+                            </li>
+                                                    <li class="categoryMenu3">
+                                <a href="/category/sport">
+                                    <span class="m-item">Спорт</span>
+                                </a>
+                            </li>
+                                                    <li class="categoryMenu4">
+                                <a href="/category/economics">
+                                    <span class="m-item">Экономика</span>
+                                </a>
+                            </li>
+                                                    <li class="categoryMenu5">
+                                <a href="/category/showbiz">
+                                    <span class="m-item">Шоу-бизнес</span>
+                                </a>
+                            </li>
+                        					</ul>
+					<div class="wrap-second-menu">
+						<span class="wr">eщё</span>
+						<ul class="secondMenu">
+						</ul>
+					</div>
+				</div>
+			</nav>
+            <div class="header_block reg">
+                                    <div id="open-reg">войти</div>
+                                <form action="/" method="post" autocomplete="on" id="searchform">
+                    <input id="search" name="search" type="text" placeholder="Поиск...">
+                    <input id="search_submit" value="" type="submit">
+                </form>
+                <a class="android" target="_blank" href="https://play.google.com/store/apps/details?id=com.idealmedia&referrer=utm_source%3Dmain_page%26utm_medium%3Dicon_a">
+                    <img src="/img/android_icon.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="wrap">
+                        <div class="period">
+                <a class="hour" data-period="hour" href="javascript:;">час</a>
+                <a class="day active" data-period="day" href="javascript:;">день</a>
+                <a class="week" data-period="week" href="javascript:;">неделя</a>
+            </div>
+                        <div class="date"></div>
+                            <div class="money">
+                                            <span>USD 27.89</span>
+                                            <span>EUR 33.13</span>
+                                    </div>
+                                                        <div class="temperature"><span>Kiev: +2&deg;C</span></div>
+            
+            <div class="about-wrapper">
+                <a href="https://partner.idealmedia.io" class="cooperation" target="_blank">Сотрудничество</a>
+                <div class="about">О проекте</div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="wrap">
+    <div class="content">
+
+            <div class="main">
+        <h1>главные новости</h1>
+        <div id="MasonryNews" class="MasonryContent"></div>
+    </div>
+<div class="sidebar">
+    <h1>картина дня</h1>
+    <div id="box"></div>
+</div>
+
+<!--googleoff: all-->
+<script id="news-template" type="text/x-dot-template">{{var i = 0; }}
+{{~it : news}}
+{{?(i==0 && loadingNews.pageNews == 1)}}
+{{?loadingNews.targetNews == 0}}
+<div class="part item w_2">
+    <div class="topnews">
+        {{?news.categoryId}}
+            <a href="/category/{{=loadingNews.categories[news.categoryId]}}" class="category">{{=loadingNews.categoriesRu[news.categoryId]}}</a>
+        {{?}}
+        <div class="img">
+            <a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target='_blank'>
+                <img class="news-img" src="{{=news.img_link}}" alt="{{=news.title}} | idealmedia" title="{{=news.title}} | idealmedia"></a>
+            <div class="counter"><span class="eye"></span>{{=news.clicks}}</div>
+        </div>
+        <div class="share_popup">
+            <div class="share_pic none"></div>
+            <div id="social_hendler_{{=news.id}}"  class="sharesoc none"></div>
+        </div>
+        <a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank" class="title">{{=news.title}}</a>
+        {{?news.description}}
+            <p>{{=news.description}}...</p>
+        {{?}}
+        <div class="subnetwork">
+            <a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank">{{=news.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=news.domain}}'></div>
+            <div class="sub_popup none">
+                Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=news.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+            </div>
+        </div>
+        <div class="time"><span>{{=news.createdAt}}</span></div>
+        {{?news.similarNews}}
+            <div class="more">
+                <span>ещё</span>
+            </div>
+            <div class="more_block">
+                {{~news.similarNews : similar}}
+                <div class="daynews">
+                    <div class="source">
+                        <img src="{{=loadingNews.getIcon(similar.domain)}}" alt="">
+                        <a class="daynews-domain" target="_blank" href="http://{{=similar.domain}}">{{=similar.domain}}</a>
+                    </div>
+                    <div class="timeside">
+                        <span>{{=similar.createdAt}}</span>
+                    </div>
+                    <a target="_blank" href="{{=loadingNews.getRedirectUrl(similar.campaignId, similar.url)}}" class="titleside">{{=similar.title}}</a>
+                </div>
+                {{~}}
+            </div>
+        {{?}}
+    </div>
+</div>
+{{??}}
+<div class="part item w_2">
+    <div class="targetnews">
+        <div class="bg">
+            {{?news.categoryId}}
+                <a href="/category/{{=loadingNews.categories[news.categoryId]}}" class="category">{{=loadingNews.categoriesRu[news.categoryId]}}</a>
+            {{?}}
+            <div class="img">
+                <a target="_blank" href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}">
+                    <img src="{{=news.img_link}}" alt="{{=news.title}} | idealmedia" title="{{=news.title}} | idealmedia"></a>
+                <div class="abs">
+                    <div class="subnetwork">{{=news.domain}}</div>
+                    <div class="time">
+                        {{var datetime = news.createdAt.split(' '); }}
+                        <span>{{=datetime[0]}}</span> <span class="inTime">{{=datetime[1]}}</span>
+                    </div>
+                    <div class="counter"><span class="eye"></span>{{=news.clicks}}</div>
+                </div>
+            </div>
+            <div class="text-block">
+                <a target="_blank" href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" class="title">{{=news.title}}</a>
+                {{?news.description}}
+                    <p>{{=news.description}}...</p>
+                {{?}}
+                <a target="_blank" onclick="_gaq.push(['button', 'click'])" href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" class="readmore">Читать далее</a>
+                <div id="socTarget" class="soctarget"></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>
+{{?}}
+{{??}}
+{{?(loadingNews.targetNews != news.id)}}
+<div class="item">
+    <div class="news">
+        {{?news.categoryId}}
+            <a href="/category/{{=loadingNews.categories[news.categoryId]}}" class="category">{{=loadingNews.categoriesRu[news.categoryId]}}</a>
+        {{?}}
+        <div class="img">
+            <a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target='_blank' >
+                <img class="news-img" src="{{=news.img_link}}" alt="{{=news.title}} | idealmedia" title="{{=news.title}} | idealmedia"></a>
+            <div class="counter"><span class="eye"></span>{{=news.clicks}}</div>
+        </div>
+        <div class="share_popup">
+            <div class="share_pic none"></div>
+            <div id="social_hendler_{{=news.id}}"  class="sharesoc none"></div>
+        </div>
+        <a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" class="title" target='_blank'>{{=news.title}}</a>
+        {{?news.description}}
+            <p>{{=news.description}}...</p>
+        {{?}}
+        <div class="subnetwork">
+            <a href="{{=loadingNews.getRedirectUrl(news.campaignId, news.url)}}" target="_blank">{{=news.domain}}</a> <div class="close{{? helper.user}} confirm{{?}}" data-source='{{=news.domain}}'></div>
+            <div class="sub_popup none">
+                Если Вы хотите заблокировать все новости данного источника, пожалуйста <a class="open-auth" data-source='{{=news.domain}}' href="javascript:;">Зарегистрируйтесь</a>
+            </div>
+        </div>
+        <div class="time"><span>{{=news.createdAt}}</span></div>
+        {{?news.similarNews}}
+            <div class="more">
+                <span>ещё</span>
+            </div>
+            <div class="more_block">
+                {{~news.similarNews : similar}}
+                    <div class="daynews">
+                        <div class="source">
+                            <img src="{{=loadingNews.getIcon(similar.domain)}}" alt="">
+                            <a class="daynews-domain" target="_blank" href="http://{{=similar.domain}}">{{=similar.domain}}</a>
+                        </div>
+                        <div class="timeside">
+                            <span>{{=similar.createdAt}}</span>
+                        </div>
+                        <a target="_blank" href="{{=loadingNews.getRedirectUrl(similar.campaignId, similar.url)}}" class="titleside">{{=similar.title}}</a>
+                    </div>
+                {{~}}
+            </div>
+        {{?}}
+    </div>
+</div>
+{{?}}
+{{?}}
+{{i++;}}
+{{~}}
+</script>
+<script id="hot-template" type="text/x-dot-template">{{~it : hot}}
+<div class="daynews">
+    <div class="source">
+        <img src="https://www.google.com/s2/favicons?domain={{=hot.domain}}" alt="">
+        <a class="daynews-domain" target="_blank" href="http://{{=hot.domain}}">{{=hot.domain}}</a>
+    </div>
+    <div class="timeside">
+        <span>{{=hot.createdAt}}</span>
+    </div>
+    <a target="_blank" href="{{=loadingNews.getRedirectUrl(hot.campaignId, hot.url)}}" class="titleside">{{=hot.title}}</a>
+</div>
+{{~}}</script>
+<script id="search-template" type="text/x-dot-template">{{~it : search}}
+<div class="main search">
+    <div class="line">
+        <img src="{{=loadingNews.getIcon(search.domain)}}" alt="">
+        <div class="timeline">{{=search.createdAt}}</div>
+        <span><a target="_blank" href="{{=loadingNews.getRedirectUrl(search.campaignId, search.url)}}" class="titleside">{{=loadingNews.highlightTitle(search.title)}}</a></span>
+        <div class="countline">{{=search.clicks}}</div>
+    </div>
+</div>
+{{~}}</script>
+<!--googleon: all-->
+
+<script type="text/javascript" src="/js/scripts.js?v=1.0"></script>
+<script lang="javascript">
+    loadingNews.targetNews = 0;
+        loadingNews.categories = {"3":"showbiz","11":"sport","13":"society","15":"society","16":"politics","17":"society","21":"showbiz","22":"showbiz","30":"politics","31":"society","32":"society","33":"economics","34":"sport","35":"sport","36":"sport","37":"showbiz","38":"society","40":"society","41":"society","43":"society","46":"society","49":"society","50":"showbiz","52":"society","53":"society","60":"society","62":"society","64":"society","68":"society","72":"society","100":"politics","102":"politics","104":"economics","110":"society","111":"economics","112":"society","113":"economics","114":"sport","115":"society","118":"politics","119":"showbiz","120":"politics","121":"society","122":"society","123":"society","124":"politics","125":"politics","126":"politics","127":"politics","128":"society","129":"society","130":"politics","131":"politics","132":"politics","133":"society","134":"society","135":"politics","136":"politics","137":"society","138":"society","139":"economics","140":"politics","141":"politics","142":"society","143":"society","144":"economics"};
+    loadingNews.categoriesRu = {"3":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","11":"\u0421\u043f\u043e\u0440\u0442","13":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","15":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","16":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","17":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","21":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","22":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","30":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","31":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","32":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","33":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","34":"\u0421\u043f\u043e\u0440\u0442","35":"\u0421\u043f\u043e\u0440\u0442","36":"\u0421\u043f\u043e\u0440\u0442","37":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","38":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","40":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","41":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","43":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","46":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","49":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","50":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","52":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","53":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","60":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","62":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","64":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","68":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","72":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","100":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","102":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","104":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","110":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","111":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","112":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","113":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","114":"\u0421\u043f\u043e\u0440\u0442","115":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","118":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","119":"\u0428\u043e\u0443-\u0431\u0438\u0437\u043d\u0435\u0441","120":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","121":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","122":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","123":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","124":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","125":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","126":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","127":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","128":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","129":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","130":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","131":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","132":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","133":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","134":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","135":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","136":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","137":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","138":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","139":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","140":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","141":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","142":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","143":"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e","144":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430"};
+    loadingNews.category = 0;
+</script>
+
+    </div>
+</div>
+
+<!Google Analitics>
+<script>
+    var _gaq = _gaq || [];
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-35438815-1', 'auto');
+            ga('send', 'pageview', '/main_page');    </script>
+
+</body>
+</html>
