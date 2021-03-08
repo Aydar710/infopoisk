@@ -1,5 +1,4 @@
-# infopoisk
-запускать
+
 # How to run
 
 1. Загрузить и установить [Python](https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe). Выбрать опцию по добавлению в системные переменные
