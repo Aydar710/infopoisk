@@ -1,9 +1,5 @@
-import os
 from string import Formatter
-
 import requests
-from os import path
-import glob
 
 index_txt = open("index.txt", "w", encoding="utf-8")
 
