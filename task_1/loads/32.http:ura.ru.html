@@ -1,0 +1,3093 @@
+<!DOCTYPE html>
+<html ng-app="uraruApp">
+<head>
+	<title ng-bind-html="metaService.metaTitle('Новости РИА URA.RU — последние новости политики, интересные, свежие, горячие новости часа УрФО, интервью');">Новости РИА URA.RU — последние новости политики, интересные, свежие, горячие новости часа УрФО, интервью</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+<!--<meta name="viewport" content="width=device-width, user-scalable=1"/>-->
+<meta name="viewport" content="width=768, user-scalable=1"/>
+
+<meta name="Keywords"
+      content="новости, новости сегодня, последние новости, новости бизнеса, свежие новости, интересные новости, новости часа, новости политики, новости УрФО, интервью, горячие новости"
+      ng-attr-content="{{ metaService.metaKeywords('новости, новости сегодня, последние новости, новости бизнеса, свежие новости, интересные новости, новости часа, новости политики, новости УрФО, интервью, горячие новости') }}"/>
+<meta name="Description"
+      content="Будьте в курсе главных новостей УрФО. Эксклюзивные новости бизнеса и политики — читайте только на URA.RU."
+      ng-attr-content="{{ metaService.metaDescription('Будьте в курсе главных новостей УрФО. Эксклюзивные новости бизнеса и политики — читайте только на URA.RU.') }}" />
+<meta property="og:type"
+      content="website"
+      ng-attr-content="{{ metaService.ogType('website') }}" />
+<meta property="og:title"
+      content="Новости РИА URA.RU — последние новости политики, интересные, свежие, горячие новости часа УрФО, интервью"
+      ng-attr-content="{{ metaService.ogTitle('Новости РИА URA.RU — последние новости политики, интересные, свежие, горячие новости часа УрФО, интервью') }}" />
+<meta property="og:url"
+      content="https://ura.news/"
+      ng-attr-content="{{ metaService.ogUrl('https://ura.news/') }}" />
+<meta property="og:description"
+      content="Читайте на URA.RU"
+      ng-attr-content="{{ metaService.ogDescription('Читайте на URA.RU') }}"  />
+<meta property="fb:app_id"
+      content="204956386294609"
+      ng-attr-content="{{ metaService.fbAppId('204956386294609') }}" />
+<meta property="fb:pages"
+      content="185226544854775"
+      ng-attr-content="{{ metaService.ogPages('185226544854775') }}" />
+<meta name="twitter:card"
+      content="summary_large_image"
+      ng-attr-content="{{ metaService.twitterCard('summary_large_image') }}" />
+<meta name="twitter:site"
+      content="@ura_ru"
+      ng-attr-content="{{ metaService.twitterSite('@ura_ru') }}" />
+<meta name="twitter:creator"
+      content="@ura_ru"
+      ng-attr-content="{{ metaService.twitterCreator('@ura_ru') }}" />
+<meta name="twitter:title"
+      content="Новости РИА URA.RU — последние новости политики, интересные, свежие, горячие новости часа УрФО, интервью"
+      ng-attr-content="{{ metaService.twitterTitle('Новости РИА URA.RU — последние новости политики, интересные, свежие, горячие новости часа УрФО, интервью') }}" />
+<meta name="twitter:description"
+      content="Читайте на URA.RU"
+      ng-attr-content="{{ metaService.twitterDescription('Читайте на URA.RU') }}" />
+
+
+    <meta property="og:image"
+          content="https://s.ura.news/img/fbimage.jpg"
+          ng-attr-content="{{ metaService.ogImage('https://s.ura.news/img/fbimage.jpg') }}"  />
+    <meta name="twitter:image"
+          content="https://s.ura.news/img/fbimage.jpg"
+          ng-attr-content="{{ metaService.twitterImage('https://s.ura.news/img/fbimage.jpg') }}" />
+
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta itemprop="mainEntityOfPage" content="https://ura.news/">
+
+    <meta name="robots" content="noyaca"/>
+
+    <meta content="" />
+
+    <meta content="" />
+
+    <link rel="shortcut icon" href="/favicon.ico?3" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0037a1"/>
+    <meta name="theme-color" content="#0037a1">
+    <meta name="msapplication-config" content="browserconfig.xml"/>
+        <link rel="canonical"
+              ng-href="{{ (metaService && metaService.ogUrl()) ? metaService.ogUrl() : 'https://ura.news/' }}"
+              href="https://ura.news/" />
+    <link rel="alternate" type="application/rss+xml" title="URA.RU RSS" href="/rss" />
+    <link rel="alternate"
+          media="only screen and (max-width: 640px)"
+          ng-href="{{ (metaService && metaService.pdaUrl()) ? metaService.pdaUrl() : 'https://m.ura.news/' }}"
+          href="https://m.ura.news/" />
+    <link rel="alternate"
+          media="handheld"
+          ng-href="{{ (metaService && metaService.pdaUrl()) ? metaService.pdaUrl() : 'https://m.ura.news/' }}"
+          href="https://m.ura.news/" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="opensearch.xml"/>
+	<link rel="stylesheet" href="https://s.ura.news/lib/jquery/jquery-ui-1.11.1.custom/jquery-ui.min.css"/>
+<link rel="stylesheet" href="https://s.ura.news/lib/jquery/jquery-ui-1.11.1.custom/jquery-ui.structure.min.css"/>
+<link rel="stylesheet" href="https://s.ura.news/lib/jscrollpane/jquery.jscrollpane.css"/>
+<link rel="stylesheet" href="https://s.ura.news/lib/fotorama-4.6.4/fotorama.css"/>
+<link rel="stylesheet" href="https://s.ura.news/lib/select2-3.5.4/select2.css" />
+<link rel="stylesheet" href="https://s.ura.news/lib/angularjs/ui-select/select.min.css" />
+<link rel="stylesheet" href="https://s.ura.news/css/all.min.css?v=20.02.2021-1.0.0"/>
+<link rel="stylesheet" href="https://s.ura.news/css/all_v3.css?v=20.02.2021-1.0.0"/>
+<link rel="stylesheet" href="https://s.ura.news/css/all_v3_ie.css?v=20.02.2021-1.0.0"/>
+<!-- <link rel="stylesheet" href="https://s.ura.news/social-icons/social-likes_flat.min.css"> -->
+<link rel="stylesheet" href="https://s.ura.news/social-icons/social-likes_light.min.css">
+
+    <link rel="stylesheet" href="https://s.ura.news/css/components/cl-main-carousel.min.css?v=20.02.2021-1.0.0"/>
+
+	
+<script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
+<script src="https://s.ura.news/lib/date_format.js"></script>
+<script src="https://s.ura.news/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="https://s.ura.news/lib/jquery/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+<script src="https://s.ura.news/lib/jquery/jquery.ui.datepicker-ru.js"></script>
+<script src="https://s.ura.news/lib/jquery/plugins/jquery-scrolltofixed.js"></script>
+<script src="https://s.ura.news/lib/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="https://s.ura.news/lib/jscrollpane/jquery.mousewheel.js"></script>
+<script src="https://s.ura.news/lib/angularjs/1.6.10/angular.min.js"></script>
+<script src="https://s.ura.news/lib/angularjs/1.6.10/angular-sanitize.min.js"></script>
+<script src="https://s.ura.news/lib/angularjs/ng-infinite-scroll.js"></script>
+<script src="https://s.ura.news/lib/angularjs/ui-select/select.min.js"></script>
+<script src="https://s.ura.news/lib/momentjs/moment-with-locales.min.js"></script>
+<script>
+	fotoramaDefaults = {
+		width: '100%',
+		maxwidth: '100%',
+		ratio: 760/505,
+		allowfullscreen: false,
+		nav: 'thumbs',
+		arrows: 'always',
+		thumbborderwidth: 3,
+		thumbmargin: 15
+	}
+</script>
+<script src="https://s.ura.news/lib/fotorama-4.6.4/fotorama.js"></script>
+<script src="https://s.ura.news/lib/angularjs/datepicker/angular-datepicker.js"></script>
+<script src="https://s.ura.news/lib/bower_components/angular-i18n/angular-locale_ru-ru.js"></script>
+<script src="https://s.ura.news/lib/bower_components/angular-deckgrid/angular-deckgrid.js"></script>
+<script src="https://s.ura.news/lib/bower_components/angular-scroll/angular-scroll.min.js"></script>
+<script src="https://s.ura.news/lib/bower_components/angular-md5/angular-md5.min.js"></script>
+<script>
+    window.MAIN_HOST =	'https://ura.news';
+    window.IMAGE_PATH =	'https://s.ura.news';
+    window.STATIC_HOST= 'https://s.ura.news';
+    window.PDA_HOST = 	'https://m.ura.news';
+    window.AMP_HOST = 	'https://amp.ura.news';
+    window.VERSION = 	'20.02.2021-1.0.0';
+	window.IS_NEW_SITE = 1;
+	window.config = {};
+		window.config.currentRegion = '';
+</script>
+<script src="https://s.ura.news/js/main.js?v=20.02.2021-1.0.0"></script>
+<script src="https://s.ura.news/js/all.js?v=20.02.2021-1.0.0"></script>
+<script>window.prerenderReady = false;</script>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?160"></script>
+
+<script type="text/javascript">
+    window.FONTS_TYPE = '(none)';
+	window.MOMENTY_LEFT_LINK = '(none)';
+</script>
+	
+<link rel="dns-prefetch" href="//static.criteo.net">
+<link rel="dns-prefetch" href="//bidder.criteo.com">
+<link rel="preload" href="//static.criteo.net/js/ld/publishertag.js" as="script" crossorigin="anonymous">
+<link rel="preconnect" href="https://gum.criteo.com">
+<link rel="preconnect" href="https://static.criteo.net">
+<link rel="preconnect" href="https://exchange.buzzoola.com">
+<link rel="preconnect" href="https://pb.adriver.ru">
+<link rel="preconnect" href="https://ad.mail.ru">
+<link rel="preconnect" href="https://ads.betweendigital.com" crossorigin>
+
+<script async src="https://yastatic.net/pcode/adfox/header-bidding.js"></script>
+<script>
+    var adfoxBiddersMap = {
+        "criteo": "843514",
+        "rtbhouse": "869408",
+        "betweenDigital": "869406",
+        "segmento": "1511072",
+        "adriver": "991279",
+        "adfox_tn-inpool": "1033132",
+        "adfox_adsmart": "1033289",
+        "hybrid": "1511090",
+        "otm": "1511088",
+        "buzzoola": "1505361",
+        "myTarget": "843516"
+    };
+    var adUnits = [{
+            // Площадка: ura.news / Новости и статьи / B4_300x600 - тут проверить рандом и pushAdunits
+            "code": "adfox_e3ghj",
+            "sizes": [
+                [300, 600]
+            ],
+            "bids": [{
+                    "bidder": "criteo",
+                    "params": {
+                        "placementId": "1327546"
+                    }
+                },
+                {
+                    "bidder": "rtbhouse",
+                    "params": {
+                        "placementId": "3CC02kO9UJtpb5UgB6W7"
+                    }
+                },
+                {
+                    "bidder": "myTarget",
+                    "params": {
+                        "placementId": "255922"
+                    }
+                },
+                {
+                    "bidder": "adriver",
+                    "params": {
+                        "placementId": "41:ura_300х600"
+                    }
+                },
+                {
+                    "bidder": "adfox_tn-inpool",
+                    "params": {
+                        "p1": "cehvd",
+                        "p2": "gdnn"
+                    }
+                },
+                {
+                    "bidder": "otm",
+                    "params": {
+                        "placementId": "7719"
+                    }
+                },
+                {
+                    "bidder": "segmento",
+                    "params": {
+                        "placementId": "363"
+                    }
+                },
+                {
+                    "bidder": "hybrid",
+                    "params": {
+                        "placementId": "5fbced6885603ad5b446243b"
+                    }
+                },
+                {
+                    "bidder": "betweenDigital",
+                    "params": {
+                        "placementId": "2782980"
+                    }
+                }
+            ]
+        },
+        {
+            // Площадка: ura.news / Новости и статьи / B4_300x600_2
+            "code": "adfox_157165666658216893",
+            "sizes": [
+                [300, 600]
+            ],
+            "bids": [{
+                    "bidder": "criteo",
+                    "params": {
+                        "placementId": "1327545"
+                    }
+                },
+                {
+                    "bidder": "myTarget",
+                    "params": {
+                        "placementId": "782781"
+                    }
+                },
+                {
+                    "bidder": "betweenDigital",
+                    "params": {
+                        "placementId": "3898476"
+                    }
+                }
+            ]
+        },
+        {
+            // Площадка: ura.news / Новости и статьи / B4_300x600_3
+            "code": "adfox_157166171090965397",
+            "sizes": [
+                [300, 600]
+            ],
+            "bids": [{
+                    "bidder": "criteo",
+                    "params": {
+                        "placementId": "1327544"
+                    }
+                },
+                {
+                    "bidder": "myTarget",
+                    "params": {
+                        "placementId": "782783"
+                    }
+                },
+                {
+                    "bidder": "betweenDigital",
+                    "params": {
+                        "placementId": "3898477"
+                    }
+                }
+            ]
+        }, {
+            // Площадка: ura.news / Новости и статьи / B1_240x400
+            "code": "adfox_1538065629859413",
+            "sizes": [
+                [240, 400]
+            ],
+            "bids": [{
+                    "bidder": "criteo",
+                    "params": {
+                        "placementId": "1373849"
+                    }
+                },
+                {
+                    "bidder": "rtbhouse",
+                    "params": {
+                        "placementId": "EQ9X5n0HG9RwxSEXivJH"
+                    }
+                },
+                {
+                    "bidder": "myTarget",
+                    "params": {
+                        "placementId": "223678"
+                    }
+                },
+                {
+                    "bidder": "betweenDigital",
+                    "params": {
+                        "placementId": "2745120"
+                    }
+                }
+            ]
+        },
+        {
+            // Новости и статьи / C_100%x100_после статьи
+            "code": "adfox_bo0e7p",
+            "sizes": [
+                [760, 200],
+                [728, 90]
+            ],
+            "bids": [{
+                    "bidder": "criteo",
+                    "params": {
+                        "placementId": "1566080"
+                    }
+                },
+                {
+                    "bidder": "myTarget",
+                    "params": {
+                        "placementId": "259552"
+                    }
+                },
+                {
+                    "bidder": "adfox_adsmart",
+                    "params": {
+                        "p1": "cgiix",
+                        "p2": "ul"
+                    }
+                },
+                {
+                    "bidder": "rtbhouse",
+                    "params": {
+                        "placementId": "d4miHKBJAFaAW4Kfixcn"
+                    }
+                },
+                {
+                    "bidder": "adriver",
+                    "params": {
+                        "placementId": "41:ura_728х90"
+                    }
+                },
+                {
+                    "bidder": "otm",
+                    "params": {
+                        "placementId": "7720"
+                    }
+                },
+                {
+                    "bidder": "segmento",
+                    "params": {
+                        "placementId": "363"
+                    }
+                },
+                {
+                    "bidder": "hybrid",
+                    "params": {
+                        "placementId": "5fbcedfa87e6fb44c019779e"
+                    }
+                },
+                {
+                    "bidder": "betweenDigital",
+                    "params": {
+                        "placementId": "3454020"
+                    }
+                }
+            ]
+        }, {
+            // Все страницы / A1_130px_верхняя перетяжка
+            "code": "adfox_156716587437438580",
+            "sizes": [
+                [970, 90],
+                [970, 130]
+            ],
+            "bids": [{
+                    "bidder": "criteo",
+                    "params": {
+                        "placementId": "1365901"
+                    }
+                },
+                {
+                    "bidder": "myTarget",
+                    "params": {
+                        "placementId": "598026"
+                    }
+                },
+                {
+                    "bidder": "betweenDigital",
+                    "params": {
+                        "placementId": "3394444"
+                    }
+                }
+            ]
+        }
+
+    ];
+    var userTimeout = 1000;
+    window.YaHeaderBiddingSettings = {
+        biddersMap: adfoxBiddersMap,
+        adUnits: adUnits,
+        timeout: userTimeout
+    };
+</script>
+<script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-9042923451181320",
+        enable_page_level_ads: true
+    });
+</script>
+
+<script type="text/javascript" src="https://s.ura.news/js/slick/slick.min.js"></script>
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+
+
+
+<script type="text/javascript" encoding="utf8">
+    (function() {
+        var sm = document.createElement("script");
+        sm.type = "text/javascript";
+        sm.async = true;
+        sm.src = "//counter.24smi.info/counter.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(sm, s);
+    })();
+</script>    
+</head>
+<body scrolly ng-style="eula.visible ? {'overflow':'hidden'} : {};">
+<div ng-controller="UserCtrl">
+	<div id="vc_content_block">
+		
+			
+
+	<div id="top_banner_A" style="height:200px; width:100%;overflow: hidden;">
+		<div>
+			<!--AdFox START-->
+			<!--uraru-->
+			<!--Площадка: ura.news / Все страницы / A1_130px-->
+			<!--Категория: <не задана>-->
+			<!--Тип баннера: A_100%x130-->
+			<div id="adfox_156716587437438580"></div>
+			<script>
+				window.Ya.adfoxCode.createAdaptive({
+					ownerId: 227654,
+					containerId: 'adfox_156716587437438580',
+					params: {
+						p1: 'buudz',
+						p2: 'fjcz'
+					}
+				}, ['desktop', 'tablet', 'phone'], {
+					tabletWidth: 768,
+					phoneWidth: 640,
+					isAutoReloads: false
+				});
+			</script>
+		</div>
+	</div>
+
+
+
+<div class="vc-header" id="header">
+	<div class="vc-header-content">
+		
+		
+		
+		
+		
+		
+		<a href="/" class="vc-header-logo ural (none)" id="logo" ng-click="changeRegion('');">
+			<img src="https://s.ura.news/img/blank.png" alt="Информационное агентство URA.RU"/>
+		</a>
+
+		<div class="vc-header-menu">
+			<div class="vc-header-menu-items">
+				<ul>
+											<li class="vc-header-menu-item"
+							data-region=""
+							ng-class="sectionService.get_currentSection().id==23 ? 'active' : ''">
+							<a href="/" ng-click="sectionService.set_currentRegion(23);">Все&nbsp;регионы</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="msk"
+							ng-class="sectionService.get_currentSection().id==41 ? 'active' : ''">
+							<a href="/msk" ng-click="sectionService.set_currentRegion(41);">Москва</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="svrd"
+							ng-class="sectionService.get_currentSection().id==1 ? 'active' : ''">
+							<a href="/svrd" ng-click="sectionService.set_currentRegion(1);">Свердловская&nbsp;обл.</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="chel"
+							ng-class="sectionService.get_currentSection().id==2 ? 'active' : ''">
+							<a href="/chel" ng-click="sectionService.set_currentRegion(2);">Челябинская&nbsp;обл.</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="kurgan"
+							ng-class="sectionService.get_currentSection().id==3 ? 'active' : ''">
+							<a href="/kurgan" ng-click="sectionService.set_currentRegion(3);">Курганская&nbsp;обл.</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="tumen"
+							ng-class="sectionService.get_currentSection().id==4 ? 'active' : ''">
+							<a href="/tumen" ng-click="sectionService.set_currentRegion(4);">Тюменская&nbsp;обл.</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="khanti"
+							ng-class="sectionService.get_currentSection().id==5 ? 'active' : ''">
+							<a href="/khanti" ng-click="sectionService.set_currentRegion(5);">Югра</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="yamal"
+							ng-class="sectionService.get_currentSection().id==6 ? 'active' : ''">
+							<a href="/yamal" ng-click="sectionService.set_currentRegion(6);">Ямал</a>						</li>
+											<li class="vc-header-menu-item"
+							data-region="perm"
+							ng-class="sectionService.get_currentSection().id==22 ? 'active' : ''">
+							<a href="/perm" ng-click="sectionService.set_currentRegion(22);">Пермский&nbsp;край</a>						</li>
+									</ul>
+			</div>
+		</div>
+
+		<div class="vc-header-right">
+	<div ng-cloak>
+		<div class="vc-header-btn vc-header-search-btn"
+		     ng-click="searchPanel.toggle()"
+		     ng-class="{'active': searchPanel.visible}"></div>
+
+		<div id="header_search_form" ng-show="searchPanel.visible">
+			<div class="form form-a">
+				<div class="form-pad">
+					<button class="btn" id="header_search_submit" ng-click="searchPanel.submit()">искать</button>
+					<input type="text" id="header_search_input" ng-model="searchPanel.q"
+					       on-enter="searchPanel.submit()"/>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<notification-popover class="vc-header-btn vc-header-notification-btn"></notification-popover>
+
+		<user-popover ng-if="userService.isAuth() && !userService.isAnonymous()"
+		              class="vc-header-btn"></user-popover>
+
+		<login-popover ng-if="!userService.isAuth() || userService.isAnonymous()"
+		               class="vc-header-btn vc-header-login-btn" id="login_popover"></login-popover>
+
+		<div class="vc-header-age"></div>
+
+	</div>
+
+</div>
+	</div>
+</div>
+
+		
+		<div class="vc-content">
+	<div class="vc-left vc-left-main" id="cl_left">
+		<div class="vc-left-inner">
+			
+			
+<div class="col left-col">
+
+	<div id="vc_list_news_all" data-last-modified="Mon, 08 Mar 2021 11:45:33 GMT" class="list-news" data-last-date="2021-03-06">
+					<div class="list-scroll-container">
+				<div class="list-scroll-date"><span>08&nbsp;марта&nbsp;2021</span></div>
+				<ul>
+											<li class="list-scroll-item  "
+                            data-story-id="413">
+							<a href="/news/1052474906" >
+								<span class="time">16:44</span>
+								Раскрыты связи задержанного командира ДНР с вором в законе Гули							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474905" >
+								<span class="time">16:44</span>
+								Новый клип Славы Марлоу сломал счетчик просмотров в Youtube. Скрин							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474904" >
+								<span class="time">16:28</span>
+								Лебедев назвал мужское общество самым честным и справедливым							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474903" >
+								<span class="time">16:13</span>
+								Захарова раскрыла свое отношение к феминитивам							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474902" >
+								<span class="time">15:44</span>
+								Дора, Алена Швец и Клава Кока вошли в топ популярных певиц года							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474900" >
+								<span class="time">15:23</span>
+								Блогер Литвин разбил нос. Фото							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474900')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474901" >
+								<span class="time">15:22</span>
+								В Союзе туриндустрии назвали срок открытия Шенгенской зоны для РФ							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="651">
+							<a href="/news/1052474899" >
+								<span class="time">14:52</span>
+								Педиатр предупредил о смертельном последствии COVID у детей. Болезнь развивается за несколько дней							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474898" >
+								<span class="time">14:38</span>
+								В Сербии заявили о подготовке убийства президента							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474895" >
+								<span class="time">13:58</span>
+								Хакеры: какие российские сайты не выдержат американских кибератак							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474895')"
+										class="vc-comments-count ">7</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474896" >
+								<span class="time">13:47</span>
+								Захарова призвала ввести всеобщий контроль над интернетом							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474896')"
+										class="vc-comments-count ">13</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="651">
+							<a href="/news/1052474894" >
+								<span class="time">13:12</span>
+								Зам Собянина сделала заявление о принудительной вакцинации							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474894')"
+										class="vc-comments-count ">6</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="651">
+							<a href="/news/1052474893" >
+								<span class="time">12:59</span>
+								В РФ наметился тренд на снижение числа выздоровевших от COVID							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474892" >
+								<span class="time">12:54</span>
+								Главный флорист РФ: какие цветы нельзя дарить на 8 марта							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474892')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474891" >
+								<span class="time">12:33</span>
+								В ГД ответили на блокировку публикаций российских СМИ в Facebook							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474891')"
+										class="vc-comments-count ">2</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474890" >
+								<span class="time">12:12</span>
+								Рогозин поиздевался над фамилией советника главы украинского МВД							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474890')"
+										class="vc-comments-count vc-comments-count-red">22</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474889" >
+								<span class="time">11:39</span>
+								Стерлинг согласился на реванш с Петром Яном							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474889')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474888" >
+								<span class="time">11:20</span>
+								Юлия Михалкова ответила на обвинения в обжорстве. Видео							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="651">
+							<a href="/news/1052474887" >
+								<span class="time">11:06</span>
+								В Москве ослабили карантин							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474887')"
+										class="vc-comments-count ">4</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474886" >
+								<span class="time">10:49</span>
+								Интервью Гарри и Меган раскололо российские соцсети. &laquo;Выбирать свекровь следует тщательно&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474886')"
+										class="vc-comments-count ">2</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="651">
+							<a href="/news/1052474885" >
+								<span class="time">10:44</span>
+								Врач назвал болезни, при которых COVID особенно опасен							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474885')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item is_momenty "
+                            data-story-id="">
+							<a href="https://tyumen.momenty.org/people/1013"  target="_blank" >
+								<span class="time">10:30</span>
+								&laquo;Не&nbsp;женская профессия&raquo;: девушки опровергают гендерные стереотипы о&nbsp;работе							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item is_momenty "
+                            data-story-id="">
+							<a href="https://momenty.org/people/10145"  target="_blank" >
+								<span class="time">10:29</span>
+								&laquo;Мама заметила, что у&nbsp;меня депрессия&raquo;. Комик Рита Шимова о&nbsp;грубых шутках и&nbsp;женском стендапе							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474883" >
+								<span class="time">10:06</span>
+								Глава ЯНАО поздравил женщин песней &laquo;Увезу тебя я в тундру&raquo;. Ему аккомпанировал оркестр из элиты							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474883')"
+										class="vc-comments-count ">5</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474684" >
+								<span class="time">10:01</span>
+								Супруга губернатора Текслера поздравила женщин с 8 марта. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474684')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474884" >
+								<span class="time">09:57</span>
+								Посол рассказал о деталях крушения вертолета с россиянами в ЦАР							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474884')"
+										class="vc-comments-count ">5</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="95">
+							<a href="/news/1052474880" >
+								<span class="time">09:36</span>
+								В ПФР рассказали о льготах для предпенсионеров							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474880')"
+										class="vc-comments-count vc-comments-count-red">30</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474882" >
+								<span class="time">09:34</span>
+								Губернатор Шумков поздравил женщин с 8 марта. &laquo;Пальцы гнуть не умею&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474882')"
+										class="vc-comments-count ">9</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474881" >
+								<span class="time">09:22</span>
+								Семь человек погибли в ДТП в Самарской области							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474881')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="659">
+							<a href="/news/1052474877" >
+								<span class="time">09:00</span>
+								Новости кризиса 8 марта. Жителям России не нравятся зарплаты политиков, против РФ готовятся кибератаки, получение маткапитала упростят							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474877')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474879" >
+								<span class="time">08:35</span>
+								Онколог раскрыл, почему колбаса вреднее сигарет							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474879')"
+										class="vc-comments-count ">13</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474878" >
+								<span class="time">08:15</span>
+								Киев обвинил Россию в создании украинского ЛГБТ-взвода							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474878')"
+										class="vc-comments-count ">11</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474876" >
+								<span class="time">07:54</span>
+								Военкомат предложил россиянкам сдавать бывших кавалеров в армию. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474876')"
+										class="vc-comments-count vc-comments-count-red">25</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474875" >
+								<span class="time">07:25</span>
+								Ивлеева устроит салюты в городах России в честь дня рождения. Адреса							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474875')"
+										class="vc-comments-count ">8</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474874" >
+								<span class="time">06:43</span>
+								Ученые назвали еще один способ понизить артериальное давление							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474874')"
+										class="vc-comments-count ">13</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474873" >
+								<span class="time">06:15</span>
+								NYT: США готовят кибератаки на Россию							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474873')"
+										class="vc-comments-count ">15</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474872" >
+								<span class="time">05:06</span>
+								Диетолог рассказала в какое время фрукты есть вредно							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474872')"
+										class="vc-comments-count ">9</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474871" >
+								<span class="time">04:24</span>
+								В России встречают Масленицу							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474871')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474869" >
+								<span class="time">03:18</span>
+								Путин поздравил россиянок с Международным женским днем. И рассказал, за что их следует уважать							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474869')"
+										class="vc-comments-count ">2</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474868" >
+								<span class="time">02:51</span>
+								Космонавты на МКС поздравили женщин с 8 Марта. Видео							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474867" >
+								<span class="time">02:30</span>
+								Собчак предрекла войну каналов за трансляцию нового шоу &laquo;Дом-2&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474867')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="651">
+							<a href="/news/1052474866" >
+								<span class="time">02:00</span>
+								Коронавирус: последние новости 8 марта. Названы причины весеннего всплеска пандемии, ВОЗ оценило вклад России в борьбу с COVID-19							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474866')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474865" >
+								<span class="time">01:38</span>
+								В центре Екатеринбурга затопило несколько улиц. Фото							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474865')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474863" >
+								<span class="time">00:21</span>
+								Гематолог назвала группу крови, &laquo;защищенную&raquo; от инфарктов. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474863')"
+										class="vc-comments-count ">9</span>
+															</div>
+						</li>
+									</ul>
+			</div>
+					<div class="list-scroll-container">
+				<div class="list-scroll-date"><span>07&nbsp;марта&nbsp;2021</span></div>
+				<ul>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474862" >
+								<span class="time">23:41</span>
+								В Германии неизвестные осквернили могилу Степана Бандеры							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474862')"
+										class="vc-comments-count ">11</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474861" >
+								<span class="time">22:52</span>
+								Бабушку с тремя внуками жестоко убили в Подмосковье							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474861')"
+										class="vc-comments-count ">5</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474859" >
+								<span class="time">22:35</span>
+								Соцсети высмеяли заявление польского генерала о войне РФ с НАТО. &laquo;Не терпится стать частью России&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474859')"
+										class="vc-comments-count ">10</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474860" >
+								<span class="time">22:27</span>
+								Facebook заблокировал посты нескольких российских СМИ. Роскомнадзор уже отреагировал							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474860')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474858" >
+								<span class="time">21:59</span>
+								Силовики назвали главные проблемы борьбы с домашним насилием в РФ							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474858')"
+										class="vc-comments-count ">11</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474857" >
+								<span class="time">21:53</span>
+								Винокур, Лоза и Дробыш раскрыли, что подарят женщинам 8 марта							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474856" >
+								<span class="time">21:36</span>
+								Центр &laquo;Фобос&raquo;: 8 марта Москву накроют аномальные морозы							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474856')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474855" >
+								<span class="time">21:02</span>
+								В ХМАО после пожара на реке Обь запрещена рыбалка							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474855')"
+										class="vc-comments-count ">12</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474854" >
+								<span class="time">20:35</span>
+								Норвежского лыжника наказали после инцидента с Большуновым. Теперь у россиянина серебро							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474854')"
+										class="vc-comments-count vc-comments-count-red">20</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474853" >
+								<span class="time">20:10</span>
+								Губернатор Комарова предостерегла жителей ХМАО после ЧП на Оби							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474853')"
+										class="vc-comments-count ">10</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="651">
+							<a href="/news/1052474852" >
+								<span class="time">20:10</span>
+								В Пермском крае сняли часть ограничений по коронавирусу. Инсайд URA.RU подтвердился							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474850" >
+								<span class="time">19:51</span>
+								Уральский лыжник Большунов стал призером масс-старта на ЧМ. На финише он сломал палку. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474850')"
+										class="vc-comments-count ">14</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474849" >
+								<span class="time">19:36</span>
+								Михалков ответил на слова Собчак о бизнесе с главой &laquo;Сима-ленда&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474849')"
+										class="vc-comments-count ">13</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474848" >
+								<span class="time">19:36</span>
+								Учителя нашли главный недостаток нового формата экзаменов в вузах							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474848')"
+										class="vc-comments-count ">2</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474847" >
+								<span class="time">18:49</span>
+								Поклонники со всей России съехались к замку Пугачевой. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474847')"
+										class="vc-comments-count ">9</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474845" >
+								<span class="time">18:20</span>
+								Экономисты высказались об индексации социальных пенсий. &laquo;Выплаты с барского стола&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474845')"
+										class="vc-comments-count vc-comments-count-red">76</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474846" >
+								<span class="time">18:18</span>
+								Экономист: к чему приведет ужесточение ипотеки для россиян							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474846')"
+										class="vc-comments-count ">4</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474844" >
+								<span class="time">17:58</span>
+								В Госдуме объяснили, как будут следить за тратами маткапитала							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474844')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474843" >
+								<span class="time">17:47</span>
+								Челябинские силовики поздравили женщин стрельбой из автоматов. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474843')"
+										class="vc-comments-count ">8</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474842" >
+								<span class="time">17:23</span>
+								В Госдуме предложили выдавать маткапитал на любые нужды							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474842')"
+										class="vc-comments-count ">13</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474841" >
+								<span class="time">17:16</span>
+								Глава Челябинска вспомнила, как развивалась ее карьера в мэрии							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474841')"
+										class="vc-comments-count vc-comments-count-red">20</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="93">
+							<a href="/news/1052474840" >
+								<span class="time">16:45</span>
+								В Госдуме заявили, что Россия защитит Донбасс от Украины. &laquo;Будем реагировать жестко&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474840')"
+										class="vc-comments-count vc-comments-count-red">46</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="93">
+							<a href="/news/1052474839" >
+								<span class="time">16:01</span>
+								В МВД Украины пригрозили сокрушить Россию за Донбасс. Ключевой станет поддержка Запада							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474839')"
+										class="vc-comments-count vc-comments-count-red">129</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474838" >
+								<span class="time">15:58</span>
+								Полицейские поздравили женщин в московском метро. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474838')"
+										class="vc-comments-count ">6</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474837" >
+								<span class="time">15:41</span>
+								Онколог назвал неожиданные симптомы опасного вида рака							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474836" >
+								<span class="time">15:41</span>
+								Прокуратура отреагировала на пожар на реке Обь в ХМАО							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474836')"
+										class="vc-comments-count ">8</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474835" >
+								<span class="time">15:26</span>
+								В Тюмени машина врезалась в дом, протаранив детскую комнату. Фото							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474835')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474834" >
+								<span class="time">14:49</span>
+								В правительстве РФ назвали новое условие для поступления в вузы							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474834')"
+										class="vc-comments-count ">9</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="691">
+							<a href="/news/1052474833" >
+								<span class="time">14:42</span>
+								Политологи: повлияют ли воры в законе на выборы в Госдуму							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474833')"
+										class="vc-comments-count vc-comments-count-red">29</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474832" >
+								<span class="time">14:28</span>
+								Эстонские подростки готовятся к войне с Россией							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474832')"
+										class="vc-comments-count vc-comments-count-red">34</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474831" >
+								<span class="time">13:42</span>
+								Глава UFC сделал заявление о реванше Петра Яна							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474831')"
+										class="vc-comments-count ">9</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474830" >
+								<span class="time">13:23</span>
+								Умерла правозащитница из команды Кадырова							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474830')"
+										class="vc-comments-count ">19</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="651">
+							<a href="/news/1052474829" >
+								<span class="time">12:59</span>
+								В России стали меньше выздоравливать от коронавируса							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474829')"
+										class="vc-comments-count ">7</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="82">
+							<a href="/news/1052474825" >
+								<span class="time">12:41</span>
+								Экономист: в какой валюте, кроме доллара и евро, хранить деньги							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474825')"
+										class="vc-comments-count ">13</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474828" >
+								<span class="time">12:40</span>
+								В России будут выдавать материнский капитал по новым правилам							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474828')"
+										class="vc-comments-count ">8</span>
+															</div>
+						</li>
+											<li class="list-scroll-item is_momenty "
+                            data-story-id="">
+							<a href="https://tyumen.momenty.org/city/1032"  target="_blank" >
+								<span class="time">12:02</span>
+								Создателей праздничной рекламы уличили в&nbsp;сексизме							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474824" >
+								<span class="time">11:43</span>
+								&laquo;ЖКХ Контроль&raquo;: кто виноват в завышении счетов за коммуналку							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474824')"
+										class="vc-comments-count vc-comments-count-red">101</span>
+															</div>
+						</li>
+											<li class="list-scroll-item is_momenty "
+                            data-story-id="">
+							<a href="https://momenty.org/city/10146"  target="_blank" >
+								<span class="time">11:00</span>
+								В&nbsp;магазинах заявили о&nbsp;скачке цен на&nbsp;цветы							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474823" >
+								<span class="time">10:58</span>
+								В Академии РМК раскрыли, что ждет Петра Яна после поражения в UFC							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474823')"
+										class="vc-comments-count ">7</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474822" >
+								<span class="time">10:24</span>
+								Гидрометцентр: на Урал вернутся морозы. Дата							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474822')"
+										class="vc-comments-count ">7</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474821" >
+								<span class="time">10:09</span>
+								Уральский боец Петр Ян лишился титула чемпиона UFC. Видео							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474821')"
+										class="vc-comments-count ">7</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474820" >
+								<span class="time">09:11</span>
+								Рашкин: Зюганов поддерживает уличные протесты							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474820')"
+										class="vc-comments-count vc-comments-count-red">27</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="82">
+							<a href="/news/1052474819" >
+								<span class="time">09:00</span>
+								Новости кризиса 7 марта. Цены на продукты вырастут, появятся новые выплаты для матерей							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474819')"
+										class="vc-comments-count ">4</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="82">
+							<a href="/news/1052474818" >
+								<span class="time">08:39</span>
+								Власти потеряли миллиарды россиян после инвестиций в юани							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474818')"
+										class="vc-comments-count vc-comments-count-red">40</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="651">
+							<a href="/news/1052474817" >
+								<span class="time">07:57</span>
+								Венедиктов: почему Путин не привился от коронавируса							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474817')"
+										class="vc-comments-count vc-comments-count-red">34</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474816" >
+								<span class="time">07:43</span>
+								BadComedian: на что власти в России должны выделять деньги							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474816')"
+										class="vc-comments-count ">12</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="93">
+							<a href="/news/1052474815" >
+								<span class="time">07:34</span>
+								Сатановский объяснил угрозы экс-президента Украины в адрес России							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474815')"
+										class="vc-comments-count vc-comments-count-red">78</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474814" >
+								<span class="time">06:32</span>
+								Московский суд рассмотрит дело экс-помощника полпреда в УрФО. Его обвиняют в шпионаже							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474814')"
+										class="vc-comments-count ">12</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474813" >
+								<span class="time">06:27</span>
+								Турэксперты назвали популярные у россиян направления на 8 марта							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474813')"
+										class="vc-comments-count ">3</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474812" >
+								<span class="time">06:04</span>
+								Ростехнадзор заявил об угрозе экологии после ЧП на реке в ХМАО							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474812')"
+										class="vc-comments-count ">14</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474810" >
+								<span class="time">05:27</span>
+								Моргенштерн поделился планами на ближайшее будущее. &laquo;20 детей хочу&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474810')"
+										class="vc-comments-count vc-comments-count-red">28</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474809" >
+								<span class="time">05:00</span>
+								Диетолог развеяла популярные мифы о похудении							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474809')"
+										class="vc-comments-count ">4</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474808" >
+								<span class="time">04:12</span>
+								Бизнесмен Стерлигов призвал Путина &laquo;вырубить&raquo; интернет. &laquo;Избавьте нас от этой наркоты&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474808')"
+										class="vc-comments-count vc-comments-count-red">33</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474807" >
+								<span class="time">03:52</span>
+								Минтруд объяснил правила заполнения электронных трудовых книжек							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474807')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="95">
+							<a href="/news/1052474806" >
+								<span class="time">03:09</span>
+								Экономист раскрыл, почему в РФ не будет новой пенсионной реформы							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474806')"
+										class="vc-comments-count ">10</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474805" >
+								<span class="time">02:52</span>
+								В РФ вступил в силу запрет на высадку детей из транспорта							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474805')"
+										class="vc-comments-count ">10</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474804" >
+								<span class="time">02:00</span>
+								Ученый заявил о смертельной опасности ароматических свечей							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474804')"
+										class="vc-comments-count ">1</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="651">
+							<a href="/news/1052474802" >
+								<span class="time">02:00</span>
+								Коронавирус: последние новости 7 марта. Минздрав РФ призвал повторно вакцинироваться от COVID, болезнь приводит к проблемам с памятью							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474802')"
+										class="vc-comments-count ">4</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474803" >
+								<span class="time">01:43</span>
+								Гидрометцентр предупредил россиян об опасной погоде							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474801" >
+								<span class="time">01:04</span>
+								В Екатеринбурге пожарные спасли ребенка-инвалида из горящего дома. Фото							</a>
+							<div>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="95">
+							<a href="/news/1052474799" >
+								<span class="time">01:04</span>
+								Профессор МГУ раскрыл, кому была выгодна пенсионная реформа в РФ. &laquo;Хотели дискредитировать Путина&raquo;							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474799')"
+										class="vc-comments-count vc-comments-count-red">170</span>
+															</div>
+						</li>
+											<li class="list-scroll-item list-scroll-item-important "
+                            data-story-id="">
+							<a href="/news/1052474800" >
+								<span class="time">00:33</span>
+								Греция разрешила въезд россиянам в марте на особых условиях							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474800')"
+										class="vc-comments-count ">4</span>
+															</div>
+						</li>
+											<li class="list-scroll-item  "
+                            data-story-id="">
+							<a href="/news/1052474798" >
+								<span class="time">00:18</span>
+								СМИ назвали возможных виновников пожара на реке Обь в ХМАО							</a>
+							<div>
+																	<span onclick="showNews(event, '1052474798')"
+										class="vc-comments-count ">14</span>
+															</div>
+						</li>
+									</ul>
+			</div>
+			</div>
+</div>
+
+			
+		</div>
+	</div>
+
+	<div class="vc-center" style="overflow: hidden;">
+		<div class="vc-center-inner" style="padding-top: 0; padding-left: 0;">
+
+
+
+			<div id="cl-main-inner">
+				<div class="cl-right">
+					<a href="/specials" class="spec-projects-banner">URA ПРОЕКТЫ</a>
+										<div class="cl-right-addition">
+						<div style="height:416px;">        <div id="W2evrThyUb9PXVu" class="bannerPosition_b1"></div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                var banner_data = {
+                    banner_id:  Math.random().toString(36).substring(7)
+                };
+
+                $.ajax(
+                    '/widgets/banner_loader/loader.php',
+                    {
+                        type:       'get',
+                        data:       {type:'b1'},
+                        dataType:   'json',
+                        success:    (function(position, banner_data){return function(data){
+
+							if (data.length > 0) {
+							    var banner_code = data[Math.floor(Math.random()*data.length)];
+							        banner_code = banner_code.replace(
+							            /%%([a-z_]+)%%/g,
+							            (function(banner_data){return function(str, value_name, offset, banner_code){
+                                            return banner_data[value_name] ? banner_data[value_name] : '';
+                                        };})(banner_data));
+                            	$('#W2evrThyUb9PXVu').html(banner_code);
+							}
+
+                        };})('b1', banner_data)
+                    }
+                )
+
+            });
+        </script></div>
+						<!--<div class="right-block"><img src="/img/banner_test.png"></div>-->
+					</div>
+				</div>
+
+				<div>
+					
+
+					
+					
+					
+					
+
+					<div class="cl-main-carousel">
+						
+						
+
+<div class="day-news-items" data-last-modified="Mon, 08 Mar 2021 11:45:33 GMT">
+	<div class="day-news-items__title">
+		<h1>Главное за день</h1>
+	</div>
+	<div class="day-news-items__list">
+				<div class="day-news-items__item">
+						<a href="/news/1052474901" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474901 mbid:197022',window.location.href); mb_stat('197022');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/901/1052474901/557275_Aviaplener_v_aeroportu_Kolytsovo_Ekaterinburg_samolet_aviaperevozki_aviaperelet_aviaperevozchik_aviakompaniya_aeroflot_aeroflot_boing747_400_250x0_4612.3082.0.0_280.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_1"></div>
+			</a>
+						<a href="/news/1052474901" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474901 mbid:197022',window.location.href); mb_stat('197022');">
+								Союз туриндустрии назвал срок открытия Шенгена для РФ			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474896" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474896 mbid:197021',window.location.href); mb_stat('197021');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/2021/03/08/190940_Media_forum_Za_pravdu_i_spravedlivosty_vstrecha_s_Zaharovoy_M_Sankt_Peterburg_zaharova_mariya_220x153_5520.3840.58.0.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_2"></div>
+			</a>
+						<a href="/news/1052474896" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474896 mbid:197021',window.location.href); mb_stat('197021');">
+								Захарова призвала ввести контроль над интернетом			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474894" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474894 mbid:197020',window.location.href); mb_stat('197020');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/2021/03/08/319424_Vaktsinatsiya_ot_grippa_Chelyabinsk_gripp_privivka_shprits_meditsina_vrach_220x153_2875.2000.25.0.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_3"></div>
+			</a>
+						<a href="/news/1052474894" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474894 mbid:197020',window.location.href); mb_stat('197020');">
+								Зам Собянина о принудительной вакцинации			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474893" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474893 mbid:197019',window.location.href); mb_stat('197019');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/2021/03/08/575172_Rabota_felydsherov_skoroy_pomoshti_v_usloviyah_koronavirusnoy_infektsii_na_territorii_gorodskoy_bolynitsi_2_Kurgan_patsient_nosilki_zashtitniy_kostyum_skoraya_pomoshty_felydsher_220x153_4996.3475.217.0.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_4"></div>
+			</a>
+						<a href="/news/1052474893" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474893 mbid:197019',window.location.href); mb_stat('197019');">
+								В России новый коронавирусный тренд			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474887" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474887 mbid:197018',window.location.href); mb_stat('197018');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/2021/03/08/579237_Krasnaya_ploshtady_sobor_Vasiliya_Blazhennogo_Moskva_hram_vasiliya_blazhennogo_rossiya_turizm_lyudi_sobor_hram_krasnaya_ploshtady_sobor_vasiliya_blazhennogo_moskva_220x153_4341.3020.98.0.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_5"></div>
+			</a>
+						<a href="/news/1052474887" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474887 mbid:197018',window.location.href); mb_stat('197018');">
+								В Москве ослабили карантин			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474880" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474880 mbid:197016',window.location.href); mb_stat('197016');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/2021/03/08/590974_Tsveti_Deti_Pensioneri_Kurgan_sugrob_sneg_zima_pensioneri_220x153_5980.4160.73.0.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_6"></div>
+			</a>
+						<a href="/news/1052474880" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474880 mbid:197016',window.location.href); mb_stat('197016');">
+								В ПФР рассказали о льготах для предпенсионеров			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474871" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474871 mbid:197014',window.location.href); mb_stat('197014');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/871/1052474871/526746_Maslenitsa_v_Yalutorovske_2020_Tyumeny_prazdnik_narodnie_gulyaniya_tserkovy_maslenitsa_yalutorovsk_hram_skomorohi_na_hodulyah_250x0_5616.3744.0.0_280.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_7"></div>
+			</a>
+						<a href="/news/1052474871" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474871 mbid:197014',window.location.href); mb_stat('197014');">
+								В России встречают Масленицу			</a>
+		</div>
+				<div class="day-news-items__item">
+						<a href="/news/1052474869" class="img-link" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474869 mbid:197013',window.location.href); mb_stat('197013');">
+				<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/869/1052474869/590894_Tsveti_Deti_Pensioneri_Kurgan_buket_prazdnik_vesni_tsveti_8_marta_250x0_2304.1536.0.0_280.jpg" class="day-news-items__img">
+				<div class="day-news-items__item-position day-news-items__item-position_8"></div>
+			</a>
+						<a href="/news/1052474869" class="day-news-items__announce" onclick="ga('send','event','NS Главные новости ','Переход на /news/1052474869 mbid:197013',window.location.href); mb_stat('197013');">
+								Путин поздравил россиянок с Международным женским днем			</a>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+		$('.day-news-items__list')
+			.removeAttr('style')
+			.slick({
+				dots: false,
+				autoplay: true,
+				autoplaySpeed: 20 * 1000,
+				adaptiveHeight: true,
+				infinite: false,
+				speed: 500,
+				slidesToShow: 4,
+				slidesToScroll: 2,
+				responsive: [{
+					breakpoint: 1366,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					}
+				}]
+			});
+</script>
+
+
+						
+					</div>
+				</div>
+				
+				
+
+				
+				
+<div class="spec-position" id="main_news" data-last-modified="Mon, 08 Mar 2021 11:45:33 GMT"
+     data-next-date="2021-03-05">&nbsp;</div>
+
+<div class="cl-right">
+	<div class="cl-game-block-position"></div>
+</div>
+
+
+
+    <div class="publication-item"
+         data-story-id="651"
+         data-main-item-id="115302"
+         data-id="1052474899"
+         data-type="news">
+		<a href="/news/1052474899" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474899', window.location.href+'0'); mi_stat('115302', '1052474899', '', '23', 1, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/899/1052474899/521816_Klipart_na_temu_ORVI_Kurgan_rebenok_lekarstva_gradusnik_gripp_bolezny_orvi_zabolevanie_orvi_karantin_bolynoy_rebenok_orz_rebenok_bolynichnaya_koyka_bolynichniy_visokaya_temperatura_250x0_5976.3984.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474899" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474899', window.location.href+'0'); mi_stat('115302', '1052474899', '', '23', 1, 'main');">Педиатр предупредил о смертельном последствии COVID у детей</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474899"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474899', window.location.href+'0'); mi_stat('115302', '1052474899', '', '23', 1, 'main');">Болезнь развивается за несколько дней</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115301"
+         data-id="1052474895"
+         data-type="news">
+		<a href="/news/1052474895" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474895', window.location.href+'1'); mi_stat('115301', '1052474895', '', '23', 2, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/895/1052474895/328937_Haker_it_illyustratsii__vzlom_hakerstvo_kompyyuternaya_gramotnosty_zlodey_kompyyuter_haker_250x0_4001.2667.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474895" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474895', window.location.href+'1'); mi_stat('115301', '1052474895', '', '23', 2, 'main');">Хакеры: какие российские сайты не выдержат американских кибератак</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474895"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474895', window.location.href+'1'); mi_stat('115301', '1052474895', '', '23', 2, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115299"
+         data-id="1052474858"
+         data-type="news">
+		<a href="/news/1052474858" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474858', window.location.href+'0'); mi_stat('115299', '1052474858', '', '23', 1, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/858/1052474858/490237_Nasilie_i_pedofiliya_Klipart_Kurgan_nasilie_domashnee_nasilie_bitovoe_ubiystvo_udushye_250x0_6003.4002.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474858" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474858', window.location.href+'0'); mi_stat('115299', '1052474858', '', '23', 1, 'main');">Силовики назвали главные проблемы борьбы с домашним насилием в РФ</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474858"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474858', window.location.href+'0'); mi_stat('115299', '1052474858', '', '23', 1, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115297"
+         data-id="1052474842"
+         data-type="news">
+		<a href="/news/1052474842" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474842', window.location.href+'1'); mi_stat('115297', '1052474842', '', '23', 2, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/842/1052474842/506104_Klipart_Zarplata_Chelyabinsk_zarplata_pyaty_tisyach_konvert_seraya_zarplata_denygi_nalichnie_raschet_kupyuri_banknoti_buhgalter_poluchka_250x0_2986.1991.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474842" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474842', window.location.href+'1'); mi_stat('115297', '1052474842', '', '23', 2, 'main');">В Госдуме придумали новые способы потратить маткапитал</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474842"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474842', window.location.href+'1'); mi_stat('115297', '1052474842', '', '23', 2, 'main');">Это решит проблемы миллионов россиян</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115295"
+         data-id="1052474824"
+         data-type="news">
+		<a href="/news/1052474824" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474824', window.location.href+'2'); mi_stat('115295', '1052474824', '', '23', 3, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/824/1052474824/564638_Klipart_na_temu_otklyucheniya_vklyucheniya_otopleniya_Kurgan_holod_radiator_otoplenie_batareya_otopleniya_batarei_250x0_6240.4160.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474824" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474824', window.location.href+'2'); mi_stat('115295', '1052474824', '', '23', 3, 'main');">&laquo;ЖКХ Контроль&raquo;: кто виноват в завышении счетов за коммуналку</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474824"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474824', window.location.href+'2'); mi_stat('115295', '1052474824', '', '23', 3, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115293"
+         data-id="1052474823"
+         data-type="news">
+		<a href="/news/1052474823" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474823', window.location.href+'3'); mi_stat('115293', '1052474823', '', '23', 4, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/823/1052474823/549909_P_tr_Yan_v_aeroportu_Kolytsovo_Ekaterinburg_yan_petr_poyas_chempiona_ufc_v_legchayshem_vese_250x0_4168.2786.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474823" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474823', window.location.href+'3'); mi_stat('115293', '1052474823', '', '23', 4, 'main');">В Академии РМК раскрыли, что ждет Петра Яна после поражения в UFC</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474823"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474823', window.location.href+'3'); mi_stat('115293', '1052474823', '', '23', 4, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115291"
+         data-id="1052474816"
+         data-type="news">
+		<a href="/news/1052474816" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474816', window.location.href+'4'); mi_stat('115291', '1052474816', '', '23', 5, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/816/1052474816/344236_Klipart_Magnitogorsk_kupyuri_denygi_250x0_4597.3072.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474816" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474816', window.location.href+'4'); mi_stat('115291', '1052474816', '', '23', 5, 'main');">BadComedian: на что власти в России должны выделять деньги</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474816"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474816', window.location.href+'4'); mi_stat('115291', '1052474816', '', '23', 5, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115290"
+         data-id="1052474783"
+         data-type="news">
+		<a href="/news/1052474783" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474783', window.location.href+'0'); mi_stat('115290', '1052474783', '', '23', 1, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/783/1052474783/566504_Turtsiya_2020_Permy_more_turizm_turtsiya_puteshestviya_plyazh_otdih_250x0_3600.2400.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474783" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474783', window.location.href+'0'); mi_stat('115290', '1052474783', '', '23', 1, 'main');">Турэксперты обозначили главные проблемы в русской All Inclusive</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474783"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474783', window.location.href+'0'); mi_stat('115290', '1052474783', '', '23', 1, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115288"
+         data-id="1052474778"
+         data-type="news">
+		<a href="/news/1052474778" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474778', window.location.href+'1'); mi_stat('115288', '1052474778', '', '23', 2, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/778/1052474778/587409_Shkola_Moskva_shkolyniki_shkolynik_urok_ekzamen_uchebnik_uchenik_urok_v_shkole_shkola_250x0_5500.3676.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474778" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474778', window.location.href+'1'); mi_stat('115288', '1052474778', '', '23', 2, 'main');">Учителя предупредили об опасности перехода на пятидневку в школах</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474778"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474778', window.location.href+'1'); mi_stat('115288', '1052474778', '', '23', 2, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id="651"
+         data-main-item-id="115287"
+         data-id="1052474772"
+         data-type="news">
+		<a href="/news/1052474772" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474772', window.location.href+'2'); mi_stat('115287', '1052474772', '', '23', 3, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/772/1052474772/562495_Vaktsinatsiya_ot_grippa_na_oblastnom_rinke_na_Gromova_Ekaterinburg_privivka_vaktsina_privivka_ot_grippa_vaktsina_ot_grippa_vaktsinatsiya_250x0_4322.2889.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474772" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474772', window.location.href+'2'); mi_stat('115287', '1052474772', '', '23', 3, 'main');">Когда ставить третью прививку от коронавируса</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474772"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474772', window.location.href+'2'); mi_stat('115287', '1052474772', '', '23', 3, 'main');">Ответ вирусологов</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115285"
+         data-id="1052474768"
+         data-type="news">
+		<a href="/news/1052474768" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474768', window.location.href+'3'); mi_stat('115285', '1052474768', '', '23', 4, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/768/1052474768/544073_Deti_Pensioneri_Kurgan_mnogodetnaya_semyya_semyya_detskaya_kolyaska_250x0_4976.3317.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474768" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474768', window.location.href+'3'); mi_stat('115285', '1052474768', '', '23', 4, 'main');">В России готовят новые льготы и выплаты для матерей</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474768"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474768', window.location.href+'3'); mi_stat('115285', '1052474768', '', '23', 4, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115282"
+         data-id="1036282011"
+         data-type="articles">
+		<a href="/articles/1036282011" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282011', window.location.href+'4'); mi_stat('115282', '', '1036282011', '23', 5, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/011/1036282011/540873_Klipart_Surgut_arest_nakazanie_ruki_s_telefonom_ruki_v_naruchnikah_prestuplenie_moshennichestvo_luchshe_doma_samoizolyatsiya_narushenie_huliganstvo_telefonnoe_propusk_tsifrovoy_760x0_5516.4017.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282011" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282011', window.location.href+'4'); mi_stat('115282', '', '1036282011', '23', 5, 'main');">Секреты мошенника, который представляется сотрудником «Сбера»</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282011"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282011', window.location.href+'4'); mi_stat('115282', '', '1036282011', '23', 5, 'main');">Сколько он получает и почему не боится полиции. Эксклюзив URA.RU</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115264"
+         data-id="1036282012"
+         data-type="articles">
+		<a href="/articles/1036282012" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282012', window.location.href+'5'); mi_stat('115264', '', '1036282012', '23', 6, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/012/1036282012/342793_xvii_saezd_partii_Edinaya_Rossiya_vtoroy_deny_Moskva_medvedev_dmitriy_760x0_5760.3840.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282012" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282012', window.location.href+'5'); mi_stat('115264', '', '1036282012', '23', 6, 'main');">Медведев указал на главную несправедливость российской политики</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282012"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282012', window.location.href+'5'); mi_stat('115264', '', '1036282012', '23', 6, 'main');">Новую силу заметил даже президент Путин</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115262"
+         data-id="1052474764"
+         data-type="news">
+		<a href="/news/1052474764" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474764', window.location.href+'6'); mi_stat('115262', '1052474764', '', '23', 7, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/764/1052474764/582866_Torgoviy_tsentr_Kurgan_produktovaya_korzina_rastitelynoe_maslo_magazin_telezhka_s_produktami_pokupately_produkti_pitaniya_250x0_3688.2465.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474764" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474764', window.location.href+'6'); mi_stat('115262', '1052474764', '', '23', 7, 'main');">Экономист из команды Медведева: Россию ждет очередной рост цен</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474764"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474764', window.location.href+'6'); mi_stat('115262', '1052474764', '', '23', 7, 'main');">Сроки</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115260"
+         data-id="1052474762"
+         data-type="news">
+		<a href="/news/1052474762" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474762', window.location.href+'7'); mi_stat('115260', '1052474762', '', '23', 8, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/762/1052474762/590971_Tsveti_Deti_Pensioneri_Kurgan_sugrob_starushki_sneg_zima_babushki_pensiya_pensioneri_250x0_5923.3959.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474762" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474762', window.location.href+'7'); mi_stat('115260', '1052474762', '', '23', 8, 'main');">Рашкин заявил о возможном повышении пенсионного возраста</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474762"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474762', window.location.href+'7'); mi_stat('115260', '1052474762', '', '23', 8, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id="93"
+         data-main-item-id="115258"
+         data-id="1052474751"
+         data-type="news">
+		<a href="/news/1052474751" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474751', window.location.href+'8'); mi_stat('115258', '1052474751', '', '23', 9, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/751/1052474751/550814_Saemki_filyma_Blef_Ekaterinburg_boets_strelok_chop_ohrannik_ohrana_soldat_chvk_chastnaya_voennaya_kompaniya_naemnik_250x0_5075.3383.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474751" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474751', window.location.href+'8'); mi_stat('115258', '1052474751', '', '23', 9, 'main');">В Донбассе предупредили о зарубежных наемниках со стороны Украины</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474751"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474751', window.location.href+'8'); mi_stat('115258', '1052474751', '', '23', 9, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id="674"
+         data-main-item-id="115245"
+         data-id="1036282008"
+         data-type="articles">
+		<a href="/articles/1036282008" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282008', window.location.href+'9'); mi_stat('115245', '', '1036282008', '23', 10, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/008/1036282008/271911_Tsvetochniy_magazin_Anyutini_glazki_Buketi_i_tsveti_Ekaterinburg__8marta_buket_romashek_tsvetochniy_magazin_tsveti_760x0_5123.3415.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282008" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282008', window.location.href+'9'); mi_stat('115245', '', '1036282008', '23', 10, 'main');">Красивая Афиша URA.RU — кино, концерты и образование для дам</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282008"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282008', window.location.href+'9'); mi_stat('115245', '', '1036282008', '23', 10, 'main');">Рекомендации URA.RU на 6—8 марта</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id="747"
+         data-main-item-id="115256"
+         data-id="1052474662"
+         data-type="news">
+		<a href="/news/1052474662" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474662', window.location.href+'10'); mi_stat('115256', '1052474662', '', '23', 11, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/news/474/662/1052474662/590877_Klipart_pravosudie_Moskva_femida_sud_sudebnaya_sistema_250x0_5500.3676.0.0_280.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/news/1052474662" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474662', window.location.href+'10'); mi_stat('115256', '1052474662', '', '23', 11, 'main');">Чеченский прокурор рассказал, придет ли на суд по иску к URA.RU</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/news/1052474662"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /news/1052474662', window.location.href+'10'); mi_stat('115256', '1052474662', '', '23', 11, 'main');"></a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115226"
+         data-id="1036282010"
+         data-type="articles">
+		<a href="/articles/1036282010" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282010', window.location.href+'11'); mi_stat('115226', '', '1036282010', '23', 12, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/010/1036282010/3626d8d9fbb571c7f12831d2a07202ef_760x0_3493.2445.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282010" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282010', window.location.href+'11'); mi_stat('115226', '', '1036282010', '23', 12, 'main');">Свердловские инсайды: свита губернатора перестаралась</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282010"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282010', window.location.href+'11'); mi_stat('115226', '', '1036282010', '23', 12, 'main');">Про московскую проверку, новые правила полпреда и куратора для Высокинского. Выпуск 909</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115224"
+         data-id="1036282007"
+         data-type="articles">
+		<a href="/articles/1036282007" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282007', window.location.href+'12'); mi_stat('115224', '', '1036282007', '23', 13, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/007/1036282007/ea3a18f08ca259eead2abfddb01e6d12_760x0_1276.893.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282007" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282007', window.location.href+'12'); mi_stat('115224', '', '1036282007', '23', 13, 'main');">Инсайды ХМАО: полиция тоскует по митингам</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282007"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282007', window.location.href+'12'); mi_stat('115224', '', '1036282007', '23', 13, 'main');">О фейках про Комарову, империи взяточника и кадровой революции в Сургуте. Выпуск 909</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115235"
+         data-id="1036281957"
+         data-type="articles">
+		<a href="/articles/1036281957" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036281957', window.location.href+'13'); mi_stat('115235', '', '1036281957', '23', 14, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/281/957/1036281957/574940_Klipart_Magnitogorsk_prezent_podarochnie_korobki_250x0_5184.3456.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036281957" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036281957', window.location.href+'13'); mi_stat('115235', '', '1036281957', '23', 14, 'main');">Как подобрать идеальный подарок на 23 февраля и 8 марта?</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036281957"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036281957', window.location.href+'13'); mi_stat('115235', '', '1036281957', '23', 14, 'main');">Тест URA.RU</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115213"
+         data-id="1036282006"
+         data-type="articles">
+		<a href="/articles/1036282006" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282006', window.location.href+'14'); mi_stat('115213', '', '1036282006', '23', 15, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/006/1036282006/258954d3a9bcc530856aadadf567275f_760x0_3493.2445.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282006" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282006', window.location.href+'14'); mi_stat('115213', '', '1036282006', '23', 15, 'main');">Пермские инсайды: земля для Трутнева</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282006"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282006', window.location.href+'14'); mi_stat('115213', '', '1036282006', '23', 15, 'main');">О шантаже на 100 миллионов, недовольстве министром и напряжении в полиции. Выпуск 909</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+    <div class="publication-item"
+         data-story-id=""
+         data-main-item-id="115254"
+         data-id="1036282002"
+         data-type="articles">
+		<a href="/articles/1036282002" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282002', window.location.href+'15'); mi_stat('115254', '', '1036282002', '23', 16, 'main');">
+			<img src="https://s.ura.news/pics/280/200/images/news/upload/articles/282/002/1036282002/441005_Otkritie_supermarketa_Perekrestok_Ekaterinburg_produktoviy_magazin_telezhka_vhod_magazin_supermarket_760x0_3779.2519.0.0_420.jpg" class="publication-item--img"/>
+		</a>
+
+		<h2 class="publication-item--title">
+			<a href="/articles/1036282002" onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282002', window.location.href+'15'); mi_stat('115254', '', '1036282002', '23', 16, 'main');">Как небольшому бизнесу попасть на полку сетевого магазина</a>
+		</h2>
+
+		<h3 class="publication-item--sub-title">
+			<a href="/articles/1036282002"
+			   onclick="ga('send', 'event', 'NS Картина дня', 'Переход на /articles/1036282002', window.location.href+'15'); mi_stat('115254', '', '1036282002', '23', 16, 'main');">Разбираем уральский опыт</a>
+		</h3>
+	</div>
+
+	<div class="spec-position">&nbsp;</div>
+
+	<div class="cl-right">
+		<div class="cl-game-block-position"></div>
+		<div class="cl-tooday-smi-position"></div>
+	</div>
+
+	
+
+				
+
+				
+				    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.cl-story-block-position').remove();
+        });
+    </script>
+
+				
+
+				
+				
+<div class="cl-game-block">
+    <div class="block-title"><span>Лонгрид</span></div>
+    <div onclick="ga('send', 'event', 'NS Блок игры', 'Переход на https://ura.news/specials/rumyantcevo', window.location.href);">
+    <a href="https://ura.news/specials/rumyantcevo">
+        <img src="https://s.ura.news/images/news/upload/main_game/0/9e35018035be7e3955ccb261bd1afc0e_275x275_275.275.0.0.jpg"
+             style="display: block; width: 100%; height: auto;">
+    </a>
+    <a href="https://ura.news/specials/rumyantcevo"
+       class="cl-game-block-title">Истории успеха жителей регионов, отправившихся за мечтой</a>
+    </div>
+</div>
+
+				
+
+			</div>
+
+			<div class="vc-btn vc-btn-lg vc-btn-primary w100" id="vc_load_more" onclick="ga('send', 'event', 'NS Load More', 'click', '' );">загрузить ещё новостей
+			</div>
+
+		</div>
+	</div>
+
+</div>		
+	</div>
+			<div class="vc-footer">
+	<div class="vc-footer-content">
+				<div class="vc-footer-column">
+			<div class="p">
+				<div class="h4">Шеф-редактор</div>
+				<div>Иван Некрасов, <a href="mailto:in@ura.ru">in@ura.ru</a></div>
+			</div>
+			<div class="p">
+				<div class="h4">Редакция</div>
+				<div>Екатеринбург, ул.&nbsp;Карла&nbsp;Либкнехта,&nbsp;5</div>
+				<div><a href="tel:+73433820006">+7&nbsp;(343)&nbsp;382-000-6</a>,
+					<a href="mailto:obzor@ura.ru">obzor@ura.ru</a></div>
+			</div>
+            <div class="p">
+                <div>Москва, ул. Чаплыгина, 11</div>
+                <div><a href="tel:+74951375699">+7 (495) 137-56-99</a>
+                    <a href="mailto:msk@ura.ru">msk@ura.ru</a></div>
+            </div>
+			<div class="p">
+				<div>Челябинск, ул.&nbsp;Васенко,&nbsp;96, к.&nbsp;813</div>
+				<div><a href="tel:+73512209392">+7&nbsp;(351)&nbsp;220-93-92</a>
+					<a href="mailto:chel@ura.ru">chel@ura.ru</a></div>
+			</div>
+			<div class="p">
+				<div>Тюмень, ул.&nbsp;Советская,&nbsp;51/1, к.&nbsp;503</div>
+				<div><a href="tel:+73452514998">+7&nbsp;(3452)&nbsp;51-49-98</a>,
+					<a href="mailto:tyumen@ura.ru">tyumen@ura.ru</a></div>
+			</div>
+			<div class="p">
+				<div>Пермь, ул.&nbsp;Куйбышева,&nbsp;50</div>
+				<div><a href="tel:+73422563707">+7&nbsp;(342)&nbsp;256-37-07</a>
+					<a href="mailto:perm@ura.ru">perm@ura.ru</a></div>
+			</div>
+            <div class="p">
+                <div>Курган, ул. Володарского, 57, к. 417</div>
+                <div><a href="tel:+73522265076">+7 (3522) 26-50-76</a>
+                    <a href="mailto:kurgan@ura.ru">kurgan@ura.ru</a></div>
+            </div>
+			<div class="vc-footer-text">
+				Новости на&nbsp;URA.RU&nbsp;&mdash; это уникальный продукт.
+				Мы&nbsp;публикуем только по-настоящему интересные новости.
+				Не&nbsp;имеющая аналогов скорость работы редакции агентства позволяет нам публиковать
+				свежие новости едва&nbsp;ли не&nbsp;минута в&nbsp;минуту
+				с&nbsp;появлением информационного повода.
+				Это всегда новости сегодня или новости часа.
+			</div>
+		</div>
+
+		<div class="vc-footer-column">
+			<div style="flex-wrap: wrap;">
+				<div>
+					<div class="p">
+						<div class="h4"><a href="/specials/advert">Размещение рекламы</a></div>
+					</div>
+					<div class="p"><a href="tel:+73433820006">+7&nbsp;(343)&nbsp;382-00-06</a></div>
+					<div class="p"><a href="mailto:progress@ura.ru">progress@ura.ru</a></div>
+					<div class="p">
+						<a href="/banners/advert/media-kit-uraru.pdf" class="btn-link download-mediakit">Скачать медиакит</a>
+					</div>
+					<div class="p">
+						<a href="/specials/iamural" class="footer-button btn-link special-projects">Спецпроект #ЯсУрала</a>
+					</div>
+                    <div class="p">
+                        <a href="/specials/dreams" class="footer-button btn-link special-projects">Спецпроект #Куда приводят мечты</a>
+                    </div>
+				</div>
+				<div>
+					<div class="p">
+						<a href="https://m.ura.news" class="footer-button">Мобильная версия</a>
+					</div>
+					<div class="p">
+						<a href="/specials" class="footer-button special-projects">Спецпроекты</a>
+					</div>
+					<div class="p">
+						<a href="/story" class="footer-button">Сюжеты</a>
+					</div>
+					<div class="p">
+						<a href="/archive" class="footer-button archive">Архив новостей</a>
+					</div>
+					<div class="p">
+						<a href="mailto:obzor@ura.ru" class="footer-button send-news">Сообщить новость</a>
+					</div>
+
+				</div>
+			</div>
+			<div>
+				<div class="h4">Подписаться на новости</div>
+				<div class="socials-btn-group">
+					<a class="icons icons-fb" href="https://www.facebook.com/riauraru" target="_blank"></a>
+					<a class="icons icons-tw" href="https://twitter.com/ura_ru" target="_blank"></a>
+					<a class="icons icons-vk" href="http://vk.com/ura_ru" targe="_blank"></a>
+					<a class="icons icons-ok" href="http://ok.ru/uraru" target="_blank"></a>
+					<a class="icons icons-tg" href="https://t.me/uranews" target="_blank"></a>
+					<a class="icons icons-instagram" href="https://www.instagram.com/ura_ru/" target="_blank"></a>
+					<a class="icons icons-vb" href="https://invite.viber.com/?g2=AQB4A0BMe22kqUs9wwonJwv1%2FPv5Xjb%2BLpTzQTu4U9MYEaAnbDvKvDihkOyttMc%2B" target="_blank"></a>
+					<a class="icons icons-rss" href="/rss" target="_blank"></a>
+					<a class="icons icons-mail" href="/subscribe/"></a>
+				</div>
+				
+				<!--AdFox START-->
+				<!--uraru-->
+				<!--Площадка: ura.news / Главная и регионы / C_Footer-->
+				<!--Категория: <не задана>-->
+				<!--Тип баннера: C_100%x100-->
+				<div id="adfox_159551359400899499_wide" class="mediametrics-bottom wide"></div>
+				<script>
+					window.Ya.adfoxCode.create({
+						ownerId: 227654,
+						containerId: 'adfox_159551359400899499_wide',
+						params: {
+							p1: 'clrvm',
+							p2: 'fgwt'
+						},
+						onStub: function() {
+							console.log('C_100%x100(footer) is empty');
+						},
+						onError: function(error) {
+							console.error('Error at C_100%x100 = ', error);
+						}
+					});
+				</script>
+			</div>
+			<div>
+				<noindex>
+					<div class="h4">При использовании материалов ссылка обязательна</div>
+					<div class="vc-footer-text">
+						<div>Свидетельство о&nbsp;регистрации СМИ&nbsp;ИАА&nbsp;«УРА.РУ»&nbsp;Эл&nbsp;№ФС77-77908
+							от&nbsp;19&nbsp;февраля&nbsp;2020 года выдано Федеральной службой по&nbsp;надзору
+							в&nbsp;сфере связи, информационных технологий и&nbsp;массовых коммуникаций (Роскомнадзор)</div>
+
+						<div>Название СМИ: Информационно-аналитическое агентство «УРА.РУ»</div>
+
+						<div>Учредитель: Общество с ограниченной ответственностью «Сибирско-Уральская медиакомпания»
+							(620075, Свердловская обл., г. Екатеринбург, ул. Карла Либкнехта, д. 5, пом. № 317)</div>
+
+						<div>Шеф редактор: Некрасов И.О.</div>
+
+						<div>Телефон редакции: +7(343) 382-00-06</div>
+
+						<div>Адрес электронной почты редакции: obzor@ura.ru</div>
+
+					</div>
+					<div>
+						<span class="btn-link" ng-click="eula.showTermOfUse()">Пользовательское соглашение</span>
+						<span class="btn-link" ng-click="eula.showPrivacyPolicy()">Политика конфиденциальности</span>
+					</div>
+				</noindex>
+			</div>
+		</div>
+
+		<div class="vc-footer-column">
+			<div class="h4">Подписаться на новости</div>
+				<div>
+					<div class="socials-btn-group">
+						<a class="icons icons-fb" href="https://www.facebook.com/riauraru" target="_blank"></a>
+						<a class="icons icons-tw" href="https://twitter.com/ura_ru" target="_blank"></a>
+						<a class="icons icons-vk" href="http://vk.com/ura_ru" targe="_blank"></a>
+						<a class="icons icons-ok" href="http://ok.ru/uraru" target="_blank"></a>
+						<a class="icons icons-tg" href="https://t.me/uranews" target="_blank"></a>
+						<a class="icons icons-instagram" href="https://www.instagram.com/ura_ru/" target="_blank"></a>
+						<a class="icons icons-vb" href="https://invite.viber.com/?g2=AQB4A0BMe22kqUs9wwonJwv1%2FPv5Xjb%2BLpTzQTu4U9MYEaAnbDvKvDihkOyttMc%2B" target="_blank"></a>
+						<a class="icons icons-rss" href="/rss" target="_blank"></a>
+						<a class="icons icons-mail" href="/subscribe/"></a>
+					</div>
+				</div>
+
+			<!-- баннер при ширине экрана больше 1280px -->
+			<!--AdFox START-->
+				<!--uraru-->
+				<!--Площадка: ura.news / Главная и регионы / C_Footer-->
+				<!--Категория: <не задана>-->
+				<!--Тип баннера: C_100%x100-->
+			<div id="adfox_159551359400899499" class="mediametrics-bottom"></div>
+			<script>
+				window.Ya.adfoxCode.create({
+					ownerId: 227654,
+					containerId: 'adfox_159551359400899499',
+					params: {
+						p1: 'clrvm',
+						p2: 'fgwt'
+					},
+					onStub: function() {
+						console.log('C_100%x100(footer) is empty');
+					},
+					onError: function(error) {
+						console.error('Error at C_100%x100 = ', error);
+					}
+				});
+			</script>
+
+			<div class="vc-footer-text">
+				Новости на&nbsp;URA.RU&nbsp;&mdash; это уникальный продукт.
+				Мы&nbsp;публикуем только по-настоящему интересные новости.
+				Не&nbsp;имеющая аналогов скорость работы редакции агентства позволяет нам публиковать
+				свежие новости едва&nbsp;ли не&nbsp;минута в&nbsp;минуту
+				с&nbsp;появлением информационного повода.
+				Это всегда новости сегодня или новости часа.
+			</div>
+			<div>
+				<noindex>
+<div class="counter">
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write('<a href="//www.liveinternet.ru/click" '+
+'target=_blank><img src="//counter.yadro.ru/hit?t11.6;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';i'+escape('Жж'+document.title.substring(0,80))+';'+Math.random()+
+'" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" '+
+'border=0 width=88 height=31></a>')//--></script><!--/LiveInternet-->
+</div>
+<div class="counter">
+  <!-- Top100 (Kraken) Widget -->
+  <span id="top100_widget"></span>
+  <!-- END Top100 (Kraken) Widget -->
+
+  <!-- Top100 (Kraken) Counter -->
+  <script>
+    (function (w, d, c) {
+      (w[c] = w[c] || []).push(function() {
+        var options = {
+          project: 2944851,
+          element: 'top100_widget'
+        };
+        try {
+          w.top100Counter = new top100(options);
+        } catch(e) { }
+      });
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src =
+          (d.location.protocol == "https:" ? "https:" : "http:") +
+          "//st.top100.ru/top100/top100.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(window, document, "_top100q");
+  </script>
+  <noscript>
+    <img src="//counter.rambler.ru/top100.cnt?pid=2944851" alt="Топ-100" />
+  </noscript>
+  <!-- END Top100 (Kraken) Counter -->
+</div>
+
+<div class="counter">
+<!-- УралWeb -->
+<script language="JavaScript" type="text/javascript">
+<!--
+  uralweb_d=document;
+  uralweb_a='';
+  uralweb_a+='&r='+escape(uralweb_d.referrer);
+  uralweb_js=10;
+//-->
+</script>
+<script language="JavaScript1.1" type="text/javascript">
+<!--
+  uralweb_a+='&j='+navigator.javaEnabled();
+  uralweb_js=11;
+//-->
+</script>
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+  uralweb_s=screen;
+  uralweb_a+='&s='+uralweb_s.width+'*'+uralweb_s.height;
+  uralweb_a+='&d='+(uralweb_s.colorDepth?uralweb_s.colorDepth:uralweb_s.pixelDepth);
+  uralweb_js=12;
+//-->
+</script>
+<script language="JavaScript1.3" type="text/javascript">
+<!--
+  uralweb_js=13;
+//-->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+uralweb_d.write('<a href="//www.uralweb.ru/rating/go/ura">'+
+'<img border="0" src="//hc.uralweb.ru/hc/ura?js='+
+uralweb_js+'&rand='+Math.random()+uralweb_a+
+'" width="88" height="31" alt="УралWeb"><'+'/a>');
+//-->
+</script>
+<noscript>
+<a href="http://www.uralweb.ru/rating/go/ura">
+<img border="0" src="http://hc.uralweb.ru/hc/ura?js=0" width="88" height="31" alt="УралWeb"></a>
+</noscript>
+<!-- УралWeb -->
+</div>
+
+<div class="counter">
+  <!-- Rating@Mail.ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "1016715", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "topmailru-code");
+  </script><noscript><div>
+      <img src="//top-fwz1.mail.ru/counter?id=1016715;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
+    </div></noscript>
+  <!-- //Rating@Mail.ru counter -->
+
+  <!-- Rating@Mail.ru logo -->
+  <a href="http://top.mail.ru/jump?from=1016715">
+    <img src="//top-fwz1.mail.ru/counter?id=1016715;t=502;l=1"
+         style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
+  <!-- //Rating@Mail.ru logo -->
+
+</div>
+  
+</noindex>				<div class="vc-footer-age">Для лиц старше 18 лет</div>
+			</div>
+		</div>
+			</div>
+</div>		
+</div>
+
+<div id="eula" 
+	 class="eula"
+	 ng-if="$root.eula && $root.eula.visible"
+	 style="display: none;"
+	 ng-style="$root.eula.visible ? {'display':'block'} : {};">
+	<div id="eula_header">
+		<div id="eula_close" class="eula_close"
+			 ng-click="eula.hideEula();"></div>
+		<noindex><div class="h1" ng-bind="eula.title"></div></noindex>
+	</div>
+	<div style="overflow-y: scroll;height: calc(100% - 60px);">
+		<div>
+			<div><noindex>
+				<ng-include src="eula.content_template"></ng-include>
+			</noindex></div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/ng-template" id="comment.html">
+	<div id="comment_{{comment.id}}" class="comment-content">
+		<div class="comment-avatar" back-img="{{comment.avatar}}"></div>
+		<div class="comment-user">
+			<div class="comment-name" ng-bind-html="comment.name"></div>
+			<div class="comment-time" ng-bind-html="comment.time"></div>
+		</div> 
+		<div class="clear"></div>
+		<div class="comment-text" ng-bind-html="comment.comment"></div>
+		<div class="comment-btns">
+			<div class="btn-group">
+				<div class="btn-s btn-up" ng-click="karmaUp(comment)">{{comment.karma_plus}}</div>
+				<div class="btn-s btn-down" ng-click="karmaDown(comment)">{{comment.karma_minus}}</div>
+			</div>
+			<div class="btn-s reply" id="show_comment_form_{{comment.id}}" ng-click="reply(item, comment)">ответить</div>
+		</div>
+	</div>
+	<div id="comment_form_{{comment.id}}" class="comment-form-container"></div>
+	<div id="comment_success_{{comment.id}}" class="comment-success-container"></div>
+	<div class="child-comments" ng-if="comment.childs_count>0">
+		<div ng-repeat="comment in comment.comments" ng-include="'comment.html'"></div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="top_comment.html">
+	<div ng-if="comment.level==0||(comment.level==1&&$index==0)" ng-class="{'hide-last-comment':$index==9&&!comment.comments}" ng-click="expandComments2(item, null, $index, comment.comments?1:0, 0)">
+		<div class="comment-before"></div>
+		<div class="comment-content" id="comment_{{comment.id}}">
+			<div class="clear">
+				<div class="comment-avatar" back-img="{{comment.avatar}}"></div>
+				<div class="comment-user">
+					<div class="comment-name" ng-bind-html="comment.name"></div>
+					<div class="comment-time" ng-bind-html="comment.time"></div>
+				</div>
+			</div>
+			<div class="comment-text" ng-bind-html="comment.comment"></div>
+			<div class="comment-btns">
+				<div class="btn-group">
+					<div class="btn-s btn-up" ng-click="karmaUp(comment)">{{comment.karma_plus}}</div>
+					<div class="btn-s btn-down" ng-click="karmaDown(comment)">{{comment.karma_minus}}</div>
+				</div>
+				<div class="btn-s reply" ng-click="expandAndReply(item, comment)">ответить</div>
+			</div>
+			<div class="child-comments" ng-if="comment.level==0&&comment.comments" ng-class="{'hide-last-comment':$index==9&&comment.comments}" ng-click="expandComments2(item, null, $index, comment.comments?1:0, 1)">
+				<div ng-repeat="comment in comment.comments" ng-include="'top_comment.html'"></div>
+			</div>
+			<div class="btn-expand" ng-if="comment.level==0&&comment.all_count>1&&$index!=9" ng-click="expandComments(item, comment)">еще {{comment.all_count-1}}</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="comment_form.html">
+	<!--<div class="comment-form-close" ng-click="cf.close()" ng-if="cf.data.parent_id"></div>-->
+	<div class="comment-form form form-a">
+		<textarea ng-model="cf.data.text"></textarea>
+		<span class="error">{{cf.errors.text}}</span>
+		<div ng-if="!user.is_auth || user.is_anonymous">
+			<div class="form-bottom form-pad" ng-show="cf.tabs.name">
+				<span class="error" style="margin-left:130px;">{{cf.errors.name}}</span>
+				<label for="comment_user_name" class="flex" ng-class="{'error':cf.errors.name}">
+					<span class="label" style="width:110px;">Укажите ваше имя:</span>
+					<input type="text" ng-model="cf.data.user_name"/>
+				</label>
+				<div class="clear"></div>
+				<button class="btn btn-send"
+						style="float:right;"
+						ng-click="$root.userService.getUserParam('confirm_rules') ? cf.submit() : $event.preventDefault()"
+						ng-class="{'btn-disabled':!$root.userService.getUserParam('confirm_rules')}">ответить</button>
+				<p>войти <a class="btn-link" ng-click="cf.changeTab('social')">через соцсети</a> или <a class="btn-link" ng-click="cf.changeTab('email')">профиль на URA.RU</a></p>
+				<div class="clear"></div>
+				<div class="clear"></div>
+				<div style="float: right; display: block; width: 100%">
+					<div class="btn-s btn-subs rules"
+						 ng-init="user"
+						 ng-click="$root.userService.setUserParam('confirm_rules', !$root.userService.getUserParam('confirm_rules'))"
+						 ng-class="{'checked':$root.userService.getUserParam('confirm_rules')}">
+					</div>
+					<span style="overflow: hidden; white-space: normal">
+						я согласен с условиями 
+						<a href="#" class="btn-link"
+						   ng-click="$root.eula.showTermOfUse(); $event.preventDefault();">пользовательского соглашения</a>
+						и <a href="#" class="btn-link"
+							 ng-click="$root.eula.showPrivacyPolicy(); $event.preventDefault();">политики конфиденциальности</a>,
+						а также на обработку персональных данных
+					</span>
+				</div>
+			</div>
+			<div class="form-bottom form-hor form-pad" ng-show="cf.tabs.email">
+				<div class="flex">
+					<div class="label" style="line-height: 35px;width:165px;text-align: right;">Войдите в профиль на URA.RU</div>
+				</div>
+				<span class="error" style="margin-left:185px;">{{cf.errors.email}}</span>
+				<label for="comment_user_email" class="flex" ng-class="{'error':cf.errors.email}">
+					<span class="label" style="width:165px;text-align: right;">email:</span>
+					<input type="text" ng-model="cf.data.user_email"/>
+				</label>
+				<span class="error" style="margin-left:185px;">{{cf.errors.password}}</span>
+				<label for="comment_user_password" class="flex" style="position: relative;" ng-class="{'error':cf.errors.password}">
+					<span class="label" style="width:165px;text-align: right;">пароль:</span>
+					<input type="password" style="padding-right: 90px;" ng-model="cf.data.user_password"/>
+					<a class="btn-link" style="position: absolute;font-size:10px;line-height: 12px;top: 11px;right: 10px;">забыли пароль?</a>
+				</label>
+				<div class="clear"></div>
+				<button class="btn btn-send"
+						style="float:right;" ng-click="$root.userService.getUserParam('confirm_rules') ? cf.submit() : null"
+						ng-class="{'btn-disabled':!$root.userService.getUserParam('confirm_rules')}">ответить</button>
+				<p>войти <a class="btn-link" ng-click="cf.changeTab('social')">через соцсети</a> или просто <a class="btn-link" ng-click="cf.changeTab('name')">укажите имя</a></p>
+				<div class="clear"></div>
+			</div>
+			<div class="form-bottom form-pad" ng-show="cf.tabs.social">
+				<div class="label">Войдите через соцсети</div>
+				<div style="margin: 10px 0;height: 40px;">
+					<a href="" class="icon icon-40 icon-vk" ng-click="cf.oauth('vk')"></a>
+					<a href="" class="icon icon-40 icon-tw" ng-click="cf.oauth('tw')"></a>
+					<a href="" class="icon icon-40 icon-fb" ng-click="cf.oauth('fb')"></a>
+					<a href="" class="icon icon-40 icon-ok" ng-click="cf.oauth('ok')"></a>
+					<a href="" class="icon icon-40 icon-google"></a>
+				</div>
+				<div class="clear">войти <a class="btn-link" ng-click="cf.changeTab('email')">в профиль на URA.RU</a> или просто <a class="btn-link" ng-click="cf.changeTab('name')">укажите имя</a></div>
+			</div>
+			<span class="error">{{cf.errors.form}}</span>
+		</div>
+		<div ng-if="user.is_auth && !user.is_anonymous">
+			<div class="form-bottom form-pad">
+				<span class="error">{{cf.errors.form}}</span>
+				<button class="btn btn-send"
+						style="float:right;"
+						ng-click="$root.userService.getUserParam('confirm_rules') ? cf.submit() : null"
+						ng-class="{'btn-disabled':!$root.userService.getUserParam('confirm_rules')}">ответить</button>
+				<i class="icon icon-google" style="float: left;"></i><p>вы вошли как {{user.name}}</p>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</script>
+	
+	<!-- Различные подписки -->
+<div id="sub_bottom"
+     class="right_panel"
+     style="display: none"
+     ng-if="sub_bottom.visible"
+     ng-class="sub_bottom.open ? 'expanded' : 'collapsed'"
+     ng-cloak>
+    <a href="https://ura.news/push/" id="sub_bottom__push" class="sub_bottom__btn" onclick="ga('send', 'event', 'Промо подписки', 'Push на vertical_subscribe_panel', window.location.href);">
+        <span>Разрешить уведомления</span>
+    </a>
+    <a href="https://ura.news/subscribe/" id="sub_bottom__email" class="sub_bottom__btn" onclick="ga('send', 'event', 'Промо подписки', 'Подписка на vertical_subscribe_panel', window.location.href);">
+        <span>Подписаться на рассылку</span>
+    </a>
+    <a href="https://t.me/uranews" id="sub_bottom__telegram" class="sub_bottom__btn" onclick="ga('send', 'event', 'Промо подписки', 'Telegram на vertical_subscribe_panel', window.location.href);">
+        <span>Присоединиться к Telegram</span>
+    </a>
+    <span id="sub_bottom__vk" class="sub_bottom__btn" onclick="ga('send', 'event', 'Промо подписки', 'Вконтакте на vertical_subscribe_panel', window.location.href);">
+        <span>Уведомления во&nbsp;Вконтакте</span>
+    </span>
+    <div id="sub_bottom__open" onclick="ga('send', 'event', 'Промо подписки', 'Показать плашку vertical_subscribe_panel', window.location.href);" class="sub_bottom__btn" ng-click="sub_bottom.show()"></div>
+    <div id="sub_bottom__close" onclick="ga('send', 'event', 'Промо подписки', 'Скрыть плашку vertical_subscribe_panel', window.location.href);" class="sub_bottom__btn" ng-click="sub_bottom.hide()"></div>
+</div>	    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=1379637825594264&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(1130914, "init", {
+            id:1130914,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/1130914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    if (location.pathname == '/') {
+        ga('create', 'UA-56019874-1', 'auto');
+        ga('send', {
+        hitType: 'pageview',
+        page: location.pathname
+        });
+    }
+    </script>
+
+
+
+    <!-- VK Pixel Code -->
+    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-216666-fy3ng';</script>
+    <!-- End VK Pixel Code -->
+
+    <!-- Lentainform Pixel Code -->
+    <script>
+        if (window.self === window.top) {
+            (document.createElement('img')).src = document.location.protocol + '//autocounter.lentainform.com/1x1.gif?pid=51151' + '&referer=' + encodeURIComponent(window.document.referrer);
+        }
+    </script>
+    <!-- End Lentainform Pixel Code -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1436811319895604');
+        fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1436811319895604&ev=PageView&noscript=1"
+            /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+<!--Chartbeat-->
+<!--<script type='text/javascript'>
+    var _sf_async_config = _sf_async_config || {};
+    /** CONFIGURATION START **/
+    _sf_async_config.sections = '';
+    _sf_async_config.authors = '';
+
+    /** CONFIGURATION END **/
+    (function() {
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+        }
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function')
+            ? loadChartbeat
+            : function() {
+                oldonload();
+                loadChartbeat();};
+    })();
+</script>-->
+<!--END-Chartbeat-->
+
+
+</body>
+
+</html>

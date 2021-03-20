@@ -1,0 +1,2779 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        //$(function() {
+        ___width_page = screen.width;
+        //alert(___width_page);
+        if (___width_page < 640){
+            document.write("<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />");
+        }
+        //});
+    </script>
+        <link rel="manifest" href="/manifest.json">
+
+
+
+
+    
+            <title>Новости Украины за последний час - ТЕЛЕГРАФ</title>
+                    <meta property="og:title" content="Новости Украины за последний час"/>
+                    <meta property="og:url" content="https://telegraf.com.ua"/>
+                    <meta property="og:image" content="https://telegraf.com.ua/i/touch-icon-iphone-114.png"/>
+                    <meta property="og:description" content="Новости Украины за последний час. Читать актуальные новости на портале ТЕЛЕГРАФ."/>
+                    <meta property="og:site_name" content="Телеграф"/>
+                    <meta property="og:type" content="website"/>
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:site" content="@telegrafcomua" />
+                    <meta name="description" content="Новости Украины за последний час. Читать актуальные новости на портале ТЕЛЕГРАФ." />
+                    <link rel="canonical" href="https://telegraf.com.ua/" />
+                    <link rel="alternate" href="https://telegraf.com.ua/" hreflang="ru">
+                    <link rel="alternate" href="https://telegraf.com.ua/ukr/" hreflang="uk">
+                    <link rel="amphtml" href="https://telegraf.com.ua/amp/">
+                    <meta name="ROBOTS" content="INDEX, FOLLOW, ALL" />
+                    <meta name="REVISIT-AFTER" CONTENT="1 DAYS" />
+                    <meta name="RESOURCE-TYPE" content="DOCUMENT" />
+                    <meta name="DISTRIBUTION" content="GLOBAL" />
+                    <meta name="COPYRIGHT" content="Copyright (c) 2021 Телеграф" />
+                    <style>
+        #mobile-content-show{
+            display: none;
+        }
+    </style>
+    
+    
+        <!-- mobile -->
+
+
+        <link rel="stylesheet" media="screen and (max-width: 640px)" href="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/jquery.mobile-1.4.5.min.css" type="text/css" />
+        <link rel="stylesheet" media="screen and (max-width: 640px)" href="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/style.css" type="text/css" />
+
+        <!-- mobile -->
+
+        <link rel="stylesheet" media="screen and (min-width: 641px)" href="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/css/css_home.php" type="text/css" />
+
+        <script src="//telegraf.com.ua/wp-content/themes/news_ru/js/jquery.js"></script>
+        <!-- mobile -->
+
+        <style>
+
+            @media screen and (max-width: 640px){
+                #mobile-content-show{
+                    display: block;
+                }
+                #mainWrapper{
+                    display: none!important;
+                }
+                #footer.footer-desktop{
+                    display: none!important;
+                }
+                #header-desk.header-desktop{
+                    display: none!important;
+                }
+                #soc_popup{
+                    display: none!important;
+                }
+
+
+
+            }
+        </style>
+        <script>
+            $(document).on("pageshow", "[data-role='page']", function () {
+                $('div.ui-loader').remove();
+            });
+            $(document).bind("mobileinit", function () {
+
+                $.mobile.ajaxEnabled = false;
+
+            });
+
+            $( window ).resize(function() {
+                if ($(window).width() < 640){
+
+                    $(document).ready(function(){
+                        _ajax_insert = true;
+                        if ($('#ajax-content').hasClass('insert-mob-content')){
+                            _ajax_insert = false;
+                        }
+
+                        if (_ajax_insert){
+
+                            $.ajax({
+                                url: '//telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/ajax/ajax-content.php',
+                                type: 'GET',
+                                cache: false,
+                                dataType: 'jsonp',
+                                jsonpCallback: 'main',
+                                crossDomain: true,
+                                data: {
+                                    loading: 'main'
+                                },
+                                success:function(data){
+
+
+                                    if (data != ''){
+                                        jQuery('#ajax-content').removeClass('loading');
+                                        jQuery('#ajax-content').addClass('insert-mob-content');
+                                        jQuery('#ajax-content').html(data[0]);
+
+
+
+                                    }
+
+                                }
+
+
+                            })
+
+                        }
+
+                    })
+
+                }
+
+            }).resize();
+
+        </script>
+
+            <script src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/js/jquery.bxslider.min.js"></script>
+        <script src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/js/script.js"></script>
+
+
+        <!-- mobile -->
+    
+    
+    
+
+
+    <script src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/js/jquery.scrollbar.js" ></script>
+
+    <script src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/js/smartbanner1.js" ></script>
+    <script src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/js/global_v42.js"></script>
+
+    <link rel="shortcut icon" href="https://telegraf.com.ua/favicon_32.ico" type="image/x-icon" />
+    <meta name="apple-mobile-web-app-title" content="Телеграф" />
+    <link rel="apple-touch-icon" href="https://telegraf.com.ua/i/touch-icon-iphone-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://telegraf.com.ua/i/touch-icon-iphone-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://telegraf.com.ua/i/touch-icon-iphone-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://telegraf.com.ua/i/touch-icon-iphone.png" />
+
+    <meta name="google-play-app" content="app-id=ua.com.Telegraf"/>
+    <meta name="apple-itunes-app" content="app-id=705915891"/>
+    <meta property="fb:app_id" content="516378252047196" />
+    <!--
+<script src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/js/smartbanner1.js" type="text/javascript"></script>
+-->
+
+    <script>
+        var _url = "//telegraf.com.ua/wp-content/themes/news_ru";
+    </script>
+
+       <!-- google analytics-->
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33689478-1']);
+        _gaq.push(['_setDomainName', '.telegraf.com.ua']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+        (function (tos) {
+            window.setTimeout(function () {
+                tos = (function (t) {
+                    return t[0] == 50 ? (parseInt(t[1]) + 1) + ':00' : (t[1] || '0') + ':' + (parseInt(t[0]) + 10);
+                })(tos.split(':').reverse());
+                window.pageTracker ? pageTracker._trackEvent('Time', 'Log', tos) : _gaq.push(['_trackEvent', 'Time', 'Log', tos]);
+            }, 20000);
+        })('00');
+    </script>
+
+
+    
+
+    <meta name="application-name" content="Telegraf.com.ua"/>
+
+
+    <meta name="referrer" content="unsafe-url">
+
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Organization",
+            "name" : "Телеграф",
+            "url" : "https://telegraf.com.ua/",
+            "logo": "https://telegraf.com.ua/i/touch-icon-iphone-114.png",
+            "foundingDate": "2012",
+            "sameAs" : [
+                "https://www.facebook.com/telegraf.com.ua",
+                "https://twitter.com/telegrafcomua",
+                "https://t.me/telegraf_com_ua"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://telegraf.com.ua/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://telegraf.com.ua/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+    <style>
+        .right_links .tv-prog a{
+            text-indent: 0;
+            background: none;
+            color: #d6d6d6;
+            width: 28px;
+            overflow: hidden;
+            display: block;
+            height: 20px;
+            text-align: center;
+            opacity: .7;
+            line-height: 21px;
+        }
+        .wrapper .main_title h1 {
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 38px;
+            padding-left: 63px;
+            background: url(https://telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/logo-main-h.png) no-repeat 18px 4px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: 21px;
+            line-height: 38px;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 0;
+        }
+        .block-top-main{
+            overflow: hidden;
+            margin-bottom: 0;
+            height: 38px;
+        }
+        .block-top-main img{
+            display: block;
+        }
+        .block-top-main a{
+            display: inline-block;
+            margin-right: 5px;
+            width: 300px;
+            text-align: center;
+            text-decoration: none;
+            height: 34px;
+            line-height: 38px;
+            color: #FFFFFF;
+            background: #3d3d3d;
+            font-size: 18px;
+            border-bottom: 4px solid #b00000;
+        }
+        .block-top-main a:hover{
+            border-bottom: 4px solid #3d3d3d;
+        }
+        /** banner fix */
+        .popup-fixed{
+            display: none;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            overflow: visible;
+            transform: translateZ(0);
+
+            position: fixed;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 11;
+            max-height: 100px;
+            box-sizing: border-box;
+            opacity: 1;
+            background-image: none;
+            background-color: #fff;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+            margin-bottom: 0;
+        }
+        .popup-fixed_top{
+            display: block;
+            width: 100%;
+            background: #fff;
+            height: 4px;
+            max-height: 5px;
+            z-index: 12;
+        }
+        .popup-fixed_content{
+            width: 970px;
+            height: 90px;
+            display: block;
+        }
+        .popup-fixed__btn{
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            top: -28px;
+            right: 0;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='13' viewBox='341 8 13 13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%234F4F4F' d='M354 9.31L352.69 8l-5.19 5.19L342.31 8 341 9.31l5.19 5.19-5.19 5.19 1.31 1.31 5.19-5.19 5.19 5.19 1.31-1.31-5.19-5.19z' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-size: 13px 13px;
+            background-position: 9px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 12px 0 0 0;
+            cursor: pointer;
+        }
+        .popup-fixed__btn:before {
+            position: absolute;
+            content: "";
+            top: -20px;
+            right: 0;
+            left: -20px;
+            bottom: 0;
+        }
+        /** banner fix */
+    </style>
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "3w7v78sozw");
+    </script>
+
+    <meta name="95296f4d73a7771266b3ad9ab6807ea2" content="">
+    <script data-ad-client="ca-pub-1012715390748858" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body >
+
+<script>
+    jQuery(function (){
+        jQuery('#insert-mob-footer').load(_url+'/ajax/ajax-mob-footer.php');
+    });
+</script>
+
+
+
+<div id="header-desk" class="header-desktop home-cat-main">
+
+    <div class="top">
+
+                        <p class="page_title"><strong></strong></p>
+        <div class="logo">
+            <a href="/" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'logo'])" title="Новости Украины и мира">
+                                    <h1>ТЕЛЕГРАФ</h1>
+                            </a>
+            <strong>Новости Украины и мира</strong>
+        </div>
+
+        <div class="h_center">
+
+            <div class="h_right">
+                <div class="soc_links">
+                    <a class="fb" href="https://www.facebook.com/telegraf.com.ua" target="_blank" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'facebook'])">Телеграф в Facebook</a>
+                    <a class="tw" href="https://twitter.com/telegrafcomua" target="_blank" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'twitter'])">Телеграф в Twitter</a>
+                    <a class="tl" href="https://t.me/telegraf_com_ua" target="_blank" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'telegram'])">Телеграф в Телеграм</a>
+                    <a class="rss" href="https://telegraf.com.ua/yandex-feed/" target="_blank" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'rss'])">Телеграф RSS</a>
+                </div>
+                <div class="soc-app">
+                    <a href="https://telegraf.com.ua/app/">Скачать</a>
+
+
+                    <a class="icon-ios" href="https://itunes.apple.com/app/telegraf-com-ua/id705915891" target="_blank" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'app_store'])">App Store</a>
+                    <a class="icon-android" href="https://play.google.com/store/apps/details?id=ua.com.Telegraf" target="_blank" onclick="_gaq.push(['_trackEvent', 'header', 'click', 'google play'])">Play Google Market</a>
+                </div>
+            </div>
+
+            <div class="links">
+                Понедельник, 08.03.2021 <span class="h_mid_line">|</span>
+                <!-- <a href="https://telegraf.com.ua/app" target="_blank" rel="nofollow" class="l_1">мобильное приложение</a> | --><span class="l_3">
+                        <span id="ligaWeather"><a href="https://sinoptik.ua/погода-киев" target="_blank" rel="nofollow">Погода в Киеве</a></span>
+                    <script async type="text/javascript" src="https://informers.sinoptik.ua/liga.php?v3"></script>
+                        </span>
+
+            </div>
+
+            <div>
+            </div>
+
+        </div>
+        
+    </div>
+
+        <div class="sub_header_menu">
+        <div class="sub_header_menu_block">
+
+
+                    </div>
+    </div>
+    <div id="navigation">
+        <div id="layerOne">
+            <div class="layerOne_block">
+                <ul id="root">
+                    <li  class="navLink highlight" id="activeTab" >
+                        <a href="/" class="mainNav" ><span>Главная</span></a>
+                                                    <ul class="level2 subStay sub_main">
+                                <li ><a href="https://telegraf.com.ua/nauka/" >Наука</a></li>
+                                <li ><a href="https://telegraf.com.ua/tehnologii/" >Технологии</a></li>
+                                <li ><a href="https://telegraf.com.ua/puteshestviya/" >Путешествия</a></li>
+                                <li ><a href="https://telegraf.com.ua/ekologiya/" >Экология</a></li>
+                                <li ><a href="https://telegraf.com.ua/goroskop/" >Гороскоп</a></li>
+                                <li ><a href="https://telegraf.com.ua/anekdots/" >Анекдоты</a></li>
+                            </ul>
+                                            </li>
+                    <li
+                                                    class="navLink"
+                                                >
+                        <a href="https://telegraf.com.ua/ukraina/" class="mainNav" ><span>Украина</span></a>
+                                            </li>
+                    <li
+                                                    class="navLink"
+                                                >
+                        <a href="https://telegraf.com.ua/biznes/" class="mainNav" ><span>Бизнес</span></a>
+                                            </li>
+                    <li
+                                                    class="navLink"
+                                                >
+                        <a href="https://telegraf.com.ua/mir/" class="mainNav" ><span>Мир</span></a>
+                                            </li>
+                    <li
+                                                    class="navLink"
+                                                >
+                        <a href="https://telegraf.com.ua/sport-cat/" class="mainNav" ><span>Спорт</span></a>
+                                            </li>
+                    <li
+                                                    class="navLink"
+                                                >
+                        <a href="https://telegraf.com.ua/kultura/" class="mainNav" ><span>Культура</span></a>
+                                            </li>
+                    <li
+                                                    class="navLink"
+                                                >
+                        <a href="https://telegraf.com.ua/zhizn/" class="mainNav" ><span>Жизнь</span></a>
+                                            </li>
+                                        
+                    <li>
+                        <div id="all-cat">
+
+                            <div class="show-all-cat">
+                                <div id="insert-all-cat"></div>
+                                <script>
+                                    jQuery(function (){
+                                        jQuery('#insert-all-cat').load(_url+'/new_theme/ajax/ajax-all-cat.php');
+                                    });
+                                </script>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right_links">
+                    <li class="t_all-cat">
+                        <a href="https://telegraf.com.ua/kurs-valute/">Курс Валют</a>
+                    </li>
+                    <li class="t-photogal"><a href="https://telegraf.com.ua/control/photogallery/">Телеграф Фото</a></li>
+                    <li class="videogal"><a href="https://telegraf.com.ua/control/video/">Телеграф Видео</a></li>
+                    <li class="tv-prog"><a href="https://telegraf.com.ua/ukr/">УКР</a></li>
+                </ul>
+                <div id="searchInMenu">
+                    <form role="search" method="get" id="searchform" action="https://telegraf.com.ua/" >
+                        <input style="width: 160px;" type="text" value="" name="s" id="s" /><input type="submit" id="searchsubmit" value="" /></form>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-shadow"></div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div id="mobile-content-show" class="ui-mobile ui-mobile-viewport ui-overlay-a"><div data-role="page" id="t-page" data-url="t-page" tabindex="0" class="ui-page ui-page-theme-a ui-page-header-fixed ui-page-active" style="padding-top: 41px;"><div data-role="panel" id="menu-telegraf" data-display="overlay" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-animate"></div>
+        <script>
+            $('#menu-telegraf').load('//telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/ajax/ajax-menu.php');
+        </script>
+                    <div data-role="header" data-position="fixed" id="header" role="banner" class="ui-header ui-bar-inherit ui-header-fixed slidedown">
+                <a href="#menu-telegraf" class="ui-btn-left ui-btn ui-icon-my-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button"></a><span class="ui-title"><a data-ajax="false" href="/" class="ui-link"><img src="https://telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/images/LOGO2.png" alt="Телеграф" width="164" height="27"></a></span><a href="#" class="ui-btn-right ui-btn ui-icon-my-refresh ui-btn-icon-notext ui-corner-all" id="reload-page" data-role="button" role="button"></a>
+            </div>
+                <div class="ui-content"><div id="ajax-content" class="loading"></div></div>
+                        <div data-role="header" id="footer" role="banner" class="ui-header ui-bar-inherit"><div class="footer-social"><a href="#menu-telegraf" class="ui-link"><img src="https://telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/images/menu5.png" alt="Меню" width="40" height="40"></a><a href="#" id="top-up" class="ui-link"><img src="https://telegraf.com.ua/wp-content/themes/news_ru/new_theme/mob/images/up5.png" alt="Вверх" width="40" height="40"></a></div><div class="footer-bottom">www.telegraf.com.ua</div></div>
+                </div></div>
+<div id="mainWrapper">
+                                                                                        <div class="wrapper">
+                                                                                        
+
+                                                                                        <div class="footerTitleTop">Вверх</div><div class="inner-mobile-header"><div class="outer-mobile-header"><div id="mobile-menu"></div><a href="/"><img width="194" height="27" src="//telegraf.com.ua/wp-content/themes/news_ru/images/mlogo-new-mob.png" alt="Мобильная версия" /></a></div></div>
+<script>
+    jQuery(function(){
+
+        /* var mob_content = jQuery('#mobile_content');
+
+         var d= new Date();
+         for(var i=0;i<jsPosts.length;i++){
+         var item = jQuery('<div class="item"><a class="img"><img alt="" width="388" height="206"/></a><a class="n_caption"></a><div class="date"></div></div>');
+         item.find('a.img').attr('href',jsPosts[i].guid);
+         item.find('a.img img').attr('src',jsPosts[i].guid_thumb);
+         item.find('a.img img').attr('alt',jsPosts[i].post_title);
+         item.find('a.n_caption').attr('href',jsPosts[i].guid).html(jsPosts[i].post_title);
+         d.setTime(Date.parse(jsPosts[i].post_date));
+         item.find('div.date').html(leadZero(d.getHours(),2)+':'+leadZero(d.getMinutes(),2)+' '+leadZero(d.getDate(),2)+'.'+leadZero((d.getMonth()+1),2)+'.'+d.getFullYear());
+         mob_content.append(item);
+         }
+
+
+         jQuery('#mobile-menu').live('click', function(){
+         //jQuery('#mainWrapper .wrapper').css('margin-left','250px');
+         })
+         */
+
+    });
+</script>
+    <div class="block-top-main">
+        <a href="https://telegraf.com.ua/tag/covid-19/">
+            COVID-19: КОРОНАВИРУС
+        </a>
+    </div>
+
+<div class="big-news-2">
+    <div class="big-news-top">
+        <div class="big-news-top-left">
+            <div class="big-news-top-block" id="big-news-block">
+                <div id="big-news-block-left" class="big-news-top-block-btn"></div>
+                <div id="big-news-block-right" class="big-news-top-block-btn"></div>
+                    <a href="https://telegraf.com.ua/ukraina/politika/5616984-bayden-obvalit-reyting-zelenskogo-kuda-i-kak-peretekayut-simpatii-ukraintsev.html" class="item style1">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Байден обвалит рейтинг Зеленского: куда и как перетекают симпатии украинцев" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/foto.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Байден обвалит рейтинг Зеленского: куда и как перетекают симпатии украинцев                </span>
+                </span>
+                </span>
+    </a>
+        <a href="https://telegraf.com.ua/ekologiya/5616652-chelovechestvo-mozhet-ostatsya-bez-shokolada-ozvuchenyi-sroki.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Человечество может остаться без шоколада: озвучены сроки" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/shokolad.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Человечество может остаться без шоколада: озвучены сроки                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5617027-o-karantine-zdes-nikto-ne-slyishal-poyavilis-foto-azhiotazha-v-bukovele.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="О карантине здесь никто не слышал? Появились фото ажиотажа в Буковеле" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/114.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        О карантине здесь никто не слышал? Появились фото ажиотажа в Буковеле                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/rossiya-i-sng/5616911-sdavayte-byivshih-v-armiyu-v-rossii-stranno-pozdravili-zhenshhin-s-8-marta.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+                        <span class="block-video-icon"></span>        </div>
+            <img  alt="Сдавайте бывших в армию: в России странно поздравили женщин с 8 марта" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/RF_voenkomat.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Сдавайте бывших в армию: в России странно поздравили женщин с 8 марта                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/mir/blizhniy-vostok/5616960-izrail-otkryivaet-granitsyi-dlya-inostrantsev-ozvuchenyi-novyie-pravila-vezda.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Израиль открывает границы для иностранцев: озвучены новые правила въезда" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/3335.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Израиль открывает границы для иностранцев: озвучены новые правила въезда                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616954-avtoledi-na-mazda-protaranila-neskolko-avto-v-tsente-kieva-i-ne-uvidela-v-etom-problemyi-video.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+                        <span class="block-video-icon"></span>        </div>
+            <img  alt="Автоледи на Mazda протаранила несколько авто в центе Киева и не увидела в этом проблемы (видео)" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/28.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Автоледи на Mazda протаранила несколько авто в центе Киева и не увидела в этом проблемы (видео)                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/pozdravleniya/5616725-krasivyie-pozdravleniya-s-8-marta-otkryitki-i-kartinki.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="Красивые поздравления с 8 Марта: открытки и картинки" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/Frame-4.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Красивые поздравления с 8 Марта: открытки и картинки                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616622-8-marta-i-maslenitsa-narodnyie-primetyi-i-zapretyi.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="8 Марта и Масленица: народные приметы и запреты" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/MyCollages11.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        8 Марта и Масленица: народные приметы и запреты                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616993-v-kieve-v-chastnom-sektore-gorela-banya-est-pogibshie-foto.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="В Киеве в частном секторе горела баня: есть погибшие (фото)" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/3336.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        В Киеве в частном секторе горела баня: есть погибшие (фото)                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/recepty/5617013-maslenichnaya-nedelya-2021-retseptyi-blinov-s-nachinkoy.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="Масленичная неделя 2021: рецепты блинов с начинкой" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/pexels-photo-4966607.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Масленичная неделя 2021: рецепты блинов с начинкой                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/rossiya-i-sng/5617000-sovsem-svihnulsya-kiselev-v-efire-vestey-neskolko-minut-rassuzhdal-o-grudi-zelenskogo.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>            <span class="block-video-icon"></span>        </div>
+            <img  alt="&quot;Совсем свихнулся&quot;: Киселев в эфире &quot;Вестей&quot; несколько минут рассуждал о груди Зеленского" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/131.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        "Совсем свихнулся": Киселев в эфире "Вестей" несколько минут рассуждал о груди Зеленского                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/kultura/muzyika/5616938-golos-krayini-11-kto-budet-borotsya-za-pobedu-v-komande-olega-vinnika-video.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>            <span class="block-video-icon"></span>        </div>
+            <img  alt="&quot;Голос країни-11&quot;: кто будет бороться за победу в команде Олега Винника (видео)" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/158210844_260823489000936_8693233398417731345_n.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        "Голос країни-11": кто будет бороться за победу в команде Олега Винника (видео)                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/zhizn/zhurnal/5616903-megan-markl-obvinila-korolevskuyu-semyu-v-rasizme-priznalas-chto-dumala-o-samoubiystve-i-nazvala-pol-budushhego-rebenka.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="Меган Маркл обвинила королевскую семью в расизме, призналась, что думала о самоубийстве и назвала пол будущего ребенка" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/158438590_137395461603068_8159629844536061967_n1.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Меган Маркл обвинила королевскую семью в расизме, призналась, что думала о самоубийстве и назвала пол будущего ребенка                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/pozdravleniya/5616907-pozdravleniya-s-maslenitsey-krasivyie-otkryitki-i-dushevnyie-pozdravleniya-v-stihah-i-proze.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="Поздравления с Масленицей: красивые открытки и душевные поздравления в стихах и прозе" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/Frame-41.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Поздравления с Масленицей: красивые открытки и душевные поздравления в стихах и прозе                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/anekdots/5616985-ulyibka-do-ushey-anekdotyi-na-8-marta.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="Улыбка до ушей: анекдоты на 8 Марта" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/anekdot15.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Улыбка до ушей: анекдоты на 8 Марта                </span>
+                </span>
+                </span>
+        </a>
+            <a href="https://telegraf.com.ua/kultura/muzyika/5616842-luchshaya-podruga-detstva-dorofeevoy-i-molodoy-rok-muzyikant-kak-proshel-posledniy-den-slepyih-proslushivaniy-na-shou-golos-krayini-foto-video.html" class="item">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>            <span class="block-video-icon"></span>        </div>
+            <img  alt="Лучшая подруга детства Дорофеевой и молодой рок-музыкант: как прошел последний день &quot;слепых прослушиваний&quot; на шоу &quot;Голос країни&quot; (фото, видео)" width="800" height="400" src="https://telegraf.com.ua/files/2021/03/157076363_424442845325585_3062362102270324748_n.jpg" />
+        </div>
+        <span class="title">
+        <span class="title-bg">
+        <span class="title-select">
+        Лучшая подруга детства Дорофеевой и молодой рок-музыкант: как прошел последний день "слепых прослушиваний" на шоу "Голос країни" (фото, видео)                </span>
+                </span>
+                </span>
+        </a>
+                </div>
+            <ul class="big-news-top-nav" id="big-news-nav"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li>
+                <div class="last-nav-big-news"><a href="https://telegraf.com.ua/date/2021/3/8">все новости</a></div>
+            </ul>
+            <script>
+                jQuery(function(){
+                    __index = 0;
+                    jQuery('#big-news-block a:eq('+__index+')').addClass('show');
+                    jQuery('#big-news-nav li:eq('+__index+')').addClass('active');
+                    jQuery('#big-news-nav li').hover(function(){
+                        __index = jQuery(this).index();
+                        jQuery('#big-news-nav li').removeClass('active');
+                        jQuery('#big-news-nav li:eq('+__index+')').addClass('active');
+                        jQuery('#big-news-block a').removeClass('show');
+                        jQuery('#big-news-block a:eq('+__index+')').addClass('show');
+
+                    })
+                    jQuery('#big-news-block-right').live('click', function(){
+                        __index = jQuery('#big-news-nav li.active').index();
+                        __index = __index + 1;
+                        if (__index > 15)
+                            __index = 0;
+                        //console.log(__index);
+                        jQuery('#big-news-nav li').removeClass('active');
+                        jQuery('#big-news-nav li:eq('+__index+')').addClass('active');
+                        jQuery('#big-news-block a').removeClass('show');
+                        jQuery('#big-news-block a:eq('+__index+')').addClass('show');
+                    })
+                    jQuery('#big-news-block-left').live('click', function(){
+                        __index = jQuery('#big-news-nav li.active').index();
+                        __index = __index - 1;
+                        if (__index < 0)
+                            __index = 15;
+                        //console.log(__index);
+                        jQuery('#big-news-nav li').removeClass('active');
+                        jQuery('#big-news-nav li:eq('+__index+')').addClass('active');
+                        jQuery('#big-news-block a').removeClass('show');
+                        jQuery('#big-news-block a:eq('+__index+')').addClass('show');
+                    })
+                });
+            </script>
+            <div class="top_news" style="margin-top: 0px;">
+                            </div>
+        </div>
+        <div class="big-news-top-right">
+                    <a href="https://telegraf.com.ua/mir/europa/5616943-smertelnoe-dtp-s-ukraintsami-v-polshe-stalo-izvestno-kak-mogut-nakazat-voditelya.html" class="item top_news">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Смертельное ДТП с украинцами в Польше: стало известно, как могут наказать водителя - миниатюра" width="145" height="91" src="https://telegraf.com.ua/files/2021/03/avariya-188x118.jpg" />
+        </div>
+        <span class="title">Смертельное ДТП с украинцами в Польше: стало известно, как могут наказать водителя</span>
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616948-v-zakon-ob-otmene-perevoda-chasov-vnesut-izmenenie-naschet-nachala-rabochego-dnya.html" class="item top_news">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="В закон об отмене перевода часов внесут изменение насчет начала рабочего дня - миниатюра" width="145" height="91" src="https://telegraf.com.ua/files/2021/03/chasyi1-188x118.jpg" />
+        </div>
+        <span class="title">В закон об отмене перевода часов внесут изменение насчет начала рабочего дня</span>
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616942-v-ukraine-vyirastut-tsenyi-na-myaso-skolko-pridetsya-platit-za-svininu-i-govyadinu.html" class="item top_news">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="В Украине вырастут цены на мясо: сколько придется платить за свинину и говядину - миниатюра" width="145" height="91" src="https://telegraf.com.ua/files/2021/03/113-188x118.jpg" />
+        </div>
+        <span class="title">В Украине вырастут цены на мясо: сколько придется платить за свинину и говядину</span>
+        </a>
+            <a href="https://telegraf.com.ua/recepty/5615046-luchshiy-podarok-na-8-marta-prostoy-retsept-torta-kotoryiy-udivit-lyubimuyu-zhenshhinu.html" class="item top_news">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Лучший подарок на 8 марта: простой рецепт торта, который удивит любимую женщину - миниатюра" width="145" height="91" src="https://telegraf.com.ua/files/2021/03/maxresdefault-188x118.jpg" />
+        </div>
+        <span class="title">Лучший подарок на 8 марта: простой рецепт торта, который удивит любимую женщину</span>
+        </a>
+            </div>
+    </div>
+
+</div>
+<div class="top_news under-big-news">
+            <a href="https://telegraf.com.ua/ukraina/politika/5617026-mendel-otvetila-po-povodu-vvedeniya-sanktsiy-protiv-kolomoyskogo-v-ukraine.html" class="item ">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Мендель ответила по поводу введения санкций против Коломойского в Украине - миниатюра" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/Igor-Kolomoyskiy1-294x184.jpg" />
+
+
+
+        </div>
+        <span class="title">Мендель ответила по поводу введения санкций против Коломойского в Украине</span>
+
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616685-myi-samyie-bogataya-i-samaya-nishhaya-strana-volonter-sravnila-zhizn-v-ukraine-i-polshe.html" class="item ">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="Мы самая богатая и самая нищая страна: волонтер сравнила жизнь в Украине и Польше - миниатюра" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/picture2_kakie-produkty-i-_354375_p0-294x184.jpg" />
+
+
+
+        </div>
+        <span class="title">Мы самая богатая и самая нищая страна: волонтер сравнила жизнь в Украине и Польше</span>
+
+        </a>
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616924-koronavirus-porazil-eshhe-bolee-5-5-tyisyach-chelovek-v-ukraine-statistika-na-8-marta.html" class="item ">
+        <div class="img">
+        <div class="block-icons">
+                                </div>
+            <img  alt="Коронавирус поразил еще более 5,5 тысяч человек в Украине: статистика на 8 марта  - миниатюра" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/protective-suit-5716753_1280-294x184.jpg" />
+
+
+
+        </div>
+        <span class="title">Коронавирус поразил еще более 5,5 тысяч человек в Украине: статистика на 8 марта </span>
+
+        </a>
+            <a href="https://telegraf.com.ua/zhizn/zhurnal/5616995-vpervyie-ne-menya-a-ya-prosil-sdelat-selfi-pritula-rasskazal-o-trogatelnoy-vstreche-s-poklonnitsey.html" class="item item-last">
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+            <img  alt="&quot;Впервые не меня, а я просил сделать селфи&quot;: Притула рассказал о трогательной встрече с поклонницей - миниатюра" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/94104311_2624753271139069_2196307516265814794_n-294x184.jpg" />
+
+
+
+        </div>
+        <span class="title">"Впервые не меня, а я просил сделать селфи": Притула рассказал о трогательной встрече с поклонницей</span>
+
+        </a>
+    </div>
+
+
+
+<div class="clear"></div>
+<div id="mobile_content"></div>
+
+
+<div class="kurs-main-block-home">
+<div class="go-kurs-page">
+<a href="https://telegraf.com.ua/kurs-valute/">Курс валют</a>
+</div>
+
+    <div class="courses_line">
+        <div id="courses_carusel">
+            <div class="arr_left"></div>
+            <div class="arr_right"></div>
+            <div class="pause_btn"></div>
+            <ul class="container">
+            <li class="nal">
+                    <div class="caption">Среднебанковский </div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">USD</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">EUR</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">RUB</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nbu">
+                    <div class="caption">Курс валют НБУ</div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">USD</p>
+                                                        <div class="right_it ">
+                                <span class="value">0.0000</span>
+                                <span class="proc">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">EUR</p>
+                                                        <div class="right_it ">
+                                <span class="value">0.0000</span>
+                                <span class="proc">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">RUB</p>
+                                                        <div class="right_it ">
+                                <span class="value">0.0000</span>
+                                <span class="proc">0.0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nal">
+                    <div class="caption">Черный рынок</div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">USD</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">EUR</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">RUB</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nal">
+                    <div class="caption">Межбанк</div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">USD</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">EUR</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">RUB</p>
+                                                        <div class="right_it ">
+                                <div class="tit">Покупка</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                            <div class="right_it ">
+                                <div class="tit">Продажа</div>
+                                <span class="value">0.0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mir">
+                    <div class="caption">Мировые рынки</div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">US 30</p>
+                            <p class="cont"><span class="value">17966.07</span><span class="dif down">-178.00</span></p>
+                        </div>
+                        <div class="item">
+                            <p class="title">S&amp;P 500</p>
+                            <p class="cont"><span class="value">2108.58</span><span class="dif down">-15.62</span></p>
+                        </div>
+                        <div class="item">
+                            <p class="title">Russell 2000</p>
+                            <p class="cont"><span class="value">1285.15</span><span class="dif down">-10.90</span></p>
+                        </div>
+                        <div class="item">
+                            <p class="title">S&amp;P/TSX</p>
+                            <p class="cont"><span class="value">14947.51</span><span class="dif up">42.60</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mir">
+                    <div class="caption">Мировые рынки</div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">DAX</p>
+                            <p class="cont"><span class="value">11481.8</span><span class="dif up">10.54</span></p>
+                        </div>
+                        <div class="item">
+                            <p class="title">FTSE 100</p>
+                            <p class="cont"><span class="value">6830</span><span class="dif down">-14.80</span></p>
+                        </div>
+                        <div class="item">
+                            <p class="title">CAC 40</p>
+                            <p class="cont"><span class="value">5045.6</span><span class="dif up">0.25</span></p>
+                        </div>
+                        <div class="item">
+                            <p class="title">Euro Stoxx 50</p>
+                            <p class="cont"><span class="value">3614</span><span class="dif up">3.05</span></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="met">
+                    <div class="caption">Курс  металлов</div>
+                    <div class="content">
+                        <div class="item">
+                            <p class="title">серебро</p>
+                            <div class="right_it up">
+                                <span class="value">3570.45</span>
+                                <div class="tit">грн. за 10 унций</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">золото</p>
+                            <div class="right_it up">
+                                <span class="value">251752.72</span>
+                                <div class="tit">грн. за 10 унций</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">паладий</p>
+                            <div class="right_it up">
+                                <span class="value">162067.23</span>
+                                <div class="tit">грн. за 10 унций</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">платина</p>
+                            <div class="right_it up">
+                                <span class="value">239271.68</span>
+                                <div class="tit">грн. за 10 унций</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        jQuery(function(){
+            b_courses();
+        });
+    </script>
+    </div>
+
+<div class="midlle-big-reklama">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- tefegraf_D_home -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:970px;height:250px"
+         data-ad-client="ca-pub-1012715390748858"
+         data-ad-slot="3283050604"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="main_title">
+    <h1>Новости Украины за последний час</h1>
+</div>
+<div class="clear"></div>
+<div class="right_col">
+
+
+
+<div class="main_title_right">
+    <h2>Новости сегодня</h2>
+</div>
+
+<div id="news_line">
+    <div class="scrollbar-macosx">
+            <div class="item">
+        <div class="time">
+            13:42            <span>Регионы</span>
+            <span class="photo"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5617027-o-karantine-zdes-nikto-ne-slyishal-poyavilis-foto-azhiotazha-v-bukovele.html">
+                О карантине здесь никто не слышал? Появились фото ажиотажа в Буковеле            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            13:39            <span>Политика</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/politika/5617026-mendel-otvetila-po-povodu-vvedeniya-sanktsiy-protiv-kolomoyskogo-v-ukraine.html">
+                Мендель ответила по поводу введения санкций против Коломойского в Украине            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:59            <span>Регионы</span>
+            <span class="video"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5617021-kislorodnyih-ballonov-uzhe-ne-hvataet-v-zakarpate-zagovorili-o-kollapse-iz-za-koronavirusa.html">
+                Кислородных баллонов уже не хватает: в Закарпатье заговорили о коллапсе из-за коронавируса            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:56            <span> </span>
+            <span class="photo"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/recepty/5617013-maslenichnaya-nedelya-2021-retseptyi-blinov-s-nachinkoy.html">
+                Масленичная неделя 2021: рецепты блинов с начинкой            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:56            <span>Регионы</span>
+            <span class="video"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5617011-v-kieve-i-odesse-obrazovalis-ogromnyie-ocheredi-za-tsvetami-8-marta-video.html">
+                В Киеве и Одессе образовались огромные очереди за цветами 8 марта (видео)            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:38            <span>Политика</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/politika/5617015-silnyie-storonyi-politika-oksanyi-marchenko-chto-govorit-ee-psihotip-v-sotsionike.html">
+                Сильные стороны политика – Оксаны Марченко: Что говорит ее психотип в соционике            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:30            <span>Регионы</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5617003-lezhala-na-zemle-litsom-vniz-v-kieve-v-parke-nashli-mertvoy-zhenshhinu-foto.html">
+                Лежала на земле лицом вниз: в Киеве в парке нашли мертвой женщину (фото)            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:14            <span>Регионы</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5616997-na-lvovshhine-marshrutchik-obidel-doch-veterana-ato-eto-uzhe-ne-pervyiy-takoy-sluchay-video.html">
+                На Львовщине маршрутчик обидел дочь ветерана АТО: это уже не первый такой случай (видео)            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            12:04            <span>Россия и СНГ</span>
+            <span class="photo"></span><span class="video"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/rossiya-i-sng/5617000-sovsem-svihnulsya-kiselev-v-efire-vestey-neskolko-minut-rassuzhdal-o-grudi-zelenskogo.html">
+                "Совсем свихнулся": Киселев в эфире "Вестей" несколько минут рассуждал о груди Зеленского            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            11:57            <span>Журнал</span>
+            <span class="photo"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/zhizn/zhurnal/5616995-vpervyie-ne-menya-a-ya-prosil-sdelat-selfi-pritula-rasskazal-o-trogatelnoy-vstreche-s-poklonnitsey.html">
+                "Впервые не меня, а я просил сделать селфи": Притула рассказал о трогательной встрече с поклонницей            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            11:39            <span>Регионы</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5616993-v-kieve-v-chastnom-sektore-gorela-banya-est-pogibshie-foto.html">
+                В Киеве в частном секторе горела баня: есть погибшие (фото)            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            11:11            <span>Анекдоты</span>
+            <span class="photo"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/anekdots/5616985-ulyibka-do-ushey-anekdotyi-na-8-marta.html">
+                Улыбка до ушей: анекдоты на 8 Марта            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            11:11            <span>Политика</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/politika/5616984-bayden-obvalit-reyting-zelenskogo-kuda-i-kak-peretekayut-simpatii-ukraintsev.html">
+                Байден обвалит рейтинг Зеленского: куда и как перетекают симпатии украинцев            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            11:01            <span>Россия и СНГ</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/rossiya-i-sng/5616958-v-abhazii-zaderzhali-geroya-dnr-s-rossiyskim-pasportom-v-seti-ukazali-na-ego-svyaz-s-surkovyim.html">
+                В Абхазии задержали "героя ДНР" с российским паспортом: в сети указали на его связь с Сурковым            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            10:56            <span>Курьезы</span>
+            <span class="photo"></span><span class="video"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/kurezy/5616952-s-8-marta-smeshnyie-kartinki-i-video-na-prazdnik.html">
+                С 8 Марта! Смешные картинки и видео на праздник            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            10:51            <span>Ближний Восток</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/mir/blizhniy-vostok/5616960-izrail-otkryivaet-granitsyi-dlya-inostrantsev-ozvuchenyi-novyie-pravila-vezda.html">
+                Израиль открывает границы для иностранцев: озвучены новые правила въезда            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            10:17            <span>Регионы</span>
+            <span class="video"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/mestnyiy/5616954-avtoledi-na-mazda-protaranila-neskolko-avto-v-tsente-kieva-i-ne-uvidela-v-etom-problemyi-video.html">
+                Автоледи на Mazda протаранила несколько авто в центе Киева и не увидела в этом проблемы (видео)            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            10:17            <span>Общество</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/ukraina/obshhestvo/5616948-v-zakon-ob-otmene-perevoda-chasov-vnesut-izmenenie-naschet-nachala-rabochego-dnya.html">
+                В закон об отмене перевода часов внесут изменение насчет начала рабочего дня            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            9:56            <span>Музыка</span>
+            <span class="photo"></span><span class="video"></span>        </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/kultura/muzyika/5616938-golos-krayini-11-kto-budet-borotsya-za-pobedu-v-komande-olega-vinnika-video.html">
+                "Голос країни-11": кто будет бороться за победу в команде Олега Винника (видео)            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="time">
+            9:28            <span>Европа</span>
+                    </div>
+        <div class="info">
+            <a class="n_title" href="https://telegraf.com.ua/mir/europa/5616943-smertelnoe-dtp-s-ukraintsami-v-polshe-stalo-izvestno-kak-mogut-nakazat-voditelya.html">
+                Смертельное ДТП с украинцами в Польше: стало известно, как могут наказать водителя            </a>
+        </div>
+    </div>
+    </div>
+</div>
+<a href="https://telegraf.com.ua/date/2021/3/8" class="read_all">смотреть все новости</a>
+
+
+<div class="clear"></div>
+
+
+
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2>Видео</h2></div>
+    <div class="screen">
+                <a href="https://telegraf.com.ua/mir/europa/5557178-ankaru-nakryila-peschanaya-burya-v-seti-poyavilos-vpechatlyayushhee-video-stihii.html" class="scr_item">
+            <div class="img">
+                <div class="video-btn"></div>
+                <img alt="Анкару накрыла песчаная буря: в сети появилось впечатляющее видео стихии" width="388" height="206" src="https://telegraf.com.ua/files/2020/09/ngsh2-567x309.jpg"/></div>
+            <div class="news_block">
+
+                <div class="title">
+                    <p>Анкару накрыла песчаная буря: в сети появилось впечатляющее видео стихии</p>
+
+                </div>
+                <div class="post_excerpt">
+                    После бури в город пришла сильнейшая гроза с градом.                </div>
+            </div>
+        </a>
+        </div>
+    <a href="https://telegraf.com.ua/ukraina/mestnyiy/5555842-tyi-ne-tyi-kogda-golodnyiy-v-mariupole-voditel-sela-postanovlenie-politsii-chtobyi-ne-platit-shtraf-video.html" class="under-link-block-main">Ты - не ты, когда голодный: В Мариуполе водитель съела постановление полиции, чтобы не платить штраф (Видео) </a>
+    <a href="https://telegraf.com.ua/mir/aziya/5555169-v-kitae-otkryili-samyiy-dlinnyiy-v-mire-podvesnoy-steklyannyiy-most-video.html" class="under-link-block-main">В Китае открыли самый длинный в мире подвесной стеклянный мост (Видео)</a>
+</div>
+
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2><a href="https://telegraf.com.ua/biznes/">Новости Бизнеса</a></h2></div>
+    <div class="screen">
+            <div  class="scr_item">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616471-donetskaya-oblast-ostalas-bez-tepla-ozvuchena-prichina.html" >
+            <div class="img">
+
+                <div class="block-icons">
+                                                        </div>
+                <img alt="Новости: Донецкая область осталась без тепла: озвучена причина " width="567" height="309" src="https://telegraf.com.ua/files/2021/03/heating-4518144_1920-567x309.jpg"/></div>
+            <div class="news_block">
+                <div class="title">
+                    <p>Донецкая область осталась без тепла: озвучена причина </p>
+                </div>
+                <div class="post_excerpt">
+                    Донецкая область задолжала полтора миллиарда за тепло.                 </div>
+            </div>
+
+        </a>
+    </div>
+        <a href="https://telegraf.com.ua/biznes/finansyi/5616165-nbu-povyisil-uchetnuyu-stavku-do-6-5-analitik-obyasnil-chto-eto-znachit-i-kak-v-ukraine-dela-s-valyutnyim-ryinkom.html" class="under-link-block-main">НБУ повысил учетную ставку до 6,5%: аналитик объяснил, что это значит и как в Украине дела с валютным рынком</a>
+        <a href="https://telegraf.com.ua/biznes/finansyi/5615955-indeksatsiya-pensiy-v-ukraine-1-marta-komu-i-skolko-pribavili.html" class="under-link-block-main">Индексация пенсий в Украине 1 марта: кому и сколько прибавили </a>
+            </div>
+
+</div>
+
+<div class="right_col_reklama">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- tefegraf_D_home_sidebar -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:336px;height:280px"
+         data-ad-client="ca-pub-1012715390748858"
+         data-ad-slot="7577518831"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+</div>
+
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2><a href="https://telegraf.com.ua/mir/">Новости Мира</a></h2></div>
+    <div class="screen">
+            <div class="scr_item">
+        <a href="https://telegraf.com.ua/mir/europa/5616728-studentka-ugadala-vse-chisla-v-loteree-no-ostalas-bez-krupnogo-vyiigryisha.html" >
+            <div class="img">
+                <div class="block-icons">
+                                                        </div>
+                <img alt="Новости: Студентка угадала все числа в лотерее, но осталась без крупного выигрыша" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/122611331_1329961490688557_310366235261744487_n-567x309.jpg"/></div>
+            <div class="news_block">
+                <div class="title">
+                    <p>Студентка угадала все числа в лотерее, но осталась без крупного выигрыша</p>
+
+                </div>
+                <div class="post_excerpt">
+                    Студенты забыли пополнить счет для автоматической покупки лотерейного билета и остались без джек-пота.                 </div>
+            </div>
+
+
+        </a>
+    </div>
+    </div>
+    <a href="https://telegraf.com.ua/mir/europa/5616891-tragediya-s-ukraintsami-v-polshe-postradavshie-rasskazali-chto-proishodilo-v-avtobuse-v-moment-avarii.html" class="under-link-block-main">Трагедия с украинцами в Польше: пострадавшие рассказали, что происходило в автобусе в момент аварии</a>
+    <a href="https://telegraf.com.ua/mir/europa/5616823-v-germanii-oskvernili-mogilu-banderyi-foto.html" class="under-link-block-main">В Германии осквернили могилу Бандеры (фото)</a>
+    </div>
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2><a href="https://telegraf.com.ua/sport-cat/">Новости Спорта</a></h2></div>
+    <div class="screen">
+            <div class="scr_item">
+        <a href="https://telegraf.com.ua/sport-cat/boks/5616747-ukrainskiy-halk-nokautiroval-sopernika-v-pervom-raunde-video.html" >
+            <div class="img">
+                <div class="block-icons">
+                                        <span class="block-video-icon"></span>                </div>
+                <img alt="Новости: Украинский &quot;Халк&quot; нокаутировал соперника в первом раунде (видео)" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/sheva-567x309.jpg"/></div>
+            <div class="news_block">
+                <div class="title">
+                    <p>Украинский "Халк" нокаутировал соперника в первом раунде (видео)</p>
+                </div>
+                <div class="post_excerpt">
+                    Игорь Шевадзуцкий нокаутировал Александра Нихайчика.                </div>
+            </div>
+
+
+
+        </a>
+    </div>
+    </div>
+    <a href="https://telegraf.com.ua/sport-cat/futbol/5616860-manchester-segodnya-krasnyiy-yunayted-razbil-v-gostyah-siti.html" class="under-link-block-main">Манчестер сегодня красный: Юнайтед разбил в гостях Сити </a>
+    <a href="https://telegraf.com.ua/sport-cat/futbol/5616856-zarya-unichtozhila-lvov-v-matche-upl-video.html" class="under-link-block-main">"Заря" уничтожила "Львов" в матче УПЛ (видео)</a>
+    </div>
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2>Видео</h2></div>
+
+    <div class="screen">
+                <a href="https://telegraf.com.ua/sport-cat/video-sport/video-football/5609738-dnepr-1-ingulets-video-onlayn-translyatsiya-matcha.html" class="scr_item">
+            <div class="img">
+                <div class="video-btn"></div>
+                <img alt="&quot;Днепр-1&quot; - &quot;Ингулец&quot;: видео онлайн-трансляция матча " width="388" height="206" src="https://telegraf.com.ua/files/2021/02/dnepr_1_inhulets-567x309.jpg"/></div>
+            <div class="news_block">
+
+                <div class="title">
+                    <p>"Днепр-1" - "Ингулец": видео онлайн-трансляция матча </p>
+
+                </div>
+                <div class="post_excerpt">
+                    Смотреть прямую видеотрансляцию матча 14-го тура УПЛ 2020/21 "Днепр-1" - "Ингулец".                </div>
+            </div>
+        </a>
+        </div>
+    <a href="https://telegraf.com.ua/sport-cat/video-sport/video-avtosport/5599939-kamaz-stolknulsya-s-vertoletom-na-ralli-dakar-video.html" class="under-link-block-main">"КАМАЗ" столкнулся с вертолетом на ралли "Дакар" (видео)</a>
+
+</div>
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2><a href="https://telegraf.com.ua/ukraina/">Новости Украины</a></h2></div>
+    <div class="screen">
+            <div class="scr_item">
+    <a href="https://telegraf.com.ua/ukraina/mestnyiy/5617011-v-kieve-i-odesse-obrazovalis-ogromnyie-ocheredi-za-tsvetami-8-marta-video.html" >
+        <div class="img">
+            <div class="block-icons">
+                                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: В Киеве и Одессе образовались огромные очереди за цветами 8 марта (видео)" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/tsvetyi_pokupka-567x309.jpg"/></div>
+
+        <div class="news_block">
+            <div class="title">
+                <p>В Киеве и Одессе образовались огромные очереди за цветами 8 марта (видео)</p>
+
+            </div>
+            <div class="post_excerpt">
+                В понедельник. 8 марта, в цветочных магазинах в разных городах Украины небывалый наплыв покупателей.            </div>
+        </div>
+
+
+    </a>
+
+        </div>
+
+            </div>
+    <a href="https://telegraf.com.ua/ukraina/politika/5617015-silnyie-storonyi-politika-oksanyi-marchenko-chto-govorit-ee-psihotip-v-sotsionike.html" class="under-link-block-main">Сильные стороны политика – Оксаны Марченко: Что говорит ее психотип в соционике</a>
+    <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616997-na-lvovshhine-marshrutchik-obidel-doch-veterana-ato-eto-uzhe-ne-pervyiy-takoy-sluchay-video.html" class="under-link-block-main">На Львовщине маршрутчик обидел дочь ветерана АТО: это уже не первый такой случай (видео)</a>
+</div>
+<div id="ch-o">
+    <!--[Cache: Creating cache for 08.03.2021 13:42:30....]-->
+
+
+    
+
+
+    <div class="tabs">
+        <div class="tb active">Читают</div>
+            </div>
+    <div class="items">
+        <ul class="list active">
+                            <li><a href="https://telegraf.com.ua/ukraina/mestnyiy/5616893-spasibo-vam-detki-provodnitsa-pokazala-chto-ostavili-posle-sebya-v-vagone-yunyie-gimnastyi-video.html">"Спасибо вам, детки": проводница показала, что оставили после себя в вагоне юные гимнасты (видео)</a></li>
+                            <li><a href="https://telegraf.com.ua/ukraina/obshhestvo/5616948-v-zakon-ob-otmene-perevoda-chasov-vnesut-izmenenie-naschet-nachala-rabochego-dnya.html">В закон об отмене перевода часов внесут изменение насчет начала рабочего дня</a></li>
+                            <li><a href="https://telegraf.com.ua/ekologiya/5616652-chelovechestvo-mozhet-ostatsya-bez-shokolada-ozvuchenyi-sroki.html">Человечество может остаться без шоколада: озвучены сроки</a></li>
+                            <li><a href="https://telegraf.com.ua/anekdots/5616985-ulyibka-do-ushey-anekdotyi-na-8-marta.html">Улыбка до ушей: анекдоты на 8 Марта</a></li>
+                            <li><a href="https://telegraf.com.ua/ukraina/obshhestvo/5616906-razgonyayut-zradu-v-genshtabe-otvetili-o-yakobyi-sozdanii-lgbt-podrazdeleniy.html">"Разгоняют зраду": в Генштабе ответили о якобы создании ЛГБТ-подразделений</a></li>
+            
+        </ul>
+            </div>
+
+
+
+
+
+
+    </div>
+
+
+
+<div class="soc_title">Telegraf</div>
+<div class="gallery socials_tab">
+    <div class="screen">
+        <div class="scr_item">
+            <div id="block-facebook-in">
+                <div class="fb-like-box" data-href="https://www.facebook.com/telegraf.com.ua" data-height="170" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+            </div>
+        </div>
+        <div class="scr_item">
+            <a rel="nofollow" id="follow-twitter-in" href="https://twitter.com/telegrafcomua" data-show-count="true" class="twitter-follow-button"  data-size="large" >Читать @telegrafcomua</a>
+        </div>
+        <div class="scr_item">
+            <ul id="list-rss"><li><a rel="nofollow" href="https://telegraf.com.ua/yandex-feed/">Последние новости</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/ukraina/feed/">Новости Украины</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/biznes/feed/">Новости Бизнеса</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/mir/feed/">Новости Мира</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/rossiya-i-sng/feed/">Новости Россия и СНГ</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/sport-cat/feed/">Новости Спорта</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/kultura/feed/">Новости Культуры</a></li>
+                <li><a rel="nofollow" href="https://telegraf.com.ua/zhizn/feed/">Новости Жизни</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="list">
+        <div class="list_item facebook"></div>
+        <div class="list_item twiter"></div>
+        <div class="list_item gplus"></div>
+        <div class="list_item rss"></div>
+    </div>
+</div>
+<div id="goroscope">
+<a href="https://telegraf.com.ua/goroskop/" target="_blank">
+    <div class="line">                
+        <span><img alt="Гороскоп знак зодиака Овен" width="47" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor1.png"  /><span>&nbsp;&nbsp;&nbsp;Овен</span></span>
+        <span><img alt="Гороскоп знак зодиака Телец" width="42" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor2.png"  /><span>Телец</span></span>
+        <span><img alt="Гороскоп знак зодиака Близнецы" width="60" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor3.png"  /><span>&nbsp;&nbsp;Близнецы</span></span>
+        <span><img alt="Гороскоп знак зодиака Рак" width="51" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor4.png"  /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Рак</span></span>
+        <span><img alt="Гороскоп знак зодиака Лев" width="42" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor5.png"  /><span>Лев</span></span>
+        <span><img alt="Гороскоп знак зодиака Дева" width="59" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor6.png"  /><span>&nbsp;&nbsp;Дева</span></span>
+    </div>
+    <div class="line line2">                
+        <span><img alt="Гороскоп знак зодиака Весы" width="44" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor7.png"  /><span>Весы</span></span>
+        <span><img alt="Гороскоп знак зодиака Скорпион" width="60" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor8.png"  /><span>Скорпион</span></span>
+        <span><img alt="Гороскоп знак зодиака Стрелец" width="51" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor9.png"  /><span>Стрелец</span></span>
+        <span><img alt="Гороскоп знак зодиака Козерог" width="49" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor10.png"  /><span>Козерог</span></span>
+        <span><img alt="Гороскоп знак зодиака Водолей" width="54" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor11.png"  /><span>Водолей</span></span>
+        <span><img alt="Гороскоп знак зодиака Рыбы" width="43" height="50" src="//telegraf.com.ua/wp-content/themes/news_ru/new_theme/images/single/goroskhop/gor12.png"  /><span>Рыбы</span></span>
+    </div>
+</a>
+</div><div class="gallery video_num_gal">
+    <div class="cat_link"><h2>Видео</h2></div>
+    <div class="screen">
+                <a href="https://telegraf.com.ua/kultura/muzyika/5561495-dzhennifer-lopes-prezentovala-dvoynoy-klip-na-pesni-pa-ti-i-lonely-video.html" class="scr_item">
+            <div class="img">
+                <div class="video-btn"></div>
+                <img alt="Дженнифер Лопес презентовала двойной клип на песни Pa Ti и Lonely (Видео)" width="388" height="206" src="https://telegraf.com.ua/files/2020/09/120044054_3807077199338028_8314880417372947785_n-567x309.jpg"/></div>
+            <div class="news_block">
+
+                <div class="title">
+                    <p>Дженнифер Лопес презентовала двойной клип на песни Pa Ti и Lonely (Видео)</p>
+
+                </div>
+                <div class="post_excerpt">
+                    Джей Ло и Малума презентовали клип.                </div>
+            </div>
+        </a>
+        </div>
+    <a href="https://telegraf.com.ua/kultura/muzyika/5559039-vmeste-s-chance-the-rapper-dzhastin-biber-vyipustil-novyiy-klip-video.html" class="under-link-block-main">Вместе с Chance The Rapper: Джастин Бибер выпустил новый клип (Видео)</a>
+
+</div>
+
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2>Авто</h2></div>
+    <div class="screen">
+            <div class="scr_item">
+        <a href="https://telegraf.com.ua/pozdravleniya/5616663-otkryitka-na-8-marta-podruge-zhene-lyubimoy.html" >
+            <div class="img">
+                <div class="block-icons">
+                    <span class="block-photo-icon"></span>                                    </div>
+                <img alt="Новости: Открытка на 8 Марта: подруге, жене, любимой" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/rus1-567x309.jpg"/></div>
+            <div class="news_block">
+                <div class="title">
+                    <p>Открытка на 8 Марта: подруге, жене, любимой</p>
+
+                </div>
+                <div class="post_excerpt">
+                    "Телеграф" подготовил самые красивые открытки с Международным женским днем - 8 Марта.                </div>
+            </div>
+
+        </a>
+    </div>
+    </div>
+        <a href="https://telegraf.com.ua/biznes/avtomobil/1578854-desyat-samyih-futuristichnyih-avtomobiley.html" class="under-link-block-main">Десять самых футуристичных автомобилей</a>
+
+</div>
+<div class="gallery video_num_gal">
+    <div class="cat_link"><h2>Новости Моды</h2></div>
+    <div class="screen">
+            <div class="scr_item">
+        <a href="https://telegraf.com.ua/goroskop/5616281-skorpionam-nelzya-davat-pustyih-obeshhaniy-a-kozerogam-ne-stoit-boyatsya-delat-oshibki-goroskop-na-7-marta.html" >
+            <div class="img">
+                <div class="block-icons">
+                    <span class="block-photo-icon"></span>                                    </div>
+                <img alt="Новости: Скорпионам нельзя давать пустых обещаний, а Козерогам не стоит бояться делать ошибки: гороскоп на 7 марта" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/45b35322a0ee38b714037c9c0e26c384-567x309.jpg"/></div>
+
+            <div class="news_block">
+                <div class="title">
+                    <p>Скорпионам нельзя давать пустых обещаний, а Козерогам не стоит бояться делать ошибки: гороскоп на 7 марта</p>
+
+                </div>
+                <div class="post_excerpt">
+                    "Телеграф" предлагает вам узнать, что готовит каждому знаку Зодиака воскресенье, 7 марта 2021 года.                </div>
+            </div>
+
+
+
+        </a>
+    </div>
+    </div>
+        <a href="https://telegraf.com.ua/zhizn/moda-zhizn/5614362-kategoricheskoe-net-v-garderobe-olya-freymut-podelilas-sovetami-dlya-baryishen.html" class="under-link-block-main">Категорическое "нет" в гардеробе: Оля Фреймут поделилась советами для барышень</a>
+
+</div>
+
+
+</div>
+<div class="M_left">
+
+<div class="left_col">
+    <div class="big-top-c big-top-c-first">
+        <div class="top">
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616770-v-odesse-muzhchinyi-razdelis-na-plyazhe-chtobyi-pozdravit-zhenshhin-s-8-marta-foto.html">В Одессе мужчины разделись на пляже, чтобы поздравить женщин с 8 Марта (фото)</a>
+        </div>
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616770-v-odesse-muzhchinyi-razdelis-na-plyazhe-chtobyi-pozdravit-zhenshhin-s-8-marta-foto.html" class="img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: В Одессе мужчины разделись на пляже, чтобы поздравить женщин с 8 Марта (фото)" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/Odessa_morzhi_foto-567x309.jpg" />
+        </a>
+                <div class="bottom">
+            <p>В Одессе члены клуба моржей на пляже разделись ради поздравления женщин с Международным женским днем.</p>
+            <div class="post-link">
+                <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616770-v-odesse-muzhchinyi-razdelis-na-plyazhe-chtobyi-pozdravit-zhenshhin-s-8-marta-foto.html">Читать полностью</a>
+            </div>
+        </div>
+    </div>
+    <div class="small-top">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616858-v-ukraine-sorvali-dzhekpot-v-33-mln-grn-v-seti-gadayut-kto-okazalsya-vezunchikom.html">
+
+        <div class="block-img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: В Украине сорвали джекпот в 33 млн грн: в сети гадают, кто оказался везунчиком" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/1008MainV142-294x184.jpg" />
+        </div>
+            <div class="info">
+                <span class="title">
+                    В Украине сорвали джекпот в 33 млн грн: в сети гадают, кто оказался везунчиком                </span>
+                <p>В Украине сорвали самый крупный джекпот в 33 миллиона гривен. 
+</p>
+            </div>
+        </a>
+
+    </div>
+    <div class="small-top">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616445-v-ukraine-mozhno-bez-ocheredi-poluchit-vaktsinu-ot-koronavirusa-no-malo-kto-ob-etom-znaet-detali.html">
+
+        <div class="block-img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: В Украине можно без очереди получить вакцину от коронавируса, но мало кто об этом знает: как так вышло" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/1008MainV100-294x184.jpg" />
+        </div>
+            <div class="info">
+<span class="title">
+            В Украине можно без очереди получить вакцину от коронавируса, но мало кто об этом знает: как так вышло        </span>
+                <p>В Украине можно получить вакцину от коронавируса вне очереди. 
+
+</p>
+            </div>
+        </a>
+
+    </div>
+    <div class="small-top small-top-last">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616800-arahamiyu-zametili-na-maldivah-skolko-stoit-otdyih-v-otele-gde-ostanovilsya-nardep-foto.html">
+
+        <div class="block-img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Арахамию заметили на Мальдивах: сколько стоит отдых в отеле, где остановился нардеп (фото)" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/148747660_186907636523505_1893846294625904401_n-294x184.jpg" />
+        </div>
+            <div class="info">
+<span class="title">
+            Арахамию заметили на Мальдивах: сколько стоит отдых в отеле, где остановился нардеп (фото)        </span>
+                <p>Арахамия улетел отдыхать на Мальдивы. </p>
+            </div>
+        </a>
+
+    </div>
+    <div class="big-top-c">
+        <div class="top">
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616794-stalo-izvestno-skolko-kiev-budet-v-oranzhevoy-zon-karantina.html">Стало известно, сколько Киев будет в "оранжевой" зон карантина</a>
+        </div>
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616794-stalo-izvestno-skolko-kiev-budet-v-oranzhevoy-zon-karantina.html" class="img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Стало известно, сколько Киев будет в &quot;оранжевой&quot; зон карантина" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/17-567x309.jpg" />
+        </a>
+                <div class="bottom">
+            <p>В Киеве усилят профилактику коронавируса среди молодежи.</p>
+            <div class="post-link">
+                <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616794-stalo-izvestno-skolko-kiev-budet-v-oranzhevoy-zon-karantina.html">Читать полностью</a>
+            </div>
+        </div>
+    </div>
+    <div class="small-top">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616682-potom-budut-nyit-pro-karateley-odin-iz-glavarey-dnr-priznalsya-v-obstrelah-na-donbasse.html">
+
+        <div class="block-img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: &quot;Потом будут ныть про &quot;карателей&quot;: один из главарей &quot;ДНР&quot; признался в обстрелах на Донбассе " width="294" height="184" src="https://telegraf.com.ua/files/2021/03/22227-294x184.jpg" />
+        </div>
+            <div class="info">
+                <span class="title">
+            "Потом будут ныть про "карателей": один из главарей "ДНР" признался в обстрелах на Донбассе         </span>
+                <p>Боевик выдал американские гаубицы за артиллерию российских оккупантов.</p>
+            </div>
+        </a>
+
+    </div>
+    <div class="small-top">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616777-vrach-iz-kieva-rasskazal-o-novoy-volne-koronavirusa-v-ukraine-i-obyasnil-otkuda-ona-vzyalas.html">
+
+        <div class="block-img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Врач из Киева рассказал о новой волне коронавируса в Украине и объяснил, откуда она взялась" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/mediki_koronavirus-294x184.jpg" />
+        </div>
+            <div class="info">
+                 <span class="title">
+            Врач из Киева рассказал о новой волне коронавируса в Украине и объяснил, откуда она взялась        </span>
+                <p>Последние тенденции и наблюдения показывают, что "спрятаться" от коронавируса или пересидеть его не получится, констатирует инфекционист Евгений Дубровский.</p>
+            </div>
+        </a>
+
+    </div>
+    <div class="small-top small-top-last">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616778-ubiystvo-politseyskoy-v-kieve-poyavilis-vazhnyie-dannyie-o-podozrevaemoy.html">
+
+        <div class="block-img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Убийство полицейской в Киеве: появились важные данные о подозреваемой" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/1008MainV131-294x184.jpg" />
+        </div>
+            <div class="info">
+                <span class="title">
+            Убийство полицейской в Киеве: появились важные данные о подозреваемой        </span>
+                <p>Подозреваемую в убийстве женщины-полицейской в Киеве задержали. </p>
+            </div>
+        </a>
+
+    </div>
+    <div class="big-top-c">
+        <div class="top">
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616706-lokomotiv-protaranil-avto-i-protyanul-ego-na-200-metrov-pod-vinnitsey-voditel-chudom-ostalsya-zhiv-foto.html">Локомотив протаранил авто и протянул его на 200 метров под Винницей: водитель чудом остался жив (фото)</a>
+        </div>
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616706-lokomotiv-protaranil-avto-i-protyanul-ego-na-200-metrov-pod-vinnitsey-voditel-chudom-ostalsya-zhiv-foto.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+            <img alt="Новости: Локомотив протаранил авто и протянул его на 200 метров под Винницей: водитель чудом остался жив (фото)" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/picture2_kakie-produkty-i-_354375_p01-567x309.jpg" />
+        </a>
+                <div class="bottom">
+            <p>Водитель поехал на запрещающий сигнал светофора.</p>
+            <div class="post-link">
+                <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616706-lokomotiv-protaranil-avto-i-protyanul-ego-na-200-metrov-pod-vinnitsey-voditel-chudom-ostalsya-zhiv-foto.html">Читать полностью</a>
+            </div>
+        </div>
+    </div>
+<div class="clear"></div>
+</div>
+<div class="center_col">
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/mir/europa/5616789-na-zapade-sravnili-voennyiy-potentsial-kitaya-i-rossii.html">
+            <div class="img">
+            <div class="block-icons">
+                                            </div>
+
+
+                <img alt="Новости: На Западе сравнили военный потенциал Китая и России" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/1008MainV132-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    На Западе сравнили военный потенциал Китая и России</span>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/kurezy/5616952-s-8-marta-smeshnyie-kartinki-i-video-na-prazdnik.html">
+            <div class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+
+
+                <img alt="Новости: С 8 Марта! Смешные картинки и видео на праздник" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/1519890263_1-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    С 8 Марта! Смешные картинки и видео на праздник</span>
+
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5617003-lezhala-na-zemle-litsom-vniz-v-kieve-v-parke-nashli-mertvoy-zhenshhinu-foto.html">
+            <div class="img">
+            <div class="block-icons">
+                                            </div>
+
+
+                <img alt="Новости: Лежала на земле лицом вниз: в Киеве в парке нашли мертвой женщину (фото)" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/imgonline-com-ua-Resize-xfWOukqSrLHDg-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    Лежала на земле лицом вниз: в Киеве в парке нашли мертвой женщину (фото)</span>
+
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/sport-cat/drugie-vidyi/5616830-v-rossii-10-letnie-hokkeistyi-ustroili-draku-stenka-na-stenku-video.html">
+            <div class="img">
+            <div class="block-icons">
+                                <span class="block-video-icon"></span>            </div>
+
+
+                <img alt="Новости: В России 10-летние хоккеисты устроили драку &quot;стенка на стенку&quot; (видео)" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/draka-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    В России 10-летние хоккеисты устроили драку "стенка на стенку" (видео)</span>
+
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616701-dtp-v-polshe-s-ukraintsami-otkryilis-dannyie-o-perevozchike.html">
+            <div class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+
+
+                <img alt="Новости: ДТП в Польше с украинцами: открылись данные о перевозчике" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/DTP_Polsha_PAP_2-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    ДТП в Польше с украинцами: открылись данные о перевозчике</span>
+
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/recepty/5616751-raznoobrazte-prazdnichnoe-menyu-neobyichnyie-retseptyi-blinov-na-maslenitsu.html">
+            <div class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+
+
+                <img alt="Новости: Разнообразьте праздничное меню: необычные рецепты блинов на Масленицу" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/pancakes-maple-syrup-sweet-407041-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    Разнообразьте праздничное меню: необычные рецепты блинов на Масленицу</span>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616766-na-odnogo-tsivilizovannogo-vosem-sharikovih-sovetnik-mera-hersona-oskandalilsya-zayavleniem.html">
+            <div class="img">
+            <div class="block-icons">
+                                            </div>
+
+
+                <img alt="Новости: На одного цивилизованного восемь &quot;шариковых&quot;: советник мэра Херсона оскандалился заявлением" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/15-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    На одного цивилизованного восемь "шариковых": советник мэра Херсона оскандалился заявлением</span>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616720-voditel-na-video-pokazal-vo-chto-prevratilos-koleso-posle-poezdki-po-trasse-kiev-cherkassyi.html">
+            <div class="img">
+            <div class="block-icons">
+                                <span class="block-video-icon"></span>            </div>
+
+
+                <img alt="Новости: Водитель на видео показал, во что превратилось колесо после поездки по трассе Киев-Черкассы" width="218" height="136" src="https://telegraf.com.ua/files/2021/03/picture2_kakie-produkty-i-_354375_p02-294x184.jpg" />
+
+            </div>
+            <div class="item-content-block">
+                <span class="capt">
+
+                    Водитель на видео показал, во что превратилось колесо после поездки по трассе Киев-Черкассы</span>
+
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+
+
+<div class="grey_block green">
+    <div class="t_line"></div>
+    <div class="left">
+            <div class="big_block">
+        <a href="https://telegraf.com.ua/sport-cat/drugie-vidyi/5615734-nove-mesto-2021-raspisanie-i-rezultatyi-gonok-kubka-mira-po-biatlonu.html" class="img">
+            <div class="block-icons">
+                                            </div>
+            <span class="block-img">
+            <img alt="Новости: Нове-Место-2021: результаты гонок Кубка мира по биатлону" width="567" height="309" src="https://telegraf.com.ua/files/2021/03/biarhlon455-567x309.jpg" />
+        </span>
+                        <div class="bottom">
+            <span class="title">Нове-Место-2021: результаты гонок Кубка мира по биатлону</span>
+                <p>Расписание и результаты гонок на 8-м этапе Кубка мира по биатлону в Нове-Место (Чехия).</p>
+                <div class="post-link">
+                    Читать полностью
+                </div>
+            </div>
+            <div class="c_line"></div>
+        </a>
+    </div>
+        <div class="block_line">
+                <div class="grey_duble_block">
+        <a href="https://telegraf.com.ua/sport-cat/futbol/5616878-kolos-posle-boya-s-dinamo-ne-sumel-spravitsya-s-ingultsom-video.html" class="img">
+            <div class="block-icons">
+                                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: &quot;Колос&quot; после &quot;боя&quot; с &quot;Динамо&quot; не сумел справиться с &quot;Ингульцом&quot; (видео)" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/ingulets-294x184.jpg" />
+        </a>
+        <div class="bottom">
+            <a href="https://telegraf.com.ua/sport-cat/futbol/5616878-kolos-posle-boya-s-dinamo-ne-sumel-spravitsya-s-ingultsom-video.html">"Колос" после "боя" с "Динамо" не сумел справиться с "Ингульцом" (видео)</a>
+            <p>"Колос" в 17-м туре УПЛ 2020/21 проводил выездной матч с "Ингульцом".</p>
+        </div>
+        <div class="info-block-bottom">
+            <div class="info-block-tag"><span></span> </div>
+            
+        </div>
+    </div>
+    <div class="grey_duble_block">
+        <a href="https://telegraf.com.ua/sport-cat/drugie-vidyi/5616803-rossiyskiy-podrazhatel-makgregora-udaril-nokautirovannogo-sopernika-posle-ostanovki-boya-video.html" class="img">
+            <div class="block-icons">
+                                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: Российский подражатель Макгрегора ударил нокаутированного соперника после остановки боя (видео)" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/arbi-294x184.jpg" />
+        </a>
+        <div class="bottom">
+            <a href="https://telegraf.com.ua/sport-cat/drugie-vidyi/5616803-rossiyskiy-podrazhatel-makgregora-udaril-nokautirovannogo-sopernika-posle-ostanovki-boya-video.html">Российский подражатель Макгрегора ударил нокаутированного соперника после остановки боя (видео)</a>
+            <p>Арби Эмиев нокаутировал Никиту Кондратова, а затем пнул его после боя.</p>
+        </div>
+        <div class="info-block-bottom">
+            <div class="info-block-tag"><span></span> </div>
+            
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="right center_col">
+            <div class="item" >
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+        <div class="block-cat-title"> </div>
+        <a href="https://telegraf.com.ua/goroskop/5616600-streltsam-ne-stoit-boyatsya-komandnoy-rabotyi-a-vodoleyam-zavidovat-goroskop-na-8-marta.html">
+            <img alt="Новости: Стрельцам не стоит бояться командной работы, а Водолеям - завидовать: гороскоп на 8 марта" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/94e0292ab38503489ae7527417409da6-294x184.jpg" />
+        </a>
+        </div>
+        <span class="capt">
+        <a href="https://telegraf.com.ua/goroskop/5616600-streltsam-ne-stoit-boyatsya-komandnoy-rabotyi-a-vodoleyam-zavidovat-goroskop-na-8-marta.html">
+            Стрельцам не стоит бояться командной работы, а Водолеям - завидовать: гороскоп на 8 марта        </a>
+        </span>
+
+
+
+    </div>
+    <div class="item" >
+            <div class="img">
+            <div class="block-icons">
+                                            </div>
+            <div class="block-cat-title"> </div>
+            <a href="https://telegraf.com.ua/goroskop/5616707-raki-mogut-sovershat-dorogostoyashhie-pokupki-a-kozerogam-luchshe-sfokusirovatsya-na-rabote-biznes-goroskop-na-nedelyu.html">
+                <img alt="Новости: Раки могут совершать дорогостоящие покупки, а Козерогам лучше сфокусироваться на работе: бизнес-гороскоп на неделю" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/1664aa77103ab879562efde8c243aefa-294x184.jpg" />
+            </a>
+            </div>
+            <span class="capt">
+            <a href="https://telegraf.com.ua/goroskop/5616707-raki-mogut-sovershat-dorogostoyashhie-pokupki-a-kozerogam-luchshe-sfokusirovatsya-na-rabote-biznes-goroskop-na-nedelyu.html">
+                Раки могут совершать дорогостоящие покупки, а Козерогам лучше сфокусироваться на работе: бизнес-гороскоп на неделю            </a>
+            </span>
+
+
+
+    </div>
+    <div class="item" >
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>            <span class="block-video-icon"></span>        </div>
+        <div class="block-cat-title"> </div>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616630-alina-grosu-zaintrigovala-otvetom-o-romane-s-izvestnyim-rossiyaninom-video.html">
+            <img alt="Новости: Алина Гросу заинтриговала ответом о романе с известным россиянином (видео)" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/151208619_408736913560254_5480585991884889234_n-294x184.jpg" />
+        </a>
+        </div>
+        <span class="capt">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616630-alina-grosu-zaintrigovala-otvetom-o-romane-s-izvestnyim-rossiyaninom-video.html">
+            Алина Гросу заинтриговала ответом о романе с известным россиянином (видео)        </a>
+        </span>
+
+
+
+    </div>
+    </div>
+    <div class="b_line"></div>
+</div>
+<div class="clear"></div>
+<div class="gallery num_gal">
+    <div class="screen">
+            <a href="https://telegraf.com.ua/zhizn/zhurnal/5616779-s-pervyim-voskresenem-vesnyi-maksim-galkin-pokazal-novoe-foto-lyubimoy-suprugi-foto.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Новости: &quot;С первым воскресеньем весны!&quot;: Максим Галкин показал новое фото любимой супруги (фото)" src="https://telegraf.com.ua/files/2021/03/118945701_686221932311023_3029853712098216040_n.jpg" /></div>
+        <div class="title">
+            <p>"С первым воскресеньем весны!": Максим Галкин показал новое фото любимой супруги (фото)</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/puteshestviya/5616181-v-avstralii-nashli-sposob-interesno-puteshestvovat-ne-vyiletaya-za-granitsu.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Новости: В Австралии нашли способ интересно путешествовать, не вылетая за границу" src="https://telegraf.com.ua/files/2021/03/1008MainV71.jpg" /></div>
+        <div class="title">
+            <p>В Австралии нашли способ интересно путешествовать, не вылетая за границу</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/ekologiya/5614102-bolshe-kieva-ot-antarktidyi-otkololsya-ogromnyiy-aysberg-foto-video.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Новости: Больше Киева: от Антарктиды откололся огромный айсберг (фото, видео)" src="https://telegraf.com.ua/files/2021/02/1008MainU115.jpg" /></div>
+        <div class="title">
+            <p>Больше Киева: от Антарктиды откололся огромный айсберг (фото, видео)</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/zhizn/moda-zhizn/5614264-kogda-strich-i-krasit-volosyi-v-marte-2021-goda-blagopriyatnyie-dni.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Новости: Когда стричь и красить волосы в марте 2021 года: благоприятные дни" src="https://telegraf.com.ua/files/2021/02/woman-5989552_960_720.jpg" /></div>
+        <div class="title">
+            <p>Когда стричь и красить волосы в марте 2021 года: благоприятные дни</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/puteshestviya/5615810-gde-rabotat-v-udovolstvie-top-10-samyih-zhelannyih-stran-i-gorodov-mira-dlya-rabochego-pereezda.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Новости: &quot;Где работать в удовольствие&quot;:  ТОП-10 самых желанных стран и городов мира для рабочего переезда" src="https://telegraf.com.ua/files/2021/03/komandirovka.jpg" /></div>
+        <div class="title">
+            <p>"Где работать в удовольствие":  ТОП-10 самых желанных стран и городов мира для рабочего переезда</p>
+        </div>
+    </a>
+    </div>
+    <div class="list"><div class="list_item">1<div class="arrow"></div></div><div class="list_item">2<div class="arrow"></div></div><div class="list_item">3<div class="arrow"></div></div><div class="list_item">4<div class="arrow"></div></div><div class="list_item">5<div class="arrow"></div></div>    </div>
+</div>
+
+
+<div class="clear"></div>
+<div class="sh_block left">
+    <div class="t_line"></div>
+        <div class="big_block">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616727-kogda-pasha-v-etom-godu-data-bolshogo-prazdnika.html" class="img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Когда Пасха в этом году: дата большого праздника" width="320" height="200" src="https://telegraf.com.ua/files/2021/03/Pasha-320x200.jpg" />
+        </a>
+                <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616727-kogda-pasha-v-etom-godu-data-bolshogo-prazdnika.html" class="capt">Когда Пасха в этом году: дата большого праздника</a>
+    </div>
+    <div class="vert_line">
+            <div class="item">
+        <a href="https://telegraf.com.ua/goroskop/5616821-ovnam-stoit-zavershit-staryie-otnosheniya-a-bliznetsam-osteregatsya-zavistnikov-goroskop-na-nedelyu.html" class="img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Овнам стоит завершить старые отношения, а Близнецам - остерегаться завистников: гороскоп на неделю" width="150" height="75" src="https://telegraf.com.ua/files/2021/03/1c9c8cd47a01d170167ca7560f2036fb-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/goroskop/5616821-ovnam-stoit-zavershit-staryie-otnosheniya-a-bliznetsam-osteregatsya-zavistnikov-goroskop-na-nedelyu.html" class="capt">Овнам стоит завершить старые отношения, а Близнецам - остерегаться завистников: гороскоп на неделю</a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616535-luchshaya-kompaniya-dlya-prosmotra-holostyaka-zhena-grigoriya-reshetnika-pokazala-kak-oni-smotreli-pervyiy-vyipusk-11-sezona-shou-foto.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+            <img alt="Новости: “Лучшая компания для просмотра Холостяка”: жена Григория Решетника показала, как они смотрели первый выпуск 11 сезона шоу (фото) " width="150" height="75" src="https://telegraf.com.ua/files/2021/03/156486667_2000678640074536_1182111767604750247_n1-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616535-luchshaya-kompaniya-dlya-prosmotra-holostyaka-zhena-grigoriya-reshetnika-pokazala-kak-oni-smotreli-pervyiy-vyipusk-11-sezona-shou-foto.html" class="capt">“Лучшая компания для просмотра Холостяка”: жена Григория Решетника показала, как они смотрели первый выпуск 11 сезона шоу (фото) </a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616483-chtob-nikakoy-artrit-lesya-nikityuk-pokazala-kakoy-prazdnik-organizovala-svoey-mame-na-den-rozhdeniya-video.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: &quot;Чтоб никакой артрит&quot;: Леся Никитюк показала, какой праздник организовала своей маме на день рождения (видео) " width="150" height="75" src="https://telegraf.com.ua/files/2021/03/155570324_2776638629241247_2737148732237660528_n1-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616483-chtob-nikakoy-artrit-lesya-nikityuk-pokazala-kakoy-prazdnik-organizovala-svoey-mame-na-den-rozhdeniya-video.html" class="capt">"Чтоб никакой артрит": Леся Никитюк показала, какой праздник организовала своей маме на день рождения (видео) </a>
+    </div>
+    </div>
+</div>
+
+<div class="sh_block right">
+    <div class="t_line"></div>
+        <div class="big_block">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616520-ne-mogu-byit-normalnoy-ayza-pokazala-prelesti-na-fone-sluhov-o-problemah-s-olegom-mayami.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+            <img alt="Новости: &quot;Не могу быть нормальной&quot;: Айза показала прелести на фоне слухов о проблемах с Олегом Майами" width="320" height="200" src="https://telegraf.com.ua/files/2021/03/149137564_869471317166455_4015801474111481790_n1-320x200.jpg" />
+        </a>
+                <a href="https://telegraf.com.ua/zhizn/zhurnal/5616520-ne-mogu-byit-normalnoy-ayza-pokazala-prelesti-na-fone-sluhov-o-problemah-s-olegom-mayami.html" class="capt">"Не могу быть нормальной": Айза показала прелести на фоне слухов о проблемах с Олегом Майами</a>
+    </div>
+    <div class="vert_line">
+            <div class="item">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616571-oleg-vinnik-protiv-britni-spirs-kseniya-mishina-srazilas-s-aleksandrom-ellertom-v-shou-lipsink-batl-video.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: Олег Винник против Бритни Спирс: Ксения Мишина сразилась с Александром Эллертом в шоу &quot;Липсинк батл&quot; (видео) " width="150" height="75" src="https://telegraf.com.ua/files/2021/03/156856634_132027198759310_8254775432160285844_n1-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616571-oleg-vinnik-protiv-britni-spirs-kseniya-mishina-srazilas-s-aleksandrom-ellertom-v-shou-lipsink-batl-video.html" class="capt">Олег Винник против Бритни Спирс: Ксения Мишина сразилась с Александром Эллертом в шоу "Липсинк батл" (видео) </a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616699-solomiya-vitvitskaya-rasskazala-kak-delit-imushhestvo-s-byivshim-muzhem-posle-7-let-braka-video.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: Соломия Витвицкая рассказала, как делит имущество с бывшим мужем после 7 лет брака (видео)" width="150" height="75" src="https://telegraf.com.ua/files/2021/03/101503609_264791467938312_4298595905167272682_n-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616699-solomiya-vitvitskaya-rasskazala-kak-delit-imushhestvo-s-byivshim-muzhem-posle-7-let-braka-video.html" class="capt">Соломия Витвицкая рассказала, как делит имущество с бывшим мужем после 7 лет брака (видео)</a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/recepty/5616329-vkusnyie-bulochki-s-koritsey-po-retseptu-evgeniya-klopotenko-video.html" class="img">
+            <div class="block-icons">
+                                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: Вкусные булочки с корицей по рецепту Евгения Клопотенко (видео)" width="150" height="75" src="https://telegraf.com.ua/files/2021/03/MyCollages7-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/recepty/5616329-vkusnyie-bulochki-s-koritsey-po-retseptu-evgeniya-klopotenko-video.html" class="capt">Вкусные булочки с корицей по рецепту Евгения Клопотенко (видео)</a>
+    </div>
+    </div>
+</div>
+<div class="sh_block left">
+    <div class="t_line"></div>
+        <div class="big_block">
+        <a href="https://telegraf.com.ua/goroskop/5616624-bliznetsam-ne-poddavaytes-na-provokatsii-a-lvyi-dolzhnyi-byit-gotovyi-k-peremenam-lyubovnyiy-goroskop-na-nedelyu.html" class="img">
+            <div class="block-icons">
+                                            </div>
+            <img alt="Новости: Близнецам - не поддавайтесь на провокации, а Львы должны быть готовы к переменам: любовный гороскоп на неделю" width="320" height="200" src="https://telegraf.com.ua/files/2021/03/0d0eb1cac4601d2d21c7678b7b714426-320x200.jpg" />
+        </a>
+                <a href="https://telegraf.com.ua/goroskop/5616624-bliznetsam-ne-poddavaytes-na-provokatsii-a-lvyi-dolzhnyi-byit-gotovyi-k-peremenam-lyubovnyiy-goroskop-na-nedelyu.html" class="capt">Близнецам - не поддавайтесь на провокации, а Львы должны быть готовы к переменам: любовный гороскоп на неделю</a>
+    </div>
+    <div class="vert_line">
+            <div class="item">
+        <a href="https://telegraf.com.ua/kultura/muzyika/5616385-redkiy-klip-bez-poshlosti-poklonniki-lobodyi-v-vostorge-ot-ee-novogo-video.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: &quot;Редкий клип без пошлости&quot;: поклонники Лободы в восторге от ее нового видео" width="150" height="75" src="https://telegraf.com.ua/files/2021/03/155324093_1164546610658507_8918617657701969152_n-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/kultura/muzyika/5616385-redkiy-klip-bez-poshlosti-poklonniki-lobodyi-v-vostorge-ot-ee-novogo-video.html" class="capt">"Редкий клип без пошлости": поклонники Лободы в восторге от ее нового видео</a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616366-dom-zabit-trenazherami-stalo-izvestno-o-sostoyanii-porazhennogo-insultom-aktera-alekseya-yanina.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <img alt="Новости: &quot;Дом забит тренажерами&quot;: стало известно о состоянии пораженного инсультом актера Алексея Янина" width="150" height="75" src="https://telegraf.com.ua/files/2021/03/MyCollages8-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616366-dom-zabit-trenazherami-stalo-izvestno-o-sostoyanii-porazhennogo-insultom-aktera-alekseya-yanina.html" class="capt">"Дом забит тренажерами": стало известно о состоянии пораженного инсультом актера Алексея Янина</a>
+    </div>
+    <div class="item">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616588-nikto-ne-lyubit-na-shou-maska-poshutili-nad-freymut.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+            <img alt="Новости: &quot;Никто не любит&quot;: на шоу &quot;Маска&quot; пошутили над Фреймут" width="150" height="75" src="https://telegraf.com.ua/files/2021/03/MyCollages9-150x75.jpg" />
+        </a>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616588-nikto-ne-lyubit-na-shou-maska-poshutili-nad-freymut.html" class="capt">"Никто не любит": на шоу "Маска" пошутили над Фреймут</a>
+    </div>
+    </div>
+    <div class="b_line"></div>
+</div>
+<div class="clear"></div>
+<div class="gallery photogal">
+    <div class="cat_link"><span>Фотогалереи</span></div>
+    <div class="screen">
+            <a href="https://telegraf.com.ua/ukraina/obshhestvo/5614727-vesna-prishla-kotyi-prileteli-1-marta-otmechayut-vsemirnyiy-den-domashnih-lyubimtsev-foto.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Весна пришла - коты прилетели: во всем мире отмечают день домашних любимцев" src="https://telegraf.com.ua/files/2021/02/Bez-imeni-3.jpg" /></div>
+        <div class="info">
+            <span class="numb">&nbsp;</span>
+            <p>Весна пришла - коты прилетели: во всем мире отмечают день домашних любимцев</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/zhizn/muzhchinyi/5038747-kak-shon-konneri-menyalsya-s-godami.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Как Шон Коннери менялся с годами " src="https://telegraf.com.ua/files/2019/06/Kopiya-kak-shon-konneri-menyalsya-s-godami-15.jpg" /></div>
+        <div class="info">
+            <span class="numb">&nbsp;</span>
+            <p>Как Шон Коннери менялся с годами </p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/zhizn/moda-zhizn/5559257-idealnyie-variantyi-strizhek-na-korotkie-volosyi-dlya-dam-posle-40-foto.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Идеальные варианты стрижек на короткие волосы для дам после 40 (Фото)" src="https://telegraf.com.ua/files/2020/09/MyCollages12.jpg" /></div>
+        <div class="info">
+            <span class="numb">&nbsp;</span>
+            <p>Идеальные варианты стрижек на короткие волосы для дам после 40 (Фото)</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/kurezy/5559199-moda-iz-naroda-kak-ona-est-2.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Мода из народа как она есть" src="https://telegraf.com.ua/files/2020/09/vaprol.jpg" /></div>
+        <div class="info">
+            <span class="numb">&nbsp;</span>
+            <p>Мода из народа как она есть</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/kurezy/5558170-bezuderzhnoe-vesele-s-etimi-zhivotnyimi-vam-garantirovano.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="Безудержное веселье с этими животными вам гарантировано" src="https://telegraf.com.ua/files/2020/09/5k5nke.jpg" /></div>
+        <div class="info">
+            <span class="numb">&nbsp;</span>
+            <p>Безудержное веселье с этими животными вам гарантировано</p>
+        </div>
+    </a>
+    <a href="https://telegraf.com.ua/kurezy/5557638-u-kazhdogo-cheloveka-svoe-ponyatie-neudachi-i-nevezeniya.html" class="scr_item">
+        <div class="img"><img width="800" height="400" alt="У каждого человека свое понятие неудачи и невезения..." src="https://telegraf.com.ua/files/2020/09/ue5gnkeg.jpg" /></div>
+        <div class="info">
+            <span class="numb">&nbsp;</span>
+            <p>У каждого человека свое понятие неудачи и невезения...</p>
+        </div>
+    </a>
+    </div>
+    <div class="list">
+            <div class="list_item">
+                <img width="150" height="90" alt="Весна пришла - коты прилетели: во всем мире отмечают день домашних любимцев - миниатюра" src="https://telegraf.com.ua/files/2021/02/Bez-imeni-3-150x90.jpg" />
+                <div class="act_block"></div>
+            </div>
+    <div class="list_item">
+                <img width="150" height="90" alt="Как Шон Коннери менялся с годами  - миниатюра" src="https://telegraf.com.ua/files/2019/06/Kopiya-kak-shon-konneri-menyalsya-s-godami-15-150x90.jpg" />
+                <div class="act_block"></div>
+            </div>
+    <div class="list_item">
+                <img width="150" height="90" alt="Идеальные варианты стрижек на короткие волосы для дам после 40 (Фото) - миниатюра" src="https://telegraf.com.ua/files/2020/09/MyCollages12-150x90.jpg" />
+                <div class="act_block"></div>
+            </div>
+    <div class="list_item">
+                <img width="150" height="90" alt="Мода из народа как она есть - миниатюра" src="https://telegraf.com.ua/files/2020/09/vaprol-150x90.jpg" />
+                <div class="act_block"></div>
+            </div>
+    <div class="list_item">
+                <img width="150" height="90" alt="Безудержное веселье с этими животными вам гарантировано - миниатюра" src="https://telegraf.com.ua/files/2020/09/5k5nke-150x90.jpg" />
+                <div class="act_block"></div>
+            </div>
+    <div class="list_item">
+                <img width="150" height="90" alt="У каждого человека свое понятие неудачи и невезения... - миниатюра" src="https://telegraf.com.ua/files/2020/09/ue5gnkeg-150x90.jpg" />
+                <div class="act_block"></div>
+            </div>
+        <div class="plashka"></div>
+    </div>
+</div>
+
+<div class="grey_block blue">
+    <div class="t_line"></div>
+    <div class="left">
+            <div class="big_block">
+        <a href="https://telegraf.com.ua/kultura/iskusstvo/5616592-u-pitstsyi-s-ananasami-poyavilsya-konkurent-set-negoduet-ot-novogo-retsepta-lyubimogo-blyuda.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <span class="block-img">
+            <img alt="Новости: У пиццы с ананасами появился конкурент: сеть негодует от нового рецепта любимого блюда  " width="567" height="309" src="https://telegraf.com.ua/files/2021/03/pexels-horizon-content-3762075-567x309.jpg" />
+        </span>
+                        <div class="bottom">
+            <span class="title">У пиццы с ананасами появился конкурент: сеть негодует от нового рецепта любимого блюда  </span>
+                <p>Одна из американских пиццерий представила необычный рецепт пиццы.  </p>
+                <div class="post-link">
+                    Читать полностью
+                </div>
+            </div>
+            <div class="c_line"></div>
+        </a>
+    </div>
+        <div class="block_line">
+                <div class="grey_duble_block">
+        <a href="https://telegraf.com.ua/recepty/5616503-marina-borzhemskaya-rasskazala-kak-prigotovit-postnyie-pp-blinchiki.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+            <img alt="Новости: Марина Боржемская рассказала, как приготовить постные ПП-блинчики " width="294" height="184" src="https://telegraf.com.ua/files/2021/03/pexels-rama-khandkar-2113556-294x184.jpg" />
+        </a>
+        <div class="bottom">
+            <a href="https://telegraf.com.ua/recepty/5616503-marina-borzhemskaya-rasskazala-kak-prigotovit-postnyie-pp-blinchiki.html">Марина Боржемская рассказала, как приготовить постные ПП-блинчики </a>
+            <p>Тренер Марина Боржемская поделилась рецептом вкусных блинчиков для тех, кто находится на правильном питании. </p>
+        </div>
+        <div class="info-block-bottom">
+            <div class="info-block-tag"><span></span> </div>
+            
+        </div>
+    </div>
+    <div class="grey_duble_block">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616841-v-krivom-roge-sred-bela-dnya-rasstrelyali-muzhchinu-v-gorode-perepoloh-foto.html" class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                            </div>
+            <img alt="Новости: В Кривом Роге средь бела дня расстреляли мужчину: в городе переполох (фото)" width="294" height="184" src="https://telegraf.com.ua/files/2021/03/110-294x184.jpg" />
+        </a>
+        <div class="bottom">
+            <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616841-v-krivom-roge-sred-bela-dnya-rasstrelyali-muzhchinu-v-gorode-perepoloh-foto.html">В Кривом Роге средь бела дня расстреляли мужчину: в городе переполох (фото)</a>
+            <p>Погибшим является криворожский бандит Алексей Леончик</p>
+        </div>
+        <div class="info-block-bottom">
+            <div class="info-block-tag"><span></span> </div>
+                    </div>
+    </div>
+        </div>
+    </div>
+    <div class="right center_col">
+            <div class="item" >
+        <div class="img">
+        <div class="block-icons">
+            <span class="block-photo-icon"></span>                    </div>
+        <div class="block-cat-title"> </div>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616550-zvezda-shou-holostyachka-povtoril-obraz-novogo-glavnogo-geroya-holostyaka-mihaila-zalivako-foto.html">
+            <img alt="Новости: Звезда шоу &quot;Холостячка&quot; повторил образ нового главного героя &quot;Холостяка&quot; Михаила Заливако (фото) " width="188" height="118" src="https://telegraf.com.ua/files/2021/03/148371081_3594968177298250_1630387906099089049_n1-294x184.jpg" />
+        </a>
+        </div>
+        <span class="capt">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616550-zvezda-shou-holostyachka-povtoril-obraz-novogo-glavnogo-geroya-holostyaka-mihaila-zalivako-foto.html">
+            Звезда шоу "Холостячка" повторил образ нового главного героя "Холостяка" Михаила Заливако (фото)         </a>
+        </span>
+
+
+    </div>
+    <div class="item" >
+        <div class="img">
+        <div class="block-icons">
+                        <span class="block-video-icon"></span>        </div>
+        <div class="block-cat-title"> </div>
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616603-eto-novyiy-angliyskiy-olga-buzova-porazila-set-vokalom-video.html">
+            <img alt="Новости: &quot;Это новый английский?&quot; Ольга Бузова поразила сеть вокалом (видео) " width="188" height="118" src="https://telegraf.com.ua/files/2021/03/153126279_282978226501506_2930707645200190394_n1-294x184.jpg" />
+        </a>
+        </div>
+        <span class="capt">
+        <a href="https://telegraf.com.ua/zhizn/zhurnal/5616603-eto-novyiy-angliyskiy-olga-buzova-porazila-set-vokalom-video.html">
+            "Это новый английский?" Ольга Бузова поразила сеть вокалом (видео)         </a>
+        </span>
+
+
+    </div>
+    <div class="item" >
+            <div class="img">
+            <div class="block-icons">
+                <span class="block-photo-icon"></span>                <span class="block-video-icon"></span>            </div>
+            <div class="block-cat-title"> </div>
+            <a href="https://telegraf.com.ua/zhizn/zhurnal/5616579-anna-rizatdinova-proigrala-eline-svitolinoy-v-pervom-vyipuske-shou-lipsink-batl-video.html">
+                <img alt="Новости: Анна Ризатдинова проиграла Элине Свитолиной в первом выпуске шоу &quot;Липсинк батл&quot; (видео) " width="188" height="118" src="https://telegraf.com.ua/files/2021/03/157068699_265106771864955_4264149670653154296_n1-294x184.jpg" />
+            </a>
+            </div>
+            <span class="capt">
+            <a href="https://telegraf.com.ua/zhizn/zhurnal/5616579-anna-rizatdinova-proigrala-eline-svitolinoy-v-pervom-vyipuske-shou-lipsink-batl-video.html">Анна Ризатдинова проиграла Элине Свитолиной в первом выпуске шоу "Липсинк батл" (видео) </a>
+            </span>
+
+
+    </div>
+    </div>
+    <div class="b_line"></div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div class="gallery bottom_tabs" style="margin-bottom: 30px;">
+
+<div class="screen">
+<div class="scr_item" style="display: block;">
+
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616906-razgonyayut-zradu-v-genshtabe-otvetili-o-yakobyi-sozdanii-lgbt-podrazdeleniy.html">
+            <div class="img">
+                <img alt="Новости: &quot;Разгоняют зраду&quot;: в Генштабе ответили о якобы создании ЛГБТ-подразделений" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/LGBT-188x118.jpg" />
+            </div>
+            <div class="title">
+                <span>"Разгоняют зраду": в Генштабе ответили о якобы создании ЛГБТ-подразделений</span>
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/obshhestvo/5616786-koronavirus-pomolodel-golubovskaya-pokazala-rentgenogrammu-18-letnego-patsienta.html">
+            <div class="img">
+                <img alt="Новости: Коронавирус &quot;помолодел&quot;: Голубовская показала рентгенограмму 18-летнего пациента" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/16-188x118.jpg" />
+            </div>
+            <div class="title">
+                <span>Коронавирус "помолодел": Голубовская показала рентгенограмму 18-летнего пациента</span>
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/ukraina/mestnyiy/5616717-8-marta-chast-ukrainyi-zasyiplet-snegom-sinoptiki-ozvuchili-prognoz.html">
+            <div class="img">
+                <img alt="Новости: 8 марта часть Украины засыплет снегом: синоптики озвучили прогноз" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/mokryiy-sneg-188x118.jpg" />
+            </div>
+            <div class="title">
+                <span>8 марта часть Украины засыплет снегом: синоптики озвучили прогноз</span>
+            </div>
+        </a>
+    </div>
+
+
+
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/mir/usa/5616636-na-meste-gibeli-dzhordzha-floyda-sluchilas-novaya-tragediya-video.html">
+            <div class="img">
+                <img alt="Новости: На месте гибели Джорджа Флойда случилась новая трагедия (видео)" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/22224-188x118.jpg" />
+            </div>
+            <div class="title">
+                <span>На месте гибели Джорджа Флойда случилась новая трагедия (видео)</span>
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="item">
+        <a href="https://telegraf.com.ua/mir/europa/5616612-avariya-s-ukraintsami-v-polshe-ochevidtsyi-rasskazali-o-poslednih-minutah-nakanune-tragedii.html">
+            <div class="img">
+                <img alt="Новости: Авария с украинцами в Польше: очевидцы рассказали о последних минутах накануне трагедии" width="188" height="118" src="https://telegraf.com.ua/files/2021/03/DTP_Polsha_PAP-188x118.jpg" />
+            </div>
+            <div class="title">
+                <span>Авария с украинцами в Польше: очевидцы рассказали о последних минутах накануне трагедии</span>
+            </div>
+        </a>
+    </div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+
+<div class="clear"></div>
+</div>
+</div> <!-- #main-->
+
+
+<script>
+        jQuery(function(){
+        top_big();
+        jQuery('.scrollbar-macosx').scrollbar();
+        courses();
+        ch_o();
+        runner(jQuery('#ptfs_block .runner'));
+        runner(jQuery('#ukr_birg .runner'));
+    });
+</script>
+
+
+<script>
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    function setCookie(name, value, options) {
+        options = options || {};
+        var expires = options.expires;
+        if (typeof expires == "number" && expires) {
+            var d = new Date();
+            d.setTime(d.getTime() + expires*1000);
+            expires = options.expires = d;
+        }
+        if (expires && expires.toUTCString) {
+            options.expires = expires.toUTCString();
+        }
+        value = encodeURIComponent(value);
+        var updatedCookie = name + "=" + value;
+        for(var propName in options) {
+            updatedCookie += "; " + propName;
+            var propValue = options[propName];
+            if (propValue !== true) {
+                updatedCookie += "=" + propValue;
+            }
+        }
+        document.cookie = updatedCookie;
+    }
+
+
+
+
+</script>
+    <script>
+
+
+        (function() {
+            function async_load(u,id) {
+                if (!gid(id)) {
+                    s="script", d=document,
+                        o = d.createElement(s);
+                    o.type = 'text/javascript';
+                    o.id = id;
+                    o.async = true;
+                    o.src = u;
+                    // Creating scripts on page
+                    x = d.getElementsByTagName(s)[0];
+                    x.parentNode.insertBefore(o,x);
+                }
+            }
+            function gid (id){
+                return document.getElementById(id);
+            }
+            window.onload = function() {
+                e = gid("follow-twitter-in");
+                e = gid("s-google-page");
+                async_load("//platform.twitter.com/widgets.js", "id-twitter");//twitter
+                async_load("//connect.facebook.net/en_EN/all.js#xfbml=1", "id-facebook");//facebook
+                async_load("https://apis.google.com/js/plusone.js", "id-google");//google
+            };
+
+        })();
+
+
+    </script>
+<div id="footer-desk" class="footer-desktop">
+    <div class="top">
+        <div class="content">
+            <div class="tt">
+                <div class="footerTitle">
+                    <p>Телеграф - <span>последние новости Украины и мира</span></p>
+                </div>
+
+            </div>
+            <ul class="footerList"></ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="content">
+            <div class="footerDownText">
+                Все материалы <strong>Телеграф</strong>, опубликованные на этом сайте с ссылкой <a target="_blank" rel="nofollow" href="http://www.interfax.com.ua/">на агентство "Интерфакс-Украина"</a>, не подлежат дальнейшему воспроизведению и/или распространению в какой-либо форме, не иначе как с письменного разрешения агентства. Перепечатка, копирование или воспроизведение информации, содержащей ссылку на агентство "УНИАН", "Укринформ", "УНН", "Украинские новости", "ИТАР-ТАСС", "Украинская Фото Группа" и "Reuters"  в каком-либо виде строго запрещена.
+                <br /><br />
+                Полное или частичное использование материалов разрешается только при условии наличия прямой, открытой для поисковых систем гиперссылки на прямой адрес материала  на сайте <strong>telegraf.com.ua</strong>. Гиперссылка должна содержаться исключительно в первом абзаце текста. Размер шрифта ссылки или <strong>гиперссылки</strong> не должен быть меньше шрифта публикации.
+                <br /><br />
+                Copyright &copy; 2012-2021, <a href="https://telegraf.com.ua/"><i>Телеграф</i></a>.
+                    <div class="f-b-menu">
+                        <a rel="nofollow" href="https://telegraf.com.ua/sitemap.html" class="style_rules">Карта сайта</a>
+                        <a rel="nofollow" href="https://telegraf.com.ua/rules/" class="style_rules">Правила сайта</a>
+                        <a href="https://telegraf.com.ua/contact/" class="style_rules">Контакты</a>
+                        <a rel="nofollow" href="https://telegraf.com.ua/reklama/" class="style_rules">Реклама на сайте</a>
+                        <a rel="nofollow" href="https://telegraf.com.ua/privacypolicy/" class="style_rules">Политика конфиденциальности</a>
+                        <a rel="nofollow" href="https://telegraf.com.ua/about/" class="style_rules">О проекте Телеграф</a>
+                    </div>
+            </div>
+            <div class="liveInt">
+                <!--LiveInternet counter--><script><!--
+                    document.write("<a href='http://www.liveinternet.ru/click' "+
+                    "target=_blank><img src='//counter.yadro.ru/hit?t57.5;r"+
+                    escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                    ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                    ";"+Math.random()+
+                    "' alt='' title='LiveInternet' "+
+                    "border='0' width='88' height='31'><\/a>")
+                    //--></script><!--/LiveInternet-->
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $('ul.footerList').load(
+        _url+'/ajax/footer-ajax.php'
+    );
+</script>
+
+<script src="https://telegraf.com.ua/wp-content/themes/news_ru/new_theme/js/ck-karma.js"></script>
+<!--
+3.34 Mb / 0.14425 сек / 98 запросов-->
+
+<div class="privasypolicy-info privasypolicy-info">
+    <span class="skip-privacypolicy privasypolicy-info__button_top_skip">×</span>
+    <div class="privacy-text">
+        Продолжая просматривать telegraf.com.ua, Вы подтверждаете, что ознакомились с
+        <a href="https://telegraf.com.ua/rules/" class="privasypolicy-info__link" target="_blank" rel="noopener">Правилами пользования сайтом</a>, и соглашаетесь c
+        <a href="https://telegraf.com.ua/privacypolicy/" class="privasypolicy-info__link" target="_blank" rel="noopener">Политикой конфиденциальности</a>
+    </div>
+    <div class="close-privacypolicy-wrap">
+        <span class="skip-privacypolicy privasypolicy-info__button_skip">Закрыть</span>
+        <span class="close-privacypolicy privasypolicy-info__button_close"><span class="privasypolicy-info__icon"></span>Соглашаюсь</span>
+    </div>
+</div>
+<script>
+    $(function(){
+        var modalPrivacypolicy = $(".privasypolicy-info"),
+            closePrivacypolicy = $(".close-privacypolicy"),
+            skipPrivacypolicy = $(".skip-privacypolicy");
+
+        if(getCookie('close-privacypolicy')=="1"){
+
+        } else {
+            modalPrivacypolicy.css('display','block');
+        }
+        closePrivacypolicy.on("click",function(){
+            var opt = new Object();
+            opt.expires = 365 * 86400;
+            opt.path = '/';
+            opt.domain = 'telegraf.com.ua';
+            setCookie('close-privacypolicy', '1', opt);
+            modalPrivacypolicy.css('display','none');
+        });
+        skipPrivacypolicy.on("click",function(){
+            modalPrivacypolicy.css('display','none');
+        });
+    })
+</script>
+<style>
+    /*smart banner*/
+    #smartbanner { position:fixed; left:0; bottom: 0px;border-bottom:1px solid #222; width:100%; height:84px; font-family:'Helvetica Neue',sans-serif; background:-webkit-linear-gradient(top, #f4f4f4 0%,#cdcdcd 100%); background-image: -ms-linear-gradient(top, #F4F4F4 0%, #CDCDCD 100%); background-image: -moz-linear-gradient(top, #F4F4F4 0%, #CDCDCD 100%); box-shadow:0 1px 2px rgba(0,0,0,0.5); z-index:9998; -webkit-font-smoothing:antialiased; overflow:hidden; -webkit-text-size-adjust:none; }
+    #smartbanner, html.sb-animation {-webkit-transition: all .3s ease;}
+    #smartbanner .sb-container { margin: 0 auto}
+    #smartbanner .sb-close { position:absolute; left:5px; top:5px; display:block; border:2px solid #fff; width:14px; height:14px; font-family:'ArialRoundedMTBold',Arial; font-size:15px; line-height:15px; text-align:center; color:#fff; background:#070707; text-decoration:none; text-shadow:none; border-radius:14px; box-shadow:0 2px 3px rgba(0,0,0,0.4); -webkit-font-smoothing:subpixel-antialiased; }
+    #smartbanner .sb-close:active { font-size:13px; color:#aaa; }
+    #smartbanner .sb-icon { position:absolute; left:30px; top:10px; display:block; width:57px; height:57px; background:rgba(0,0,0,0.6); background-size:cover; border-radius:10px; box-shadow:0 1px 3px rgba(0,0,0,0.3); }
+    #smartbanner.no-icon .sb-icon { display:none; }
+    #smartbanner .sb-info { position:absolute; left:98px; top:14px; width:44%; font-size:11px; line-height:1.2em; font-weight:bold; color:#6a6a6a; text-shadow:0 1px 0 rgba(255,255,255,0.8); }
+    #smartbanner #smartbanner.no-icon .sb-info { left:34px; }
+    #smartbanner .sb-info strong { display:block; font-size:13px; color:#4d4d4d; line-height: 18px; }
+    #smartbanner .sb-info > span { display:block; }
+    #smartbanner .sb-info em { font-style:normal; text-transform:uppercase; }
+    #smartbanner .sb-button { position:absolute; right:20px; top:20px; border:1px solid #bfbfbf; padding: 0 10px; min-width: 10%; letter-spacing: .04em; height:24px; font-size:14px; line-height:24px; text-align:center; font-weight:bold; color:#6a6a6a; background:-webkit-linear-gradient(top, #efefef 0%,#dcdcdc 100%); text-transform:uppercase; text-decoration:none; text-shadow:0 1px 0 rgba(255,255,255,0.8); border-radius:3px; box-shadow:0 1px 0 rgba(255,255,255,0.6),0 1px 0 rgba(255,255,255,0.7) inset; }
+    #smartbanner .sb-button:active, #smartbanner .sb-button:hover { background:-webkit-linear-gradient(top, #dcdcdc 0%,#efefef 100%); }
+
+    #smartbanner .sb-icon.gloss:after { content:''; position:absolute; left:0; top:-1px; border-top:1px solid rgba(255,255,255,0.8); width:100%; height:50%; background:-webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.2) 100%); border-radius:10px 10px 12px 12px; }
+
+    #smartbanner.android { border-color:#212228; border-top: 3px solid #b3c833; box-shadow: none; }
+    #smartbanner.android .sb-close { border:0; width:17px; height:17px; line-height:17px; color:#b1b1b3; background:#1c1e21; text-shadow:0 1px 1px #000; box-shadow:0 1px 2px rgba(0,0,0,0.8) inset,0 1px 1px rgba(255,255,255,0.3); }
+    #smartbanner.android .sb-close:active { color:#eee; }
+    #smartbanner.android .sb-info {text-shadow:0 1px 2px rgba(255,255,255,0.8); }
+    #smartbanner.android .sb-info strong { color:#000; }
+    #smartbanner.android .sb-button { min-width: 12%; border: none; padding:1px; color:#FFF; background: none; border-radius: 0; box-shadow: none; }
+    #smartbanner.android .sb-button span { text-align: center; display: block; padding: 0 10px; background-color: #b3c833; text-transform:none; text-shadow:none; box-shadow:none; }
+    #smartbanner.android .sb-button:active, #smartbanner.android .sb-button:hover { background: none; }
+    #smartbanner.android .sb-button:active span, #smartbanner.android .sb-button:hover span { background:#C7DD38}
+
+    #smartbanner.windows .sb-icon { border-radius: 0px; }
+</style>
+<script>
+    $(function() {
+
+
+
+        $.smartbanner({
+            title: 'Telegraf.com.ua', // What the title of the app should be in the banner (defaults to <title>)
+            author: 'OOO Телеграф', // What the author of the app should be in the banner (defaults to <meta name="author"> or hostname)
+            price: 'БЕСПЛАТНО', // Price of the app
+            inAppStore: 'App Store', // Text of price for iOS
+            inGooglePlay: 'Google Play', // Text of price for Android
+            button: 'СКАЧАТЬ', // Text on the install button
+            scale: 'auto', // Scale based on viewport size (set to 1 to disable)
+            daysHidden: 1, // Duration to hide the banner after being closed (0 = always show banner)
+            daysReminder: 60 // Duration to hide the banner after "VIEW" is clicked *separate from when the close button is clicked* (0 = always show banner)
+        })
+
+    })
+</script>
+
+
+<div id="popup-block" class="popup-fixed">
+    <div class="popup-fixed_top"></div>
+    <div class="popup-fixed_content">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- tefegraf_D_popUP_970 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:970px;height:90px"
+             data-ad-client="ca-pub-1012715390748858"
+             data-ad-slot="8623721200"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <div class="popup-fixed__btn" id="popup-block__btn"></div>
+</div>
+
+<script>
+    /** popup */
+    popup_block_show = false;
+    popup_block = document.getElementById("popup-block");
+    popup_block_btn = document.getElementById("popup-block__btn");
+    popup_block_btn.onclick = function (){
+        popup_block.style.display = 'none';
+        popup_block_show = true;
+    };
+    window.addEventListener('scroll', function() {
+        if(pageYOffset > 100){
+            if(!popup_block_show){
+                popup_block.style.display = 'flex';
+            }
+        }
+    });
+    /** popup */
+</script>
+
+<!-- (C)2000-2021 Gemius SA - gemiusPrism  / Wezel zbiorczy telegraf.com.ua/Strona glowna serwisu -->
+<script type="text/javascript">
+    var pp_gemius_identifier = 'd1NFLYbwNTYc3JGeceEnsqdzDovU3JrCyv3LCp4TlcD.17';
+    function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');gt.setAttribute('defer','defer'); gt.src=l+'://gaua.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+</script>
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.144 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-03-08 13:42:30 -->
+
+<!-- Compression = gzip -->
